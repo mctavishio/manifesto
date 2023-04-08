@@ -1,28 +1,9 @@
 const fs = require("fs");
+const tools = require("./tools");
 let args = process.argv;
 console.log(process.argv);
-let inputfile = (args[2] || "./webinfo.js");
+let inputfile = (args[2] || "./data/B0.js");
 let input = require(inputfile);
-/*
- * form of input: canvas => return
- * {
- * title,subtitle,abstract,text:[],
- * root,indexurl,pictureurl,inputurl,
- * codeurl,cssurl,
- * elements:[groups][elements]
- * elements[groupj][elementn] = {
- * 	id,
- * 	drawf:(canvas,p)=>f,
- * 	tag:"circ",cssclasses:[],
- * 	tweenf:(p1,p2)=>f
- * },
- * createB: (canvas,t) => {
- * return B:[nticks][fps][groups][els]
- * B:[t][frame][group][el]=p object
- *
- * }
- */
-
 let indexname = input.indexname;
 let now = new Date();
 let head = `<!DOCTYPE html>
@@ -43,7 +24,7 @@ let head = `<!DOCTYPE html>
 			"@type": "WebPage",
 			"name": "${input.title}",
 			"breadcrumb": "${input.root} > ${input.title}",
-          	"url": "${input.indexurl}",
+          	"url": "${input.url}",
 			"description": "${input.abstract}",
 			"datePublished": "${now.toString()}",
           	"image": "${input.pictureurl}",
@@ -62,7 +43,6 @@ let head = `<!DOCTYPE html>
 	</script>
 	<link rel="stylesheet" href="${input.cssurl}"/>
 	<script src="${input.codeurl}"></script>
-	<script src="${input.inputurl}"></script>
 	<style>
   		body {
 			background: var(--warmgray});
@@ -91,21 +71,9 @@ let body = `<body id="top">
 
 <div class="screenreader-text">
 	<p>Your feedback is always welcome.</p>
-</div>`;
-body = body + input.posts.reduce( (postsstr,post) => {
-	return poststr += `
-	<article>
-		<header>
-			<h1>${post.title}</h1>
-			<h2>${post.subtitle}</h2>
-			<p>${post.abstract}</p>
-		</header>
-		<div class="textContent">
-			${post.text}
-		</div>
-	</article>`
-},"");
-body +=`
+</div>
+${input.text}
+
 <fieldset id="dashboard">
 <legend>access dashboard</legend>
 <!-- <label for="sound"><input id="sound" type="checkbox"> play sound</label> -->
@@ -125,13 +93,8 @@ body +=`
 </div> <!-- end contentframe -->
 
 </body>
-<script>
-
-window.addEventListener('load', e => {
-  z.draw(${JSON.stringify(input.elements)},${JSON.stringify(input.B)});
-  window.scroll(0,0);
-});
-</script>
+<script src="/code/railwayguide.js"></script>
+</body>
 </html>`;
 fs.writeFileSync(indexname, head+body, (err) => {
   if (err)
