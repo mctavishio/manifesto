@@ -73,7 +73,9 @@
   	--corefontsize: 18px;
   	--corefontweight: 500;
   	--corefontweightbold: 600;
-  	--corelineheight: 38px;
+  	--corelineheight: 24px;
+
+  	--dt: 1000ms;
 }
 
 /* browser fonts ::: https://blog.hubspot.com/website/web-safe-html-css-fonts */
@@ -212,6 +214,7 @@ div.hovershape.circle {
 }
 svg *{
   transition: all 2s;
+  transition: all var(--dt);
 }
 #svgframe {
 	z-index: var(--zlowest);
@@ -243,14 +246,12 @@ svg *{
 	transition: opacity 1s ease-in-out;
 	background-color: var(--coreveilbg);
 }
-#contentframe {
+
+#mainflex {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	justify-content: center;
-	align-items: baseline; /* flex-start */
-	align-content: space-around;
+  	justify-content: center;
+  	width: 90%;
+  	margin-left: 10%;
 }
 main {
 	position: relative;
@@ -258,6 +259,12 @@ main {
 	padding: 1em;
 	transition: opacity 1s ease-in-out;
 	border: 0px;
+}
+main.narrow {
+	width: 90%; max-width: 600px;
+}
+main.wide {
+	width: 90%; max-width: 900px;
 }
 footer {
 	position: relative;
@@ -275,7 +282,12 @@ footer {
 #contentframe.largetext {
 	font-size: 1.4rem;
 }
-
+blockquote {
+	padding: 2em;
+	margin:0;
+	font-size:.8rem;
+	font-style: italic;
+}
 .gallery {
 	min-width: 95%;
 	display: flex;

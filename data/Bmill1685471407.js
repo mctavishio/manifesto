@@ -1,5 +1,6 @@
 const fs = require("fs");
 const tools = require("./tools");
+const timestamp = "1685471407";
 let args = process.argv;
 console.log(process.argv);
 let inputfile = (args[2] || "./data/B0.js");

@@ -1,11 +1,11 @@
-let getz = () => {
+let getz = (score) => {
 	let width = window.innerWidth, height = window.innerHeight;
 	let min = Math.min(width, height), max = Math.max(width, height);
 	let version = (min < 680 || max < 980) ? "small" : "large";
 	let v = version === "small" ? 0 : 1;
 	let z = { 
 		dimensions: {
-			width, height, version, v
+			width, height, version, v, min, max,
 		},
 		highcontrast: false,
 		texthidden: false,
@@ -53,6 +53,12 @@ let getz = () => {
 		togrid: (min=1, max=1, x=1, ndivisions=1) => {
 			let dx = Math.floor( (max-min) / ndivisions );
 			return Math.floor( ( x-min+dx/2)/dx )*dx + min;
+		},
+		calculategridpts: (min=0,max=1,multipliers=[0,0.25,0.5,0.75.1]) => {
+			let span = max-min;
+			return multipliers.map( mpt => {
+				return min + mpt*span;
+			});
 		},
 		flatten: (arr) => {
 			return arr.reduce(function (flat, item) {

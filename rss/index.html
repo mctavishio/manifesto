@@ -1,0 +1,58 @@
+<html>
+	<head>
+<style>
+body {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  background: green;
+}
+img {
+  max-width: 100%;
+  box-shadow: 0 0 3px #B0BEC5;
+}
+
+article {
+  background: #ECEFF1;
+  border-radius: 4px;
+  overflow: hidden;
+  font: 12px/1.1 system-ui, sans-serif;
+  a {
+    text-decoration: none;
+    color: #455A64;
+    &:hover, &:focus {
+      color: #2196F3;
+    }
+  }
+  h2 {
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+}
+</style>
+<body>
+</body>
+<script>
+	const RSS_URL = `https://rss.art19.com/apology-line`;
+
+fetch(RSS_URL)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    console.log(data);
+    const items = data.querySelectorAll("item");
+    let html = ``;
+    items.forEach(el => {
+      html += `
+        <article>
+			<h1>${el.querySelector("title").innerHTML}</h1>
+			<div>${el.querySelector("description").innerHTML}</div>
+        </article>
+      `;
+    });
+    document.body.insertAdjacentHTML("beforeend", html);
+  });
+
+</script>
+	</head>

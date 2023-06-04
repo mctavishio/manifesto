@@ -48,10 +48,10 @@ module.exports = {
 			return ptacc;
 		}, {});
 		return pt;
-	};
+	},
 	//https://github.com/freder/bezier-spline
 	interpolatePath: pts => {
-	};
+	},
 	getDateTime: () => {
 		const datetime= new Date();
 		const timestamp = datetime.getTime();
@@ -166,7 +166,7 @@ module.exports = {
 		}
 	},
 	curves: {
-		init:  () -> {
+		init:  () => {
 			// find each path, to see if it has Catmull-Rom splines in it
 			var pathEls = document.documentElement.getElementsByTagName("path");
 			for (var p = 0, pLen = pathEls.length; pLen > p; p++) {
