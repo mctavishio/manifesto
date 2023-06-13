@@ -1,17 +1,20 @@
-module.exports = {
+let template = {
 	title: "manifesto title",
 	subtitle: "manifesto subtitle",
-	abstract: "the empty ladder",
-	indexname: "index.html",
+	abstract: "net.art web hypermedia algorithmic mctavish generative old-school code : the empty ladder",
+	indexname: "index_temp.html",
 	root: "manifesto",
-	url: "https://mctavish.work/index.html",
+	url: "https://mctavish.work/index_temp.html",
 	cssurl: "/css/core.css",
 	codeurl: "/code/core.js",
 	pictureurl: "https://mctavish.work//apple-touch-icon.png",
+	bodybg: ["warmblack","red"],
+	mainbg: ["warmgray","warmblack"],
 	text: `<article>
 	<header>
-	<h1>article header</h1>
+	<h1>... </h1>
 	</header>
-	<p>text text text</p>
+	<p>more & more & more</p>
 	</article>`,
-}
+};
+module.exports = template;

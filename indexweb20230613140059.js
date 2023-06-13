@@ -2,7 +2,7 @@ const fs = require("fs");
 const tools = require("./tools");
 let args = process.argv;
 console.log(process.argv);
-let inputfile = (args[2] || "./webinfo_webfactory.js");
+let inputfile = (args[2] || "./data/B0.js");
 let input = require(inputfile);
 let indexname = input.indexname;
 let now = new Date();
