@@ -5,11 +5,12 @@ let template = {
 	indexname: "index_temp.html",
 	root: "manifesto",
 	url: "https://mctavish.work/index_temp.html",
-	cssurl: "/css/core.css",
+	//cssurl: "/css/core.css",
+	cssurl: "/css/fieldnotes.css",
 	codeurl: "/code/core.js",
 	pictureurl: "https://mctavish.work//apple-touch-icon.png",
-	bodybg: ["warmblack","red"],
-	mainbg: ["warmgray","warmblack"],
+	bodybg: ["warmblack"],
+	mainbg: ["warmgray"],
 	text: `<article>
 	<header>
 	<h1>... </h1>

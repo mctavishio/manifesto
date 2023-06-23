@@ -160,10 +160,7 @@ let getz = (score) => {
 			}, []),
 		}
 	})();
-
-	
-
-		//set controls
+	//set controls
 	( () => {
 
 		let sound = document.querySelector("#sound");
