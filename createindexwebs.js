@@ -42,7 +42,7 @@ domains.forEach(domain => {
 			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en.US"
 		}
 	</script>
-	<script src="${input.scoreurl}"></script>
+	<!--<script src="${input.scoreurl}"></script>-->
 	<!-- Google Analytics -->
 	<link rel="stylesheet" href="${input.cssurl}"/>
 
@@ -61,7 +61,9 @@ let body = `<body id="top">
 <div id="svgframe" class="frame zlow">
 <svg xmlns="http://www.w3.org/2000/svg" id="svg" 
 class="frame">
-<rect x=0 y=0 width="80vw" height="80vh" fill="#000000" stroke-width="8" stroke="#ffffff" stroke-dasharray=8>
+<rect x=0 y=0 width="80vw" height="80vh" fill="#000000" stroke-width="18" stroke="#ffffff" stroke-dasharray="8"/>
+<rect x="10vw" y="0" width="80vw" height="80vh" fill="#000000" stroke-width="8" stroke="#ffcc00" stroke-dasharray="20"/>
+<rect x="50vw" y="0" width="50vw" height="50vh" fill="#333333" stroke-width="2" stroke="#006668" stroke-dasharray="2"/>
 </svg></div>
 <!--<div id="wordframe" class="frame z0"></div>-->
 <div id="contentframe" class="absolute zhighest">
@@ -125,12 +127,15 @@ if(input.hasDashboard) {
 <script src="code/velocity_v2.min.js"></script>
 <script src="${input.codeurl}"></script>
 <script>
-document.querySelector("h1").velocity({
+document.querySelectorAll("h1").velocity({
 	properties: {"color": "red"},
 	options: { duration: 500 }
 });
-document.querySelector("rect").velocity({
-	properties: {"fill": "#ffcc00", x:"50vw", y:"50vh", width:"20vmin", height: "10vmin", strokeDasharray: 30},
+document.querySelectorAll("rect").velocity({
+	properties: {"fill": "#ffcc00", x:"50vw", y:"50vh", width:"20vmin", height: "10vmin", strokeDasharray:30},
+	options: { duration: 2500 }
+}).velocity({
+	properties: {"fill": "#686868", x:"80vw", y:"80vh", width:"10vmin", height: "8vmin", strokeDasharray:10},
 	options: { duration: 2500 }
 });
 </script>
