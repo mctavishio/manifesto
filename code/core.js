@@ -90,8 +90,51 @@ let getz = (score) => {
 			return el;
 		},
 	};
-	z.draw = (elements,B,t) => {
-		let tn = t%nticks;
+	/*
+	 * 1. given score: nticks, colors, playlist, frame|elements, b
+	 * 2. create elements & append to frame
+	 * 3. given the current dt: set Timeout loop using canvas parameters
+	 * 4. use velocity to set elements(t) given b  
+	/* 
+	 * note that to calculate b it might be helpful to subdivide element list into layers and then
+	 * flatten that multidimensional layer,element array into a single elements array
+	 * but then the actual rendering is fairly "dumb" in terms of seeing
+	 * meaning/context ... it just renders the elements array in order
+	 * referencing each element by id
+	 * createScore b ::: use velocity options:
+	 * ex:
+	 * properties: { fillOpacity: (j+count)%2===0 ? 1.0 : 0.0, strokeOpacity: (j+count)%2===0 ? 0.0 : 1.0, stroke: color, strokeWidth: z.tools.randominteger(4,radius/8), strokeDasharray: z.tools.randominteger(4, radius*2), fill: color, cx: cx, cy: cy, r: radius },
+	 * fillOpacity
+	 * strokeOpacity
+	 * cx,cy,r
+	 * rotateX (Y & Z)
+	 * fill
+	 * stroke
+	 * width, height
+	 * fillColor
+	 * strokeColor
+	 * scaleX
+	 * strokeDasharray
+	 * strokeWidth
+borderRadius: "25px",
+  width: "45px",
+  paddingLeft: "0",
+  paddingRight: "0",
+  backgroundColor: "#8CC152",
+  color: "#fff",
+  borderColor: "#8CC152",
+  boxShadowX: "0",
+  boxShadowY: "0"
+	ex; properties: { fillOpacity: (j+count)%3===0 ? 1.0 : 0.0, strokeOpacity: (j+count)%2===0 ? 0.0 : 1.0, stroke: color, strokeWidth: z.tools.randominteger(10,radius*2), strokeDasharray: z.tools.randominteger(4, radius*4), fill: color, cx: cx, cy: cy, r: radius },
+		let color = e.color.choices[z.tools.randominteger(0, e.color.choices.length)];
+		Velocity({	
+			elements: element.el,
+			properties: { fillOpacity: (j+count)%5===0 ? 1.0 : 0.0, strokeOpacity: (j+count)%5===0 ? 0.0 : 1.0, stroke: color, strokeWidth: z.tools.randominteger(4,radius/8), strokeDasharray: z.tools.randominteger(4, radius*2), fill: color, cx: cx, cy: cy, r: radius },
+			options: { duration: z.tools.randominteger(
+		 });
+	 */
+	z.draw = (elements,score,canvas,t) => {
+		let tn = t%score.nticks;
  		B[tn][fps][groups][els]
  * elements[groupj][elementn] = {
  * 	id,
@@ -162,7 +205,6 @@ let getz = (score) => {
 	})();
 	//set controls
 	( () => {
-
 		let sound = document.querySelector("#sound");
 		if(sound!==null) {
 			sound.addEventListener("change", () => {

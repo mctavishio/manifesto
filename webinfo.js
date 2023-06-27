@@ -8,6 +8,7 @@ let template = {
 	//cssurl: "/css/core.css",
 	cssurl: "/css/fieldnotes.css",
 	codeurl: "/code/core.js",
+	scoreurl: "/data/scoreTemplate.js",
 	pictureurl: "https://mctavish.work//apple-touch-icon.png",
 	bodybg: ["warmblack"],
 	mainbg: ["warmgray"],

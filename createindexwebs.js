@@ -61,6 +61,7 @@ let body = `<body id="top">
 <div id="svgframe" class="frame zlow">
 <svg xmlns="http://www.w3.org/2000/svg" id="svg" 
 class="frame">
+<rect x=0 y=0 width="80vw" height="80vh" fill="#000000" stroke-width="8" stroke="#ffffff" stroke-dasharray=8>
 </svg></div>
 <!--<div id="wordframe" class="frame z0"></div>-->
 <div id="contentframe" class="absolute zhighest">
@@ -121,7 +122,18 @@ if(input.hasDashboard) {
 </footer>
 </div> <!-- end contentframe -->
 </body>
+<script src="code/velocity_v2.min.js"></script>
 <script src="${input.codeurl}"></script>
+<script>
+document.querySelector("h1").velocity({
+	properties: {"color": "red"},
+	options: { duration: 500 }
+});
+document.querySelector("rect").velocity({
+	properties: {"fill": "#ffcc00", x:"50vw", y:"50vh", width:"20vmin", height: "10vmin", strokeDasharray: 30},
+	options: { duration: 2500 }
+});
+</script>
 </html>`;
 nextsteps = nextsteps + `
 mkdir -p ../${localdir}/code
