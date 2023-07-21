@@ -1,43 +1,23 @@
 const fs = require("fs"); 
 console.log(process.argv);
-
-const inputfile = (args[2] || "./data/B0.js");
+const dirTimestamp = "1689958018";
+let dt = new Date();
+let timestamp = dt.getTime();
+let datetime = dt.toDateString();
+const inputfile = (args[2] || "./data/inputTemplate.js");
 const input = require(inputfile);
+const outputfile = `./data/mill${dirTimestamp}/B${timestamp}.js`;
 const tools = require("./tools.js");
 const nticks = input.nticks || 48;
-const bookunits = input.bookunits || "in";
+const bookunits = input.units || bookunits;
 const bookwidth = input.bookwidth || 8.5;
 const bookheight = input.bookheight || 8.5;
 const bookmargin = input.bookheight || 1;
 const pixelsperunit = input.pixelsperunit || 300;
 const captionheight = input.captionheight || 1;
-const width = bookwidth+bookunits;
-const height = bookheight+bookunits;
-const w = Number(bookwidth), h = Number(bookheight);
-const m = Number(bookmargin);
-const iw = (w-2.0*m);
-const ih = (h-2.0*m);
-const innerwidth = iw+bookunits;
-const innerheight = ih+bookunits;
-const margin = bookmargin+bookunits;
-const margingutter = (m+0.2)+bookunits;
-const svgwidth = (iw-(m+0.2))*pixelsperunit;
-const svgheight = (ih-(m+0.2))*pixelsperunit;
 
-const bookid = process.argv[3] ? process.argv[3] : "testmill";
-const poemsfile = `${bookid}poems.js`;
-const bookfile = `${bookid}book.js`;
+let B = {nticks,bookunits,bookwidth,bookheight,bookmargin,pixelsperunit,captionheight};
 
-const tools = require("./tools.js");
-const poems = require("./fieldnotespoems.js");
-const npoems = poems.length;
-
-console.log("width="+width);
-console.log("margingutter="+margingutter);
-
-let dt = new Date();
-let timestamp = dt.getTime();
-let datetime = dt.toDateString();
 let bookobj = {
 	title: "field notes",
 	subtitle: "blueatlas ::: fieldnotes",
@@ -85,7 +65,7 @@ let drawf = (canvas,p,tag) => {
 	return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 };
 let Bobj = {
-	nticks: npoems,
+	nticks: nticks,
 	elements: [
 		{tag:"rect", drawf:drawf},
 		{tag:"line", role:"vline", drawf:drawf},
@@ -94,7 +74,7 @@ let Bobj = {
 	],
 };
 Bobj.b = poems.map( (poem,j) => {
-	let cx=j/npoems,cy=j/npoems;
+	let cx=j/nticks,cy=j/nticks;
 	let bt = [];
 	bt[0] = j===0 ? {ischange:true,x:0,y:0,width:1,height:1,"stroke-dasharray":tools.randominteger(5,40)/100,"stroke-width":tools.randominteger(10,48)/100,stroke:"#000000",fill:"#000000"} : {ischange:false,x:0,y:0,width:1,height:1,"stroke-dasharray":tools.randominteger(5,40)/100,"stroke-width":tools.randominteger(10,48)/100,stroke:"#000000",fill:"#000000"};
 	bt[1] = j%3===0 ? {ischange:true,x1:cx,x2:cx,y1:0,y2:1,"stroke-dasharray":tools.randominteger(5,40)/100,"stroke-width":tools.randominteger(10,48)/100,stroke:"#ffcc00"} : {ischange:false,x1:cx,x2:cx,y1:0,y2:1,"stroke-dasharray":tools.randominteger(5,40)/100,"stroke-width":tools.randominteger(10,48)/100,stroke:"#ffcc00"};
