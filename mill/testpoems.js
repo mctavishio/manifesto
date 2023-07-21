@@ -1,4 +1,4 @@
-module.exports = [
+let poems = [
 {
 id:"001",
 title:"001",
@@ -20,14 +20,16 @@ text:`
 <li>this prairie meadow sequestration</li>
 </ul>
 `,
-figure: `
-<svg viewBox="0 0 100 100">
-<rect x="0" y="0" width="100" height="100" stroke-width="10" stroke="#ffcc00" fill="#333333"/>
-<line x1="0" x2="100" y1="10" y2="10" stroke-width="4" stroke="#9a0000" stroke-dasharray="4 1 2 3"/>
-<line x1="0" x2="100" y1="20" y2="20" stroke-width="6" stroke="#006699" stroke-dasharray="3 4 2"/>
-<circle cx="40" cy="80" r="60" stroke-width="8" stroke="#333333" fill="#000000" fill-opacity="0.4" stroke-dasharray="0.6 1 0.3"/>
-</svg>
-`,
+figure: {
+	picture:`
+	<svg viewBox="0 0 100 100">
+	<rect x="0" y="0" width="100" height="100" stroke-width="10" stroke="#ffcc00" fill="#333333"/>
+	<line x1="0" x2="100" y1="10" y2="10" stroke-width="4" stroke="#9a0000" stroke-dasharray="4 1 2 3"/>
+	<line x1="0" x2="100" y1="20" y2="20" stroke-width="6" stroke="#006699" stroke-dasharray="3 4 2"/>
+	<circle cx="40" cy="80" r="60" stroke-width="8" stroke="#333333" fill="#000000" fill-opacity="0.4" stroke-dasharray="0.6 1 0.3"/>
+	</svg>
+	`,
+	caption:``},
 },
 {
 id:"002",
@@ -51,10 +53,13 @@ text:`
 <li>reclaim restore correct</li>
 </ul>
 `,
-figure: `
-<svg >
-<rect x="0" y="0" width="50vw" height="50vh" stroke-width="2vw" stroke="#888800" fill="#006666">
-</svg>
-`,
+figure: {
+	picture:`
+	<svg >
+	<rect x="0" y="0" width="50%" height="50%" stroke-width="2%" stroke="#888800" fill="#006666">
+	</svg>
+	`,
+	caption:``}
 },
-]
+];
+module.exports = poems;

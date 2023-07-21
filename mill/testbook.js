@@ -8,7 +8,10 @@ module.exports = {
 	author: "mctavish",
 	copyright: "Copyright ©2021 mctavish<br/>",
 	isbn: "ISBN: 00000<br/>",
-	publisher: "Wildwood River Press",
+	publisher: "mctavish",
+	bookwidth: "8.5", //inches
+	bookheight: "8.5", //inches
+	bookmargin: "1", //inches
 	sections: [
 		{ 
 			id: "sectiontoc",

@@ -1,4 +1,4 @@
-module.exports = [
+ let poems = [
 {
 id:"001",
 title:"001",
@@ -1778,4 +1778,5 @@ text:`
 </ul>
 `
 },
-]
+];
+module.exports = poems;

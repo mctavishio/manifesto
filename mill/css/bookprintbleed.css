@@ -28,7 +28,7 @@
   --indent5: 10em;
   --poetry: 'Crimson Pro', serif;
   --margin: 1in;
-  --margingutter: 1.2in;
+  --figuremargin: 0in;
   --width: 8in;
   --height: 8in;
   --innerwidth: 6in;
@@ -38,6 +38,9 @@
 @page {
   margin: var(--margin);
   size: var(--width) var(--height);
+  marks: crop cross;
+  bleed: 0.25in;
+  -prince-trim: 0.25in;
 }
 @page blank :left{
   @bottom-left {
@@ -76,6 +79,8 @@
 	}
 }
 @page pagefigure {
+	margin: 0;
+	margin: var(--figuremargin);
 	@bottom-left {
 		content: "";
 	}
@@ -102,11 +107,9 @@
 */
 @page :left {
   margin-right: 1.2in;
-  margin-right: var(--margingutter);
 }
 @page :right {
   margin-left: 1.2in;
-  margin-left: var(--margingutter);
 }
 /*
 @page :right {
@@ -283,7 +286,7 @@ section > div.inscription {
 #copyright,#publisher {
 	margin-top:8em;
 }
-figure, div.frame {
+figure {
   break-before: page;
 }
 article {
@@ -313,16 +316,13 @@ article {
 div.blank {
   page: blank;
 }
-figure, div.frame {
-	display: block;
+div.frame {
+	/*position:absolute;*/
 	top:0; left:0;
 	width: var(--innerwidth);
 	height: var(--innerheight);
-	min-width: var(--innerwidth);
-	min-height: var(--innerheight);
 	background-color: #999999;
 	padding-top:0;
-  	break-before: recto;
 	page: pagefigure;
 }
 svg {

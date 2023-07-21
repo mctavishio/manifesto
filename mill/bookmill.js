@@ -1,14 +1,17 @@
 const fs = require("fs"); 
 console.log(process.argv);
-const bookid = process.argv[2] ? process.argv[2] : "test";
+const bookid = process.argv[2] ? process.argv[2] : "testmill";
 const poemfile = `./${bookid}poems.js`;
 const bookfile = `./${bookid}book.js`;
+const tools = require("./tools.js");
 const poems = require(poemfile);
 const book = require(bookfile);
+const w = Number(book.bookwidth), h = Number(book.bookheight);
+const m = Number(book.bookmargin);
 const width = book.bookwidth+"in";
 const height = book.bookheight+"in";
-const innerwidth = book.bookwidth-2*book.margin+"in";
-const innerheight = book.bookheight-2*book.margin+"in";
+const innerwidth = (w-2.0*m)+"in";
+const innerheight = (h-2.0*m)+"in";
 const margin = book.bookmargin+"in";
 const margingutter = (book.bookmargin*1+0.2)+"in";
 const svgwidth = book.bookwidth*300;
@@ -97,7 +100,6 @@ let head = `
 		--height:${height};
 		--innerwidth: ${innerwidth};
 		--innerheight: ${innerheight};
-		--richblack:red;
 	}
 	@page {
 		--margin:${margin};
@@ -198,10 +200,11 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		</div>`
 	}
 	poemstr = poemstr + `${poem.text}`;
-	if(poem.figure) {
+	console.log(poem.figure.picture);
+	if(poem.figure.picture) {
 		poemstr = poemstr + `
 		<div class="frame">
-		${poem.figure}
+		${poem.figure.picture}
 		</div>`
 	}
 	poemstr = poemstr + `
