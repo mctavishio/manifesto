@@ -110,12 +110,12 @@ let tools = {
 	jsonToHTMLFields: {
 		title: value => {return "<h1>"+value+"</h1>"}, 
 		subtitle: value => {return "<h2>"+value+"</h2>"}, 
-		description: value => {return tools.createElementStr({tag:"div", cssclasses:["description"], value:value})}, 
-		text: value => {return tools.createElementStr({tag:"div", cssclasses:["text"], value:value})}, 
-		keywords: value => {return tools.createElementStr({tag:"div", cssclasses:["keywords"], value:value.join(", ")})}, 
-		figure: value => {return tools.createElementStr({tag:"div", cssclasses:["frame figure"], value:value})}, 
+		description: value => {return tools.createElementStr({tag:"div", cssclasses:["description"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
+		text: value => {return tools.createElementStr({tag:"div", cssclasses:["text"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
+		keywords: value => {return tools.createElementStr({tag:"div", cssclasses:["keywords"], value:value.join(", ")}) + tools.createElementCloseStr({tag:"div"})}, 
+		figure: value => {return tools.createElementStr({tag:"div", cssclasses:["frame figure"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
 	},
-	jsonToHTMLArticle: ({article, attributes=[], cssclasses=[], cssstyles=[], ns="none"}={}) => {
+	jsonToHTMLArticle: ({article, attributes={}, cssclasses=[], cssstyles={}, ns="none"}={}) => {
 		let articlestr = tools.createElementTagStr({tag:"article",attributes,cssclasses,cssstyles}); 
 		conole.log("articlestr = "+articlestr);
 		articlestr = articlestr + tools.createElementTagStr({tag:"header"});
@@ -131,20 +131,20 @@ let tools = {
 		},"");
 		return tools.createElementStr({tag, cssclasses, value:contents});
 	},
-	createElementTagStr: ({tag="div", attributes=[], cssclasses=[], cssstyles=[], ns="none", value="", isEmpty=false}={}) => {
+	createElementTagStr: ({tag="div", attributes={}, cssclasses=[], cssstyles={}, ns="none", value="", isEmpty=false}={}) => {
 		console.log("tag = "+tag);
 		console.log(attributes);
 		let el=`<${tag} `;
 		if(ns!=="none") {
 			el = el + `xmlns="${ns}" `;
 		}
-		attributes.forEach( entry => {
+		Object.entries(attributes).forEach( entry => {
 			el = el + `${entry[0]}="${entry[1]}" `;
 		});
 		if(cssstyles.length>0) {
-			el = el + `style="`;
-			cssstyles.forEach( entry => {
-				el = el + `${entry[0]}:${entry[1]};`;
+			el = el + `style=" `;
+			Object.entries(cssstyles).forEach( entry => {
+				el = el + `${entry[0]}:${entry[1]}; `;
 			});
 			el = el + `" `;
 		}
@@ -168,21 +168,21 @@ let tools = {
 		let closeStr = isEmpty ? "/>" : `</${tag}>`;
 		return closeStr; 
 	},
-	createElement: ({parentel=document.querySelector("body"), tag="div", attributes=[], cssclasses=[], cssstyles=[], ns="none"}={}) => {
+	createElement: ({parentel=document.querySelector("body"), tag="div", attributes={}, cssclasses=[], cssstyles={}, ns="none"}={}) => {
 		let el;
 		if(ns!=="none") {
 			el = document.createElementNS(ns, tag);
-			attributes.forEach( entry => {
+			Object.entries(attributes).forEach( entry => {
 				el.setAttributeNS(null, entry[0], entry[1]);
 			});
 		}
 		else {
 			el = document.createElement(tag);
-			attributes.forEach( entry => {
+			Object.entries(attributes).forEach( entry => {
 				el.setAttribute(entry[0], entry[1]);
 			});
 		}
-		cssstyles.forEach( entry => {
+		Object.entries(cssstyles).forEach( entry => {
 			z.tools.logmsg("entry = " + entry)
 			el.style[entry[0]] = entry[1];
 		});
@@ -200,6 +200,21 @@ let tools = {
 				else el.style[ key ] = css[key];
 			}
 		}
+	},
+	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
+		let p = b.attributes;
+		let attmap = att => { console.log(att); return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
+		let atts = Object.keys(p).reduce( (acc,key) => {
+			if(isNaN(p[key]) && key!=="ischange") {
+				acc[key]=p[key];
+			}
+			else {
+				acc[key] = Math.round(p[key]*attmap(key));
+			}
+			return acc; 
+		},{});
+		console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
+		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 	},
 	curves: {
 		init:  () => {

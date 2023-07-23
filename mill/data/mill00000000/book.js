@@ -12,7 +12,7 @@ let book =
 	"publisher": "mctavish",
 	"bookwidth": 8.5,
 	"bookheight": 8.5,
-	"bookmargin": 8.5,
+	"bookmargin": 1,
 	"sections": [
 		{
 			"id": "sectiontoc",

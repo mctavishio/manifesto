@@ -26,13 +26,24 @@
   --indent3: 6em;
   --indent4: 8em;
   --indent5: 10em;
-  --poetry: 'Crimson Pro', serif;
   --margin: 1in;
   --margingutter: 1.2in;
   --width: 8in;
   --height: 8in;
-  --innerwidth: 6in;
-  --innerheight: 6in;
+  --innerwidth: 5.8in;
+  --innerheight: 5.8in; /*pageheight - margin - margingutter*/
+  --monospace_code: Courier, 'Andale Mono', AndaleMono, Monaco, monospace;
+  --monospace: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --monospace_zeroslash: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
+  --monospace_zerodot: 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --typewriter: 'American Typewriter', Didot, 'Times New Roman', serif;
+  --sans: Verdana, Helvetica, Arial, Tahoma, 'Trebuchet MS', sans-serif;
+  --serif: Georgia, Didot, 'Times New Roman', Times, serif;
+  --cursive: 'Bradley Hand', 'Comic Sans MS', cursive, sans-serif;
+  --dragons: Luminari, 'Bradley Hand', cursive, sans-serif;
+  --oldbook: 'Palatino Linotype', 'Book Antiqua', Palatino, 'American Typewriter', 'Times New Roman', serif;
+  --poetry: 'Crimson Pro', serif;
+  --textfont1: var(--poetry);
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/break-before */
 @page {
@@ -200,7 +211,7 @@ html {
 	color: var(--richblack);
 }
 body {
-	font: 11pt var(--poetry);
+	font: 11pt var(--textfont1);
 	line-height: 1.4;
 }
 main > header, section#prelude > header {
