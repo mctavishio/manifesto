@@ -1,0 +1,3842 @@
+1690224832
+[
+  '/opt/homebrew/Cellar/node/20.4.0/bin/node',
+  '/Users/mctavish/Documents/nodes/manifesto/mill/data/mill1690224832/Bmill.js'
+]
+j=0,cx=0,cy=0
+j=1,cx=0.02,cy=0.02
+j=2,cx=0.04,cy=0.04
+j=3,cx=0.06,cy=0.06
+j=4,cx=0.08,cy=0.08
+j=5,cx=0.1,cy=0.1
+j=6,cx=0.13,cy=0.13
+j=7,cx=0.15,cy=0.15
+j=8,cx=0.17,cy=0.17
+j=9,cx=0.19,cy=0.19
+j=10,cx=0.21,cy=0.21
+j=11,cx=0.23,cy=0.23
+j=12,cx=0.25,cy=0.25
+j=13,cx=0.27,cy=0.27
+j=14,cx=0.29,cy=0.29
+j=15,cx=0.31,cy=0.31
+j=16,cx=0.33,cy=0.33
+j=17,cx=0.35,cy=0.35
+j=18,cx=0.38,cy=0.38
+j=19,cx=0.4,cy=0.4
+j=20,cx=0.42,cy=0.42
+j=21,cx=0.44,cy=0.44
+j=22,cx=0.46,cy=0.46
+j=23,cx=0.48,cy=0.48
+j=24,cx=0.5,cy=0.5
+j=25,cx=0.52,cy=0.52
+j=26,cx=0.54,cy=0.54
+j=27,cx=0.56,cy=0.56
+j=28,cx=0.58,cy=0.58
+j=29,cx=0.6,cy=0.6
+j=30,cx=0.63,cy=0.63
+j=31,cx=0.65,cy=0.65
+j=32,cx=0.67,cy=0.67
+j=33,cx=0.69,cy=0.69
+j=34,cx=0.71,cy=0.71
+j=35,cx=0.73,cy=0.73
+j=36,cx=0.75,cy=0.75
+j=37,cx=0.77,cy=0.77
+j=38,cx=0.79,cy=0.79
+j=39,cx=0.81,cy=0.81
+j=40,cx=0.83,cy=0.83
+j=41,cx=0.85,cy=0.85
+j=42,cx=0.88,cy=0.88
+j=43,cx=0.9,cy=0.9
+j=44,cx=0.92,cy=0.92
+j=45,cx=0.94,cy=0.94
+j=46,cx=0.96,cy=0.96
+j=47,cx=0.98,cy=0.98
+bash ./data/mill1690224832/recipe.sh
+
+[
+  '/opt/homebrew/Cellar/node/20.4.0/bin/node',
+  '/Users/mctavish/Documents/nodes/manifesto/mill/poemMill',
+  './data/mill1690224832'
+]
+blength=48
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0875,"stroke-width":0.24,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":125,"stroke-width":382,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 125,
+  'stroke-width': 382,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":0,"y1":0,"y2":1,"stroke-dasharray":0.03,"stroke-width":0.27,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":0,"y1":0,"y2":1431,"stroke-dasharray":43,"stroke-width":429,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 0,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 43,
+  'stroke-width': 429,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0,"y2":0,"stroke-dasharray":0.0725,"stroke-width":0.37,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":0,"y2":0,"stroke-dasharray":104,"stroke-width":588,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 0,
+  y2: 0,
+  'stroke-dasharray': 104,
+  'stroke-width': 588,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":0,"y1":0,"y2":1,"stroke-dasharray":0.025,"stroke-width":0.41,"stroke":"#000000"}}
+atts = {"x1":0,"x2":0,"y1":0,"y2":1431,"stroke-dasharray":36,"stroke-width":652,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 0,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 36,
+  'stroke-width': 652,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0,"y2":0,"stroke-dasharray":0.01375,"stroke-width":0.11,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":0,"y2":0,"stroke-dasharray":20,"stroke-width":175,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 0,
+  y2: 0,
+  'stroke-dasharray': 20,
+  'stroke-width': 175,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0,"cy":0,"r":0.35,"stroke-dasharray":0.075,"stroke-width":0.38,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":0,"cy":0,"r":501,"stroke-dasharray":107,"stroke-width":604,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 0,
+  cy: 0,
+  r: 501,
+  'stroke-dasharray': 107,
+  'stroke-width': 604,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0,"cy":0,"r":0.13,"stroke-dasharray":0.0475,"stroke-width":0.28,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":0,"cy":0,"r":186,"stroke-dasharray":68,"stroke-width":445,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 0,
+  cy: 0,
+  r: 186,
+  'stroke-dasharray': 68,
+  'stroke-width': 445,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.055,"stroke-width":0.44,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":79,"stroke-width":700,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 700,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.02,"x2":0.02,"y1":0,"y2":1,"stroke-dasharray":0.0825,"stroke-width":0.33,"stroke":"#ffcc00"}}
+atts = {"x1":32,"x2":32,"y1":0,"y2":1431,"stroke-dasharray":118,"stroke-width":525,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 32,
+  x2: 32,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 118,
+  'stroke-width': 525,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.02,"y2":0.02,"stroke-dasharray":0.0725,"stroke-width":0.32,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":29,"y2":29,"stroke-dasharray":104,"stroke-width":509,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 29,
+  y2: 29,
+  'stroke-dasharray': 104,
+  'stroke-width': 509,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.02,"x2":0.02,"y1":0,"y2":1,"stroke-dasharray":0.02625,"stroke-width":0.31,"stroke":"#000000"}}
+atts = {"x1":32,"x2":32,"y1":0,"y2":1431,"stroke-dasharray":38,"stroke-width":493,"stroke":"#000000"}
+tag = line
+{
+  x1: 32,
+  x2: 32,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 38,
+  'stroke-width': 493,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.02,"y2":0.02,"stroke-dasharray":0.035,"stroke-width":0.4,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":29,"y2":29,"stroke-dasharray":50,"stroke-width":636,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 29,
+  y2: 29,
+  'stroke-dasharray': 50,
+  'stroke-width': 636,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.02,"cy":0.02,"r":0.23,"stroke-dasharray":0.0425,"stroke-width":0.34,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":32,"cy":29,"r":329,"stroke-dasharray":61,"stroke-width":541,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 32,
+  cy: 29,
+  r: 329,
+  'stroke-dasharray': 61,
+  'stroke-width': 541,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.02,"cy":0.02,"r":0.21,"stroke-dasharray":0.0325,"stroke-width":0.42,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":32,"cy":29,"r":301,"stroke-dasharray":47,"stroke-width":668,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 32,
+  cy: 29,
+  r: 301,
+  'stroke-dasharray': 47,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0175,"stroke-width":0.23,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":25,"stroke-width":366,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 25,
+  'stroke-width': 366,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.04,"x2":0.04,"y1":0,"y2":1,"stroke-dasharray":0.09,"stroke-width":0.11,"stroke":"#ffcc00"}}
+atts = {"x1":64,"x2":64,"y1":0,"y2":1431,"stroke-dasharray":129,"stroke-width":175,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 64,
+  x2: 64,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 129,
+  'stroke-width': 175,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.04,"y2":0.04,"stroke-dasharray":0.0675,"stroke-width":0.24,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":57,"y2":57,"stroke-dasharray":97,"stroke-width":382,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 57,
+  y2: 57,
+  'stroke-dasharray': 97,
+  'stroke-width': 382,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.04,"x2":0.04,"y1":0,"y2":1,"stroke-dasharray":0.0125,"stroke-width":0.3,"stroke":"#000000"}}
+atts = {"x1":64,"x2":64,"y1":0,"y2":1431,"stroke-dasharray":18,"stroke-width":477,"stroke":"#000000"}
+tag = line
+{
+  x1: 64,
+  x2: 64,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 18,
+  'stroke-width': 477,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.04,"y2":0.04,"stroke-dasharray":0.00625,"stroke-width":0.1,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":57,"y2":57,"stroke-dasharray":9,"stroke-width":159,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 57,
+  y2: 57,
+  'stroke-dasharray': 9,
+  'stroke-width': 159,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.04,"cy":0.04,"r":0.22,"stroke-dasharray":0.05,"stroke-width":0.27,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":64,"cy":57,"r":315,"stroke-dasharray":72,"stroke-width":429,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 64,
+  cy: 57,
+  r: 315,
+  'stroke-dasharray': 72,
+  'stroke-width': 429,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.04,"cy":0.04,"r":0.19,"stroke-dasharray":0.0575,"stroke-width":0.28,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":64,"cy":57,"r":272,"stroke-dasharray":82,"stroke-width":445,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 64,
+  cy: 57,
+  r: 272,
+  'stroke-dasharray': 82,
+  'stroke-width': 445,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.09,"stroke-width":0.19,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":129,"stroke-width":302,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 129,
+  'stroke-width': 302,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.06,"x2":0.06,"y1":0,"y2":1,"stroke-dasharray":0.015,"stroke-width":0.4,"stroke":"#ffcc00"}}
+atts = {"x1":95,"x2":95,"y1":0,"y2":1431,"stroke-dasharray":21,"stroke-width":636,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 95,
+  x2: 95,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 21,
+  'stroke-width': 636,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.06,"y2":0.06,"stroke-dasharray":0.0575,"stroke-width":0.46,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":86,"y2":86,"stroke-dasharray":82,"stroke-width":731,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 86,
+  y2: 86,
+  'stroke-dasharray': 82,
+  'stroke-width': 731,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.06,"x2":0.06,"y1":0,"y2":1,"stroke-dasharray":0.01875,"stroke-width":0.41,"stroke":"#000000"}}
+atts = {"x1":95,"x2":95,"y1":0,"y2":1431,"stroke-dasharray":27,"stroke-width":652,"stroke":"#000000"}
+tag = line
+{
+  x1: 95,
+  x2: 95,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 27,
+  'stroke-width': 652,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.06,"y2":0.06,"stroke-dasharray":0.02375,"stroke-width":0.44,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":86,"y2":86,"stroke-dasharray":34,"stroke-width":700,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 86,
+  y2: 86,
+  'stroke-dasharray': 34,
+  'stroke-width': 700,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.06,"cy":0.06,"r":0.36,"stroke-dasharray":0.0225,"stroke-width":0.32,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":95,"cy":86,"r":515,"stroke-dasharray":32,"stroke-width":509,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 95,
+  cy: 86,
+  r: 515,
+  'stroke-dasharray': 32,
+  'stroke-width': 509,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.06,"cy":0.06,"r":0.34,"stroke-dasharray":0.0325,"stroke-width":0.32,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":95,"cy":86,"r":487,"stroke-dasharray":47,"stroke-width":509,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 95,
+  cy: 86,
+  r: 487,
+  'stroke-dasharray': 47,
+  'stroke-width': 509,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0525,"stroke-width":0.25,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":75,"stroke-width":398,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 75,
+  'stroke-width': 398,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.08,"x2":0.08,"y1":0,"y2":1,"stroke-dasharray":0.0625,"stroke-width":0.47,"stroke":"#ffcc00"}}
+atts = {"x1":127,"x2":127,"y1":0,"y2":1431,"stroke-dasharray":89,"stroke-width":747,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 127,
+  x2: 127,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 89,
+  'stroke-width': 747,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.08,"y2":0.08,"stroke-dasharray":0.035,"stroke-width":0.42,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":114,"y2":114,"stroke-dasharray":50,"stroke-width":668,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 114,
+  y2: 114,
+  'stroke-dasharray': 50,
+  'stroke-width': 668,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.08,"x2":0.08,"y1":0,"y2":1,"stroke-dasharray":0.01,"stroke-width":0.16,"stroke":"#000000"}}
+atts = {"x1":127,"x2":127,"y1":0,"y2":1431,"stroke-dasharray":14,"stroke-width":254,"stroke":"#000000"}
+tag = line
+{
+  x1: 127,
+  x2: 127,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 14,
+  'stroke-width': 254,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.08,"y2":0.08,"stroke-dasharray":0.035,"stroke-width":0.4,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":114,"y2":114,"stroke-dasharray":50,"stroke-width":636,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 114,
+  y2: 114,
+  'stroke-dasharray': 50,
+  'stroke-width': 636,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.08,"cy":0.08,"r":0.39,"stroke-dasharray":0.0375,"stroke-width":0.22,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":127,"cy":114,"r":558,"stroke-dasharray":54,"stroke-width":350,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 127,
+  cy: 114,
+  r: 558,
+  'stroke-dasharray': 54,
+  'stroke-width': 350,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.08,"cy":0.08,"r":0.19,"stroke-dasharray":0.05,"stroke-width":0.33,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":127,"cy":114,"r":272,"stroke-dasharray":72,"stroke-width":525,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 127,
+  cy: 114,
+  r: 272,
+  'stroke-dasharray': 72,
+  'stroke-width': 525,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0575,"stroke-width":0.4,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":82,"stroke-width":636,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 82,
+  'stroke-width': 636,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.1,"x2":0.1,"y1":0,"y2":1,"stroke-dasharray":0.02,"stroke-width":0.27,"stroke":"#ffcc00"}}
+atts = {"x1":159,"x2":159,"y1":0,"y2":1431,"stroke-dasharray":29,"stroke-width":429,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 159,
+  x2: 159,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 429,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.1,"y2":0.1,"stroke-dasharray":0.07,"stroke-width":0.1,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":143,"y2":143,"stroke-dasharray":100,"stroke-width":159,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 143,
+  y2: 143,
+  'stroke-dasharray': 100,
+  'stroke-width': 159,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.1,"x2":0.1,"y1":0,"y2":1,"stroke-dasharray":0.03625,"stroke-width":0.32,"stroke":"#000000"}}
+atts = {"x1":159,"x2":159,"y1":0,"y2":1431,"stroke-dasharray":52,"stroke-width":509,"stroke":"#000000"}
+tag = line
+{
+  x1: 159,
+  x2: 159,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 52,
+  'stroke-width': 509,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.1,"y2":0.1,"stroke-dasharray":0.0175,"stroke-width":0.18,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":143,"y2":143,"stroke-dasharray":25,"stroke-width":286,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 143,
+  y2: 143,
+  'stroke-dasharray': 25,
+  'stroke-width': 286,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.1,"cy":0.1,"r":0.24,"stroke-dasharray":0.0525,"stroke-width":0.47,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":159,"cy":143,"r":343,"stroke-dasharray":75,"stroke-width":747,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 159,
+  cy: 143,
+  r: 343,
+  'stroke-dasharray': 75,
+  'stroke-width': 747,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.1,"cy":0.1,"r":0.3,"stroke-dasharray":0.0375,"stroke-width":0.4,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":159,"cy":143,"r":429,"stroke-dasharray":54,"stroke-width":636,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 159,
+  cy: 143,
+  r: 429,
+  'stroke-dasharray': 54,
+  'stroke-width': 636,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0425,"stroke-width":0.2,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":61,"stroke-width":318,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 61,
+  'stroke-width': 318,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.13,"x2":0.13,"y1":0,"y2":1,"stroke-dasharray":0.0325,"stroke-width":0.32,"stroke":"#ffcc00"}}
+atts = {"x1":207,"x2":207,"y1":0,"y2":1431,"stroke-dasharray":47,"stroke-width":509,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 207,
+  x2: 207,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 47,
+  'stroke-width': 509,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.13,"y2":0.13,"stroke-dasharray":0.09,"stroke-width":0.16,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":186,"y2":186,"stroke-dasharray":129,"stroke-width":254,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 186,
+  y2: 186,
+  'stroke-dasharray': 129,
+  'stroke-width': 254,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.13,"x2":0.13,"y1":0,"y2":1,"stroke-dasharray":0.03625,"stroke-width":0.39,"stroke":"#000000"}}
+atts = {"x1":207,"x2":207,"y1":0,"y2":1431,"stroke-dasharray":52,"stroke-width":620,"stroke":"#000000"}
+tag = line
+{
+  x1: 207,
+  x2: 207,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 52,
+  'stroke-width': 620,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.13,"y2":0.13,"stroke-dasharray":0.035,"stroke-width":0.19,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":186,"y2":186,"stroke-dasharray":50,"stroke-width":302,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 186,
+  y2: 186,
+  'stroke-dasharray': 50,
+  'stroke-width': 302,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.13,"cy":0.13,"r":0.16,"stroke-dasharray":0.08,"stroke-width":0.32,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":207,"cy":186,"r":229,"stroke-dasharray":114,"stroke-width":509,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 207,
+  cy: 186,
+  r: 229,
+  'stroke-dasharray': 114,
+  'stroke-width': 509,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.13,"cy":0.13,"r":0.2,"stroke-dasharray":0.0825,"stroke-width":0.29,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":207,"cy":186,"r":286,"stroke-dasharray":118,"stroke-width":461,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 207,
+  cy: 186,
+  r: 286,
+  'stroke-dasharray': 118,
+  'stroke-width': 461,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.075,"stroke-width":0.46,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":107,"stroke-width":731,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 107,
+  'stroke-width': 731,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.15,"x2":0.15,"y1":0,"y2":1,"stroke-dasharray":0.075,"stroke-width":0.47,"stroke":"#ffcc00"}}
+atts = {"x1":239,"x2":239,"y1":0,"y2":1431,"stroke-dasharray":107,"stroke-width":747,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 239,
+  x2: 239,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 107,
+  'stroke-width': 747,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.15,"y2":0.15,"stroke-dasharray":0.0975,"stroke-width":0.27,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":215,"y2":215,"stroke-dasharray":140,"stroke-width":429,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 215,
+  y2: 215,
+  'stroke-dasharray': 140,
+  'stroke-width': 429,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.15,"x2":0.15,"y1":0,"y2":1,"stroke-dasharray":0.03125,"stroke-width":0.34,"stroke":"#000000"}}
+atts = {"x1":239,"x2":239,"y1":0,"y2":1431,"stroke-dasharray":45,"stroke-width":541,"stroke":"#000000"}
+tag = line
+{
+  x1: 239,
+  x2: 239,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 45,
+  'stroke-width': 541,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.15,"y2":0.15,"stroke-dasharray":0.04875,"stroke-width":0.2,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":215,"y2":215,"stroke-dasharray":70,"stroke-width":318,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 215,
+  y2: 215,
+  'stroke-dasharray': 70,
+  'stroke-width': 318,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.15,"cy":0.15,"r":0.4,"stroke-dasharray":0.04,"stroke-width":0.29,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":239,"cy":215,"r":572,"stroke-dasharray":57,"stroke-width":461,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 239,
+  cy: 215,
+  r: 572,
+  'stroke-dasharray': 57,
+  'stroke-width': 461,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.15,"cy":0.15,"r":0.31,"stroke-dasharray":0.0125,"stroke-width":0.39,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":239,"cy":215,"r":444,"stroke-dasharray":18,"stroke-width":620,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 239,
+  cy: 215,
+  r: 444,
+  'stroke-dasharray': 18,
+  'stroke-width': 620,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.055,"stroke-width":0.26,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":79,"stroke-width":413,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 413,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.17,"x2":0.17,"y1":0,"y2":1,"stroke-dasharray":0.085,"stroke-width":0.46,"stroke":"#ffcc00"}}
+atts = {"x1":270,"x2":270,"y1":0,"y2":1431,"stroke-dasharray":122,"stroke-width":731,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 270,
+  x2: 270,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 122,
+  'stroke-width': 731,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.17,"y2":0.17,"stroke-dasharray":0.045,"stroke-width":0.2,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":243,"y2":243,"stroke-dasharray":64,"stroke-width":318,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 243,
+  y2: 243,
+  'stroke-dasharray': 64,
+  'stroke-width': 318,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.17,"x2":0.17,"y1":0,"y2":1,"stroke-dasharray":0.01625,"stroke-width":0.24,"stroke":"#000000"}}
+atts = {"x1":270,"x2":270,"y1":0,"y2":1431,"stroke-dasharray":23,"stroke-width":382,"stroke":"#000000"}
+tag = line
+{
+  x1: 270,
+  x2: 270,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 23,
+  'stroke-width': 382,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.17,"y2":0.17,"stroke-dasharray":0.04625,"stroke-width":0.15,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":243,"y2":243,"stroke-dasharray":66,"stroke-width":239,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 243,
+  y2: 243,
+  'stroke-dasharray': 66,
+  'stroke-width': 239,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.17,"cy":0.17,"r":0.22,"stroke-dasharray":0.0725,"stroke-width":0.32,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":270,"cy":243,"r":315,"stroke-dasharray":104,"stroke-width":509,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 270,
+  cy: 243,
+  r: 315,
+  'stroke-dasharray': 104,
+  'stroke-width': 509,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.17,"cy":0.17,"r":0.42,"stroke-dasharray":0.06,"stroke-width":0.21,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":270,"cy":243,"r":601,"stroke-dasharray":86,"stroke-width":334,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 270,
+  cy: 243,
+  r: 601,
+  'stroke-dasharray': 86,
+  'stroke-width': 334,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0175,"stroke-width":0.16,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":25,"stroke-width":254,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 25,
+  'stroke-width': 254,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.19,"x2":0.19,"y1":0,"y2":1,"stroke-dasharray":0.05,"stroke-width":0.3,"stroke":"#ffcc00"}}
+atts = {"x1":302,"x2":302,"y1":0,"y2":1431,"stroke-dasharray":72,"stroke-width":477,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 302,
+  x2: 302,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 72,
+  'stroke-width': 477,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.19,"y2":0.19,"stroke-dasharray":0.0225,"stroke-width":0.23,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":272,"y2":272,"stroke-dasharray":32,"stroke-width":366,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 272,
+  y2: 272,
+  'stroke-dasharray': 32,
+  'stroke-width': 366,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.19,"x2":0.19,"y1":0,"y2":1,"stroke-dasharray":0.0125,"stroke-width":0.29,"stroke":"#000000"}}
+atts = {"x1":302,"x2":302,"y1":0,"y2":1431,"stroke-dasharray":18,"stroke-width":461,"stroke":"#000000"}
+tag = line
+{
+  x1: 302,
+  x2: 302,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 18,
+  'stroke-width': 461,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.19,"y2":0.19,"stroke-dasharray":0.045,"stroke-width":0.45,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":272,"y2":272,"stroke-dasharray":64,"stroke-width":716,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 272,
+  y2: 272,
+  'stroke-dasharray': 64,
+  'stroke-width': 716,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.19,"cy":0.19,"r":0.32,"stroke-dasharray":0.0625,"stroke-width":0.39,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":302,"cy":272,"r":458,"stroke-dasharray":89,"stroke-width":620,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 302,
+  cy: 272,
+  r: 458,
+  'stroke-dasharray': 89,
+  'stroke-width': 620,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.19,"cy":0.19,"r":0.17,"stroke-dasharray":0.0325,"stroke-width":0.36,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":302,"cy":272,"r":243,"stroke-dasharray":47,"stroke-width":572,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 302,
+  cy: 272,
+  r: 243,
+  'stroke-dasharray': 47,
+  'stroke-width': 572,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.055,"stroke-width":0.1,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":79,"stroke-width":159,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 159,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.21,"x2":0.21,"y1":0,"y2":1,"stroke-dasharray":0.0525,"stroke-width":0.47,"stroke":"#ffcc00"}}
+atts = {"x1":334,"x2":334,"y1":0,"y2":1431,"stroke-dasharray":75,"stroke-width":747,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 334,
+  x2: 334,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 75,
+  'stroke-width': 747,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.21,"y2":0.21,"stroke-dasharray":0.0925,"stroke-width":0.13,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":301,"y2":301,"stroke-dasharray":132,"stroke-width":207,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 301,
+  y2: 301,
+  'stroke-dasharray': 132,
+  'stroke-width': 207,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.21,"x2":0.21,"y1":0,"y2":1,"stroke-dasharray":0.02625,"stroke-width":0.11,"stroke":"#000000"}}
+atts = {"x1":334,"x2":334,"y1":0,"y2":1431,"stroke-dasharray":38,"stroke-width":175,"stroke":"#000000"}
+tag = line
+{
+  x1: 334,
+  x2: 334,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 38,
+  'stroke-width': 175,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.21,"y2":0.21,"stroke-dasharray":0.03,"stroke-width":0.1,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":301,"y2":301,"stroke-dasharray":43,"stroke-width":159,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 301,
+  y2: 301,
+  'stroke-dasharray': 43,
+  'stroke-width': 159,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.21,"cy":0.21,"r":0.38,"stroke-dasharray":0.0225,"stroke-width":0.17,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":334,"cy":301,"r":544,"stroke-dasharray":32,"stroke-width":270,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 334,
+  cy: 301,
+  r: 544,
+  'stroke-dasharray': 32,
+  'stroke-width': 270,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.21,"cy":0.21,"r":0.17,"stroke-dasharray":0.0825,"stroke-width":0.32,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":334,"cy":301,"r":243,"stroke-dasharray":118,"stroke-width":509,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 334,
+  cy: 301,
+  r: 243,
+  'stroke-dasharray': 118,
+  'stroke-width': 509,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.085,"stroke-width":0.28,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":122,"stroke-width":445,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 122,
+  'stroke-width': 445,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.23,"x2":0.23,"y1":0,"y2":1,"stroke-dasharray":0.085,"stroke-width":0.23,"stroke":"#ffcc00"}}
+atts = {"x1":366,"x2":366,"y1":0,"y2":1431,"stroke-dasharray":122,"stroke-width":366,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 366,
+  x2: 366,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 122,
+  'stroke-width': 366,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.23,"y2":0.23,"stroke-dasharray":0.055,"stroke-width":0.26,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":329,"y2":329,"stroke-dasharray":79,"stroke-width":413,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 329,
+  y2: 329,
+  'stroke-dasharray': 79,
+  'stroke-width': 413,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.23,"x2":0.23,"y1":0,"y2":1,"stroke-dasharray":0.01,"stroke-width":0.24,"stroke":"#000000"}}
+atts = {"x1":366,"x2":366,"y1":0,"y2":1431,"stroke-dasharray":14,"stroke-width":382,"stroke":"#000000"}
+tag = line
+{
+  x1: 366,
+  x2: 366,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 14,
+  'stroke-width': 382,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.23,"y2":0.23,"stroke-dasharray":0.02375,"stroke-width":0.45,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":329,"y2":329,"stroke-dasharray":34,"stroke-width":716,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 329,
+  y2: 329,
+  'stroke-dasharray': 34,
+  'stroke-width': 716,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.23,"cy":0.23,"r":0.38,"stroke-dasharray":0.0875,"stroke-width":0.25,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":366,"cy":329,"r":544,"stroke-dasharray":125,"stroke-width":398,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 366,
+  cy: 329,
+  r: 544,
+  'stroke-dasharray': 125,
+  'stroke-width': 398,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.23,"cy":0.23,"r":0.29,"stroke-dasharray":0.015,"stroke-width":0.24,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":366,"cy":329,"r":415,"stroke-dasharray":21,"stroke-width":382,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 366,
+  cy: 329,
+  r: 415,
+  'stroke-dasharray': 21,
+  'stroke-width': 382,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.025,"stroke-width":0.45,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":36,"stroke-width":716,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 36,
+  'stroke-width': 716,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.25,"x2":0.25,"y1":0,"y2":1,"stroke-dasharray":0.085,"stroke-width":0.2,"stroke":"#ffcc00"}}
+atts = {"x1":398,"x2":398,"y1":0,"y2":1431,"stroke-dasharray":122,"stroke-width":318,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 398,
+  x2: 398,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 122,
+  'stroke-width': 318,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.25,"y2":0.25,"stroke-dasharray":0.02,"stroke-width":0.3,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":358,"y2":358,"stroke-dasharray":29,"stroke-width":477,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 358,
+  y2: 358,
+  'stroke-dasharray': 29,
+  'stroke-width': 477,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.25,"x2":0.25,"y1":0,"y2":1,"stroke-dasharray":0.01375,"stroke-width":0.26,"stroke":"#000000"}}
+atts = {"x1":398,"x2":398,"y1":0,"y2":1431,"stroke-dasharray":20,"stroke-width":413,"stroke":"#000000"}
+tag = line
+{
+  x1: 398,
+  x2: 398,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 20,
+  'stroke-width': 413,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.25,"y2":0.25,"stroke-dasharray":0.0125,"stroke-width":0.27,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":358,"y2":358,"stroke-dasharray":18,"stroke-width":429,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 358,
+  y2: 358,
+  'stroke-dasharray': 18,
+  'stroke-width': 429,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.25,"cy":0.25,"r":0.37,"stroke-dasharray":0.0525,"stroke-width":0.46,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":398,"cy":358,"r":529,"stroke-dasharray":75,"stroke-width":731,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 398,
+  cy: 358,
+  r: 529,
+  'stroke-dasharray': 75,
+  'stroke-width': 731,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.25,"cy":0.25,"r":0.41,"stroke-dasharray":0.0675,"stroke-width":0.22,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":398,"cy":358,"r":587,"stroke-dasharray":97,"stroke-width":350,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 398,
+  cy: 358,
+  r: 587,
+  'stroke-dasharray': 97,
+  'stroke-width': 350,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0475,"stroke-width":0.38,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":68,"stroke-width":604,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 68,
+  'stroke-width': 604,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.27,"x2":0.27,"y1":0,"y2":1,"stroke-dasharray":0.0625,"stroke-width":0.46,"stroke":"#ffcc00"}}
+atts = {"x1":429,"x2":429,"y1":0,"y2":1431,"stroke-dasharray":89,"stroke-width":731,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 429,
+  x2: 429,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 89,
+  'stroke-width': 731,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.27,"y2":0.27,"stroke-dasharray":0.0475,"stroke-width":0.43,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":386,"y2":386,"stroke-dasharray":68,"stroke-width":684,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 386,
+  y2: 386,
+  'stroke-dasharray': 68,
+  'stroke-width': 684,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.27,"x2":0.27,"y1":0,"y2":1,"stroke-dasharray":0.02,"stroke-width":0.31,"stroke":"#000000"}}
+atts = {"x1":429,"x2":429,"y1":0,"y2":1431,"stroke-dasharray":29,"stroke-width":493,"stroke":"#000000"}
+tag = line
+{
+  x1: 429,
+  x2: 429,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 493,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.27,"y2":0.27,"stroke-dasharray":0.03375,"stroke-width":0.19,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":386,"y2":386,"stroke-dasharray":48,"stroke-width":302,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 386,
+  y2: 386,
+  'stroke-dasharray': 48,
+  'stroke-width': 302,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.27,"cy":0.27,"r":0.32,"stroke-dasharray":0.0775,"stroke-width":0.11,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":429,"cy":386,"r":458,"stroke-dasharray":111,"stroke-width":175,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 429,
+  cy: 386,
+  r: 458,
+  'stroke-dasharray': 111,
+  'stroke-width': 175,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.27,"cy":0.27,"r":0.34,"stroke-dasharray":0.0625,"stroke-width":0.15,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":429,"cy":386,"r":487,"stroke-dasharray":89,"stroke-width":239,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 429,
+  cy: 386,
+  r: 487,
+  'stroke-dasharray': 89,
+  'stroke-width': 239,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.07,"stroke-width":0.24,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":100,"stroke-width":382,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 100,
+  'stroke-width': 382,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.29,"x2":0.29,"y1":0,"y2":1,"stroke-dasharray":0.0975,"stroke-width":0.4,"stroke":"#ffcc00"}}
+atts = {"x1":461,"x2":461,"y1":0,"y2":1431,"stroke-dasharray":140,"stroke-width":636,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 461,
+  x2: 461,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 140,
+  'stroke-width': 636,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.29,"y2":0.29,"stroke-dasharray":0.0125,"stroke-width":0.12,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":415,"y2":415,"stroke-dasharray":18,"stroke-width":191,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 415,
+  y2: 415,
+  'stroke-dasharray': 18,
+  'stroke-width': 191,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.29,"x2":0.29,"y1":0,"y2":1,"stroke-dasharray":0.0125,"stroke-width":0.47,"stroke":"#000000"}}
+atts = {"x1":461,"x2":461,"y1":0,"y2":1431,"stroke-dasharray":18,"stroke-width":747,"stroke":"#000000"}
+tag = line
+{
+  x1: 461,
+  x2: 461,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 18,
+  'stroke-width': 747,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.29,"y2":0.29,"stroke-dasharray":0.00875,"stroke-width":0.42,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":415,"y2":415,"stroke-dasharray":13,"stroke-width":668,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 415,
+  y2: 415,
+  'stroke-dasharray': 13,
+  'stroke-width': 668,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.29,"cy":0.29,"r":0.32,"stroke-dasharray":0.03,"stroke-width":0.13,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":461,"cy":415,"r":458,"stroke-dasharray":43,"stroke-width":207,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 461,
+  cy: 415,
+  r: 458,
+  'stroke-dasharray': 43,
+  'stroke-width': 207,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.29,"cy":0.29,"r":0.1,"stroke-dasharray":0.0775,"stroke-width":0.44,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":461,"cy":415,"r":143,"stroke-dasharray":111,"stroke-width":700,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 461,
+  cy: 415,
+  r: 143,
+  'stroke-dasharray': 111,
+  'stroke-width': 700,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.035,"stroke-width":0.43,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":50,"stroke-width":684,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 684,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.31,"x2":0.31,"y1":0,"y2":1,"stroke-dasharray":0.055,"stroke-width":0.11,"stroke":"#ffcc00"}}
+atts = {"x1":493,"x2":493,"y1":0,"y2":1431,"stroke-dasharray":79,"stroke-width":175,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 493,
+  x2: 493,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 175,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.31,"y2":0.31,"stroke-dasharray":0.0975,"stroke-width":0.43,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":444,"y2":444,"stroke-dasharray":140,"stroke-width":684,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 444,
+  y2: 444,
+  'stroke-dasharray': 140,
+  'stroke-width': 684,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.31,"x2":0.31,"y1":0,"y2":1,"stroke-dasharray":0.04875,"stroke-width":0.35,"stroke":"#000000"}}
+atts = {"x1":493,"x2":493,"y1":0,"y2":1431,"stroke-dasharray":70,"stroke-width":557,"stroke":"#000000"}
+tag = line
+{
+  x1: 493,
+  x2: 493,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 70,
+  'stroke-width': 557,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.31,"y2":0.31,"stroke-dasharray":0.04375,"stroke-width":0.18,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":444,"y2":444,"stroke-dasharray":63,"stroke-width":286,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 444,
+  y2: 444,
+  'stroke-dasharray': 63,
+  'stroke-width': 286,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.31,"cy":0.31,"r":0.24,"stroke-dasharray":0.095,"stroke-width":0.2,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":493,"cy":444,"r":343,"stroke-dasharray":136,"stroke-width":318,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 493,
+  cy: 444,
+  r: 343,
+  'stroke-dasharray': 136,
+  'stroke-width': 318,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.31,"cy":0.31,"r":0.19,"stroke-dasharray":0.06,"stroke-width":0.16,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":493,"cy":444,"r":272,"stroke-dasharray":86,"stroke-width":254,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 493,
+  cy: 444,
+  r: 272,
+  'stroke-dasharray': 86,
+  'stroke-width': 254,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0825,"stroke-width":0.13,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":118,"stroke-width":207,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 118,
+  'stroke-width': 207,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.33,"x2":0.33,"y1":0,"y2":1,"stroke-dasharray":0.07,"stroke-width":0.41,"stroke":"#ffcc00"}}
+atts = {"x1":525,"x2":525,"y1":0,"y2":1431,"stroke-dasharray":100,"stroke-width":652,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 525,
+  x2: 525,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 100,
+  'stroke-width': 652,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.33,"y2":0.33,"stroke-dasharray":0.0325,"stroke-width":0.13,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":472,"y2":472,"stroke-dasharray":47,"stroke-width":207,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 472,
+  y2: 472,
+  'stroke-dasharray': 47,
+  'stroke-width': 207,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.33,"x2":0.33,"y1":0,"y2":1,"stroke-dasharray":0.01125,"stroke-width":0.27,"stroke":"#000000"}}
+atts = {"x1":525,"x2":525,"y1":0,"y2":1431,"stroke-dasharray":16,"stroke-width":429,"stroke":"#000000"}
+tag = line
+{
+  x1: 525,
+  x2: 525,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 16,
+  'stroke-width': 429,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.33,"y2":0.33,"stroke-dasharray":0.04625,"stroke-width":0.42,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":472,"y2":472,"stroke-dasharray":66,"stroke-width":668,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 472,
+  y2: 472,
+  'stroke-dasharray': 66,
+  'stroke-width': 668,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.33,"cy":0.33,"r":0.38,"stroke-dasharray":0.0725,"stroke-width":0.41,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":525,"cy":472,"r":544,"stroke-dasharray":104,"stroke-width":652,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 525,
+  cy: 472,
+  r: 544,
+  'stroke-dasharray': 104,
+  'stroke-width': 652,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.33,"cy":0.33,"r":0.19,"stroke-dasharray":0.0925,"stroke-width":0.19,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":525,"cy":472,"r":272,"stroke-dasharray":132,"stroke-width":302,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 525,
+  cy: 472,
+  r: 272,
+  'stroke-dasharray': 132,
+  'stroke-width': 302,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0825,"stroke-width":0.35,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":118,"stroke-width":557,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 118,
+  'stroke-width': 557,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.35,"x2":0.35,"y1":0,"y2":1,"stroke-dasharray":0.0325,"stroke-width":0.17,"stroke":"#ffcc00"}}
+atts = {"x1":557,"x2":557,"y1":0,"y2":1431,"stroke-dasharray":47,"stroke-width":270,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 557,
+  x2: 557,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 47,
+  'stroke-width': 270,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.35,"y2":0.35,"stroke-dasharray":0.0375,"stroke-width":0.17,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":501,"y2":501,"stroke-dasharray":54,"stroke-width":270,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 501,
+  y2: 501,
+  'stroke-dasharray': 54,
+  'stroke-width': 270,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.35,"x2":0.35,"y1":0,"y2":1,"stroke-dasharray":0.02,"stroke-width":0.39,"stroke":"#000000"}}
+atts = {"x1":557,"x2":557,"y1":0,"y2":1431,"stroke-dasharray":29,"stroke-width":620,"stroke":"#000000"}
+tag = line
+{
+  x1: 557,
+  x2: 557,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 620,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.35,"y2":0.35,"stroke-dasharray":0.01,"stroke-width":0.29,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":501,"y2":501,"stroke-dasharray":14,"stroke-width":461,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 501,
+  y2: 501,
+  'stroke-dasharray': 14,
+  'stroke-width': 461,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.35,"cy":0.35,"r":0.1,"stroke-dasharray":0.0625,"stroke-width":0.19,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":557,"cy":501,"r":143,"stroke-dasharray":89,"stroke-width":302,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 557,
+  cy: 501,
+  r: 143,
+  'stroke-dasharray': 89,
+  'stroke-width': 302,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.35,"cy":0.35,"r":0.14,"stroke-dasharray":0.07,"stroke-width":0.36,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":557,"cy":501,"r":200,"stroke-dasharray":100,"stroke-width":572,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 557,
+  cy: 501,
+  r: 200,
+  'stroke-dasharray': 100,
+  'stroke-width': 572,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.07,"stroke-width":0.28,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":100,"stroke-width":445,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 100,
+  'stroke-width': 445,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.38,"x2":0.38,"y1":0,"y2":1,"stroke-dasharray":0.035,"stroke-width":0.32,"stroke":"#ffcc00"}}
+atts = {"x1":604,"x2":604,"y1":0,"y2":1431,"stroke-dasharray":50,"stroke-width":509,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 604,
+  x2: 604,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 509,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.38,"y2":0.38,"stroke-dasharray":0.0225,"stroke-width":0.12,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":544,"y2":544,"stroke-dasharray":32,"stroke-width":191,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 544,
+  y2: 544,
+  'stroke-dasharray': 32,
+  'stroke-width': 191,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.38,"x2":0.38,"y1":0,"y2":1,"stroke-dasharray":0.0225,"stroke-width":0.12,"stroke":"#000000"}}
+atts = {"x1":604,"x2":604,"y1":0,"y2":1431,"stroke-dasharray":32,"stroke-width":191,"stroke":"#000000"}
+tag = line
+{
+  x1: 604,
+  x2: 604,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 32,
+  'stroke-width': 191,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.38,"y2":0.38,"stroke-dasharray":0.0425,"stroke-width":0.28,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":544,"y2":544,"stroke-dasharray":61,"stroke-width":445,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 544,
+  y2: 544,
+  'stroke-dasharray': 61,
+  'stroke-width': 445,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.38,"cy":0.38,"r":0.21,"stroke-dasharray":0.06,"stroke-width":0.23,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":604,"cy":544,"r":301,"stroke-dasharray":86,"stroke-width":366,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 604,
+  cy: 544,
+  r: 301,
+  'stroke-dasharray': 86,
+  'stroke-width': 366,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.38,"cy":0.38,"r":0.23,"stroke-dasharray":0.0125,"stroke-width":0.39,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":604,"cy":544,"r":329,"stroke-dasharray":18,"stroke-width":620,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 604,
+  cy: 544,
+  r: 329,
+  'stroke-dasharray': 18,
+  'stroke-width': 620,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0575,"stroke-width":0.44,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":82,"stroke-width":700,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 82,
+  'stroke-width': 700,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.4,"x2":0.4,"y1":0,"y2":1,"stroke-dasharray":0.055,"stroke-width":0.29,"stroke":"#ffcc00"}}
+atts = {"x1":636,"x2":636,"y1":0,"y2":1431,"stroke-dasharray":79,"stroke-width":461,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 636,
+  x2: 636,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 461,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.4,"y2":0.4,"stroke-dasharray":0.0475,"stroke-width":0.35,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":572,"y2":572,"stroke-dasharray":68,"stroke-width":557,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 572,
+  y2: 572,
+  'stroke-dasharray': 68,
+  'stroke-width': 557,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.4,"x2":0.4,"y1":0,"y2":1,"stroke-dasharray":0.01375,"stroke-width":0.18,"stroke":"#000000"}}
+atts = {"x1":636,"x2":636,"y1":0,"y2":1431,"stroke-dasharray":20,"stroke-width":286,"stroke":"#000000"}
+tag = line
+{
+  x1: 636,
+  x2: 636,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 20,
+  'stroke-width': 286,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.4,"y2":0.4,"stroke-dasharray":0.01875,"stroke-width":0.27,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":572,"y2":572,"stroke-dasharray":27,"stroke-width":429,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 572,
+  y2: 572,
+  'stroke-dasharray': 27,
+  'stroke-width': 429,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.4,"cy":0.4,"r":0.42,"stroke-dasharray":0.075,"stroke-width":0.43,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":636,"cy":572,"r":601,"stroke-dasharray":107,"stroke-width":684,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 636,
+  cy: 572,
+  r: 601,
+  'stroke-dasharray': 107,
+  'stroke-width': 684,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.4,"cy":0.4,"r":0.41,"stroke-dasharray":0.0975,"stroke-width":0.3,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":636,"cy":572,"r":587,"stroke-dasharray":140,"stroke-width":477,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 636,
+  cy: 572,
+  r: 587,
+  'stroke-dasharray': 140,
+  'stroke-width': 477,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0575,"stroke-width":0.42,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":82,"stroke-width":668,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 82,
+  'stroke-width': 668,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.42,"x2":0.42,"y1":0,"y2":1,"stroke-dasharray":0.095,"stroke-width":0.19,"stroke":"#ffcc00"}}
+atts = {"x1":668,"x2":668,"y1":0,"y2":1431,"stroke-dasharray":136,"stroke-width":302,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 668,
+  x2: 668,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 136,
+  'stroke-width': 302,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.42,"y2":0.42,"stroke-dasharray":0.045,"stroke-width":0.1,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":601,"y2":601,"stroke-dasharray":64,"stroke-width":159,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 601,
+  y2: 601,
+  'stroke-dasharray': 64,
+  'stroke-width': 159,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.42,"x2":0.42,"y1":0,"y2":1,"stroke-dasharray":0.0225,"stroke-width":0.19,"stroke":"#000000"}}
+atts = {"x1":668,"x2":668,"y1":0,"y2":1431,"stroke-dasharray":32,"stroke-width":302,"stroke":"#000000"}
+tag = line
+{
+  x1: 668,
+  x2: 668,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 32,
+  'stroke-width': 302,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.42,"y2":0.42,"stroke-dasharray":0.02875,"stroke-width":0.12,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":601,"y2":601,"stroke-dasharray":41,"stroke-width":191,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 601,
+  y2: 601,
+  'stroke-dasharray': 41,
+  'stroke-width': 191,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.42,"cy":0.42,"r":0.32,"stroke-dasharray":0.0525,"stroke-width":0.18,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":668,"cy":601,"r":458,"stroke-dasharray":75,"stroke-width":286,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 668,
+  cy: 601,
+  r: 458,
+  'stroke-dasharray': 75,
+  'stroke-width': 286,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.42,"cy":0.42,"r":0.25,"stroke-dasharray":0.0625,"stroke-width":0.16,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":668,"cy":601,"r":358,"stroke-dasharray":89,"stroke-width":254,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 668,
+  cy: 601,
+  r: 358,
+  'stroke-dasharray': 89,
+  'stroke-width': 254,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0325,"stroke-width":0.42,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":47,"stroke-width":668,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 47,
+  'stroke-width': 668,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.44,"x2":0.44,"y1":0,"y2":1,"stroke-dasharray":0.04,"stroke-width":0.13,"stroke":"#ffcc00"}}
+atts = {"x1":700,"x2":700,"y1":0,"y2":1431,"stroke-dasharray":57,"stroke-width":207,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 700,
+  x2: 700,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 57,
+  'stroke-width': 207,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.44,"y2":0.44,"stroke-dasharray":0.0675,"stroke-width":0.4,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":630,"y2":630,"stroke-dasharray":97,"stroke-width":636,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 630,
+  y2: 630,
+  'stroke-dasharray': 97,
+  'stroke-width': 636,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.44,"x2":0.44,"y1":0,"y2":1,"stroke-dasharray":0.01125,"stroke-width":0.28,"stroke":"#000000"}}
+atts = {"x1":700,"x2":700,"y1":0,"y2":1431,"stroke-dasharray":16,"stroke-width":445,"stroke":"#000000"}
+tag = line
+{
+  x1: 700,
+  x2: 700,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 16,
+  'stroke-width': 445,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.44,"y2":0.44,"stroke-dasharray":0.00625,"stroke-width":0.38,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":630,"y2":630,"stroke-dasharray":9,"stroke-width":604,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 630,
+  y2: 630,
+  'stroke-dasharray': 9,
+  'stroke-width': 604,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.44,"cy":0.44,"r":0.16,"stroke-dasharray":0.0425,"stroke-width":0.42,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":700,"cy":630,"r":229,"stroke-dasharray":61,"stroke-width":668,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 700,
+  cy: 630,
+  r: 229,
+  'stroke-dasharray': 61,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.44,"cy":0.44,"r":0.2,"stroke-dasharray":0.07,"stroke-width":0.36,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":700,"cy":630,"r":286,"stroke-dasharray":100,"stroke-width":572,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 700,
+  cy: 630,
+  r: 286,
+  'stroke-dasharray': 100,
+  'stroke-width': 572,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0375,"stroke-width":0.3,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":54,"stroke-width":477,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 54,
+  'stroke-width': 477,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.46,"x2":0.46,"y1":0,"y2":1,"stroke-dasharray":0.08,"stroke-width":0.38,"stroke":"#ffcc00"}}
+atts = {"x1":731,"x2":731,"y1":0,"y2":1431,"stroke-dasharray":114,"stroke-width":604,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 731,
+  x2: 731,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 114,
+  'stroke-width': 604,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.46,"y2":0.46,"stroke-dasharray":0.07,"stroke-width":0.13,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":658,"y2":658,"stroke-dasharray":100,"stroke-width":207,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 658,
+  y2: 658,
+  'stroke-dasharray': 100,
+  'stroke-width': 207,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.46,"x2":0.46,"y1":0,"y2":1,"stroke-dasharray":0.015,"stroke-width":0.28,"stroke":"#000000"}}
+atts = {"x1":731,"x2":731,"y1":0,"y2":1431,"stroke-dasharray":21,"stroke-width":445,"stroke":"#000000"}
+tag = line
+{
+  x1: 731,
+  x2: 731,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 21,
+  'stroke-width': 445,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.46,"y2":0.46,"stroke-dasharray":0.025,"stroke-width":0.36,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":658,"y2":658,"stroke-dasharray":36,"stroke-width":572,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 658,
+  y2: 658,
+  'stroke-dasharray': 36,
+  'stroke-width': 572,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.46,"cy":0.46,"r":0.35,"stroke-dasharray":0.0625,"stroke-width":0.11,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":731,"cy":658,"r":501,"stroke-dasharray":89,"stroke-width":175,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 731,
+  cy: 658,
+  r: 501,
+  'stroke-dasharray': 89,
+  'stroke-width': 175,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.46,"cy":0.46,"r":0.18,"stroke-dasharray":0.0975,"stroke-width":0.25,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":731,"cy":658,"r":258,"stroke-dasharray":140,"stroke-width":398,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 731,
+  cy: 658,
+  r: 258,
+  'stroke-dasharray': 140,
+  'stroke-width': 398,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.09,"stroke-width":0.13,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":129,"stroke-width":207,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 129,
+  'stroke-width': 207,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.48,"x2":0.48,"y1":0,"y2":1,"stroke-dasharray":0.0275,"stroke-width":0.28,"stroke":"#ffcc00"}}
+atts = {"x1":763,"x2":763,"y1":0,"y2":1431,"stroke-dasharray":39,"stroke-width":445,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 763,
+  x2: 763,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 39,
+  'stroke-width': 445,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.48,"y2":0.48,"stroke-dasharray":0.095,"stroke-width":0.32,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":687,"y2":687,"stroke-dasharray":136,"stroke-width":509,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 687,
+  y2: 687,
+  'stroke-dasharray': 136,
+  'stroke-width': 509,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.48,"x2":0.48,"y1":0,"y2":1,"stroke-dasharray":0.0175,"stroke-width":0.25,"stroke":"#000000"}}
+atts = {"x1":763,"x2":763,"y1":0,"y2":1431,"stroke-dasharray":25,"stroke-width":398,"stroke":"#000000"}
+tag = line
+{
+  x1: 763,
+  x2: 763,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 25,
+  'stroke-width': 398,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.48,"y2":0.48,"stroke-dasharray":0.02875,"stroke-width":0.42,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":687,"y2":687,"stroke-dasharray":41,"stroke-width":668,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 687,
+  y2: 687,
+  'stroke-dasharray': 41,
+  'stroke-width': 668,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.48,"cy":0.48,"r":0.13,"stroke-dasharray":0.09,"stroke-width":0.44,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":763,"cy":687,"r":186,"stroke-dasharray":129,"stroke-width":700,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 763,
+  cy: 687,
+  r: 186,
+  'stroke-dasharray': 129,
+  'stroke-width': 700,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.48,"cy":0.48,"r":0.35,"stroke-dasharray":0.0325,"stroke-width":0.34,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":763,"cy":687,"r":501,"stroke-dasharray":47,"stroke-width":541,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 763,
+  cy: 687,
+  r: 501,
+  'stroke-dasharray': 47,
+  'stroke-width': 541,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.02,"stroke-width":0.19,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":29,"stroke-width":302,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 302,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.5,"x2":0.5,"y1":0,"y2":1,"stroke-dasharray":0.0625,"stroke-width":0.15,"stroke":"#ffcc00"}}
+atts = {"x1":795,"x2":795,"y1":0,"y2":1431,"stroke-dasharray":89,"stroke-width":239,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 795,
+  x2: 795,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 89,
+  'stroke-width': 239,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.5,"y2":0.5,"stroke-dasharray":0.0275,"stroke-width":0.43,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":715,"y2":715,"stroke-dasharray":39,"stroke-width":684,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 715,
+  y2: 715,
+  'stroke-dasharray': 39,
+  'stroke-width': 684,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.5,"x2":0.5,"y1":0,"y2":1,"stroke-dasharray":0.01375,"stroke-width":0.14,"stroke":"#000000"}}
+atts = {"x1":795,"x2":795,"y1":0,"y2":1431,"stroke-dasharray":20,"stroke-width":223,"stroke":"#000000"}
+tag = line
+{
+  x1: 795,
+  x2: 795,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 20,
+  'stroke-width': 223,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.5,"y2":0.5,"stroke-dasharray":0.01625,"stroke-width":0.14,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":715,"y2":715,"stroke-dasharray":23,"stroke-width":223,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 715,
+  y2: 715,
+  'stroke-dasharray': 23,
+  'stroke-width': 223,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.5,"cy":0.5,"r":0.4,"stroke-dasharray":0.09,"stroke-width":0.37,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":795,"cy":715,"r":572,"stroke-dasharray":129,"stroke-width":588,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 795,
+  cy: 715,
+  r: 572,
+  'stroke-dasharray': 129,
+  'stroke-width': 588,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.5,"cy":0.5,"r":0.13,"stroke-dasharray":0.03,"stroke-width":0.35,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":795,"cy":715,"r":186,"stroke-dasharray":43,"stroke-width":557,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 795,
+  cy: 715,
+  r: 186,
+  'stroke-dasharray': 43,
+  'stroke-width': 557,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.02,"stroke-width":0.34,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":29,"stroke-width":541,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 541,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.52,"x2":0.52,"y1":0,"y2":1,"stroke-dasharray":0.0425,"stroke-width":0.47,"stroke":"#ffcc00"}}
+atts = {"x1":827,"x2":827,"y1":0,"y2":1431,"stroke-dasharray":61,"stroke-width":747,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 827,
+  x2: 827,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 61,
+  'stroke-width': 747,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.52,"y2":0.52,"stroke-dasharray":0.0775,"stroke-width":0.28,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":744,"y2":744,"stroke-dasharray":111,"stroke-width":445,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 744,
+  y2: 744,
+  'stroke-dasharray': 111,
+  'stroke-width': 445,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.52,"x2":0.52,"y1":0,"y2":1,"stroke-dasharray":0.025,"stroke-width":0.28,"stroke":"#000000"}}
+atts = {"x1":827,"x2":827,"y1":0,"y2":1431,"stroke-dasharray":36,"stroke-width":445,"stroke":"#000000"}
+tag = line
+{
+  x1: 827,
+  x2: 827,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 36,
+  'stroke-width': 445,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.52,"y2":0.52,"stroke-dasharray":0.025,"stroke-width":0.28,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":744,"y2":744,"stroke-dasharray":36,"stroke-width":445,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 744,
+  y2: 744,
+  'stroke-dasharray': 36,
+  'stroke-width': 445,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.52,"cy":0.52,"r":0.34,"stroke-dasharray":0.08,"stroke-width":0.13,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":827,"cy":744,"r":487,"stroke-dasharray":114,"stroke-width":207,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 827,
+  cy: 744,
+  r: 487,
+  'stroke-dasharray': 114,
+  'stroke-width': 207,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.52,"cy":0.52,"r":0.2,"stroke-dasharray":0.0325,"stroke-width":0.42,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":827,"cy":744,"r":286,"stroke-dasharray":47,"stroke-width":668,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 827,
+  cy: 744,
+  r: 286,
+  'stroke-dasharray': 47,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0625,"stroke-width":0.42,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":89,"stroke-width":668,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 89,
+  'stroke-width': 668,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.54,"x2":0.54,"y1":0,"y2":1,"stroke-dasharray":0.035,"stroke-width":0.26,"stroke":"#ffcc00"}}
+atts = {"x1":859,"x2":859,"y1":0,"y2":1431,"stroke-dasharray":50,"stroke-width":413,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 859,
+  x2: 859,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 413,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.54,"y2":0.54,"stroke-dasharray":0.0725,"stroke-width":0.12,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":773,"y2":773,"stroke-dasharray":104,"stroke-width":191,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 773,
+  y2: 773,
+  'stroke-dasharray': 104,
+  'stroke-width': 191,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.54,"x2":0.54,"y1":0,"y2":1,"stroke-dasharray":0.01,"stroke-width":0.43,"stroke":"#000000"}}
+atts = {"x1":859,"x2":859,"y1":0,"y2":1431,"stroke-dasharray":14,"stroke-width":684,"stroke":"#000000"}
+tag = line
+{
+  x1: 859,
+  x2: 859,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 14,
+  'stroke-width': 684,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.54,"y2":0.54,"stroke-dasharray":0.0475,"stroke-width":0.37,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":773,"y2":773,"stroke-dasharray":68,"stroke-width":588,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 773,
+  y2: 773,
+  'stroke-dasharray': 68,
+  'stroke-width': 588,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.54,"cy":0.54,"r":0.29,"stroke-dasharray":0.0525,"stroke-width":0.39,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":859,"cy":773,"r":415,"stroke-dasharray":75,"stroke-width":620,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 859,
+  cy: 773,
+  r: 415,
+  'stroke-dasharray': 75,
+  'stroke-width': 620,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.54,"cy":0.54,"r":0.43,"stroke-dasharray":0.0925,"stroke-width":0.18,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":859,"cy":773,"r":615,"stroke-dasharray":132,"stroke-width":286,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 859,
+  cy: 773,
+  r: 615,
+  'stroke-dasharray': 132,
+  'stroke-width': 286,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.08,"stroke-width":0.45,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":114,"stroke-width":716,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 114,
+  'stroke-width': 716,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.56,"x2":0.56,"y1":0,"y2":1,"stroke-dasharray":0.0325,"stroke-width":0.45,"stroke":"#ffcc00"}}
+atts = {"x1":890,"x2":890,"y1":0,"y2":1431,"stroke-dasharray":47,"stroke-width":716,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 890,
+  x2: 890,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 47,
+  'stroke-width': 716,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.56,"y2":0.56,"stroke-dasharray":0.0875,"stroke-width":0.11,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":801,"y2":801,"stroke-dasharray":125,"stroke-width":175,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 801,
+  y2: 801,
+  'stroke-dasharray': 125,
+  'stroke-width': 175,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.56,"x2":0.56,"y1":0,"y2":1,"stroke-dasharray":0.0375,"stroke-width":0.24,"stroke":"#000000"}}
+atts = {"x1":890,"x2":890,"y1":0,"y2":1431,"stroke-dasharray":54,"stroke-width":382,"stroke":"#000000"}
+tag = line
+{
+  x1: 890,
+  x2: 890,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 54,
+  'stroke-width': 382,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.56,"y2":0.56,"stroke-dasharray":0.0425,"stroke-width":0.12,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":801,"y2":801,"stroke-dasharray":61,"stroke-width":191,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 801,
+  y2: 801,
+  'stroke-dasharray': 61,
+  'stroke-width': 191,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.56,"cy":0.56,"r":0.33,"stroke-dasharray":0.0275,"stroke-width":0.42,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":890,"cy":801,"r":472,"stroke-dasharray":39,"stroke-width":668,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 890,
+  cy: 801,
+  r: 472,
+  'stroke-dasharray': 39,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.56,"cy":0.56,"r":0.28,"stroke-dasharray":0.085,"stroke-width":0.38,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":890,"cy":801,"r":401,"stroke-dasharray":122,"stroke-width":604,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 890,
+  cy: 801,
+  r: 401,
+  'stroke-dasharray': 122,
+  'stroke-width': 604,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0125,"stroke-width":0.28,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":18,"stroke-width":445,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 18,
+  'stroke-width': 445,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.58,"x2":0.58,"y1":0,"y2":1,"stroke-dasharray":0.0875,"stroke-width":0.3,"stroke":"#ffcc00"}}
+atts = {"x1":922,"x2":922,"y1":0,"y2":1431,"stroke-dasharray":125,"stroke-width":477,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 922,
+  x2: 922,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 125,
+  'stroke-width': 477,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.58,"y2":0.58,"stroke-dasharray":0.0875,"stroke-width":0.22,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":830,"y2":830,"stroke-dasharray":125,"stroke-width":350,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 830,
+  y2: 830,
+  'stroke-dasharray': 125,
+  'stroke-width': 350,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.58,"x2":0.58,"y1":0,"y2":1,"stroke-dasharray":0.02625,"stroke-width":0.12,"stroke":"#000000"}}
+atts = {"x1":922,"x2":922,"y1":0,"y2":1431,"stroke-dasharray":38,"stroke-width":191,"stroke":"#000000"}
+tag = line
+{
+  x1: 922,
+  x2: 922,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 38,
+  'stroke-width': 191,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.58,"y2":0.58,"stroke-dasharray":0.04875,"stroke-width":0.21,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":830,"y2":830,"stroke-dasharray":70,"stroke-width":334,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 830,
+  y2: 830,
+  'stroke-dasharray': 70,
+  'stroke-width': 334,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.58,"cy":0.58,"r":0.25,"stroke-dasharray":0.06,"stroke-width":0.24,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":922,"cy":830,"r":358,"stroke-dasharray":86,"stroke-width":382,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 922,
+  cy: 830,
+  r: 358,
+  'stroke-dasharray': 86,
+  'stroke-width': 382,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.58,"cy":0.58,"r":0.37,"stroke-dasharray":0.0875,"stroke-width":0.33,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":922,"cy":830,"r":529,"stroke-dasharray":125,"stroke-width":525,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 922,
+  cy: 830,
+  r: 529,
+  'stroke-dasharray': 125,
+  'stroke-width': 525,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.035,"stroke-width":0.33,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":50,"stroke-width":525,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 525,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.6,"x2":0.6,"y1":0,"y2":1,"stroke-dasharray":0.05,"stroke-width":0.33,"stroke":"#ffcc00"}}
+atts = {"x1":954,"x2":954,"y1":0,"y2":1431,"stroke-dasharray":72,"stroke-width":525,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 954,
+  x2: 954,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 72,
+  'stroke-width': 525,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.6,"y2":0.6,"stroke-dasharray":0.02,"stroke-width":0.16,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":859,"y2":859,"stroke-dasharray":29,"stroke-width":254,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 859,
+  y2: 859,
+  'stroke-dasharray': 29,
+  'stroke-width': 254,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.6,"x2":0.6,"y1":0,"y2":1,"stroke-dasharray":0.025,"stroke-width":0.3,"stroke":"#000000"}}
+atts = {"x1":954,"x2":954,"y1":0,"y2":1431,"stroke-dasharray":36,"stroke-width":477,"stroke":"#000000"}
+tag = line
+{
+  x1: 954,
+  x2: 954,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 36,
+  'stroke-width': 477,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.6,"y2":0.6,"stroke-dasharray":0.03,"stroke-width":0.32,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":859,"y2":859,"stroke-dasharray":43,"stroke-width":509,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 859,
+  y2: 859,
+  'stroke-dasharray': 43,
+  'stroke-width': 509,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.6,"cy":0.6,"r":0.27,"stroke-dasharray":0.035,"stroke-width":0.27,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":954,"cy":859,"r":386,"stroke-dasharray":50,"stroke-width":429,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 954,
+  cy: 859,
+  r: 386,
+  'stroke-dasharray': 50,
+  'stroke-width': 429,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.6,"cy":0.6,"r":0.18,"stroke-dasharray":0.075,"stroke-width":0.44,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":954,"cy":859,"r":258,"stroke-dasharray":107,"stroke-width":700,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 954,
+  cy: 859,
+  r: 258,
+  'stroke-dasharray': 107,
+  'stroke-width': 700,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.035,"stroke-width":0.32,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":50,"stroke-width":509,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 509,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.63,"x2":0.63,"y1":0,"y2":1,"stroke-dasharray":0.03,"stroke-width":0.26,"stroke":"#ffcc00"}}
+atts = {"x1":1002,"x2":1002,"y1":0,"y2":1431,"stroke-dasharray":43,"stroke-width":413,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1002,
+  x2: 1002,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 43,
+  'stroke-width': 413,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.63,"y2":0.63,"stroke-dasharray":0.0575,"stroke-width":0.33,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":902,"y2":902,"stroke-dasharray":82,"stroke-width":525,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 902,
+  y2: 902,
+  'stroke-dasharray': 82,
+  'stroke-width': 525,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.63,"x2":0.63,"y1":0,"y2":1,"stroke-dasharray":0.0425,"stroke-width":0.22,"stroke":"#000000"}}
+atts = {"x1":1002,"x2":1002,"y1":0,"y2":1431,"stroke-dasharray":61,"stroke-width":350,"stroke":"#000000"}
+tag = line
+{
+  x1: 1002,
+  x2: 1002,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 61,
+  'stroke-width': 350,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.63,"y2":0.63,"stroke-dasharray":0.0325,"stroke-width":0.45,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":902,"y2":902,"stroke-dasharray":47,"stroke-width":716,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 902,
+  y2: 902,
+  'stroke-dasharray': 47,
+  'stroke-width': 716,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.63,"cy":0.63,"r":0.26,"stroke-dasharray":0.0175,"stroke-width":0.42,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1002,"cy":902,"r":372,"stroke-dasharray":25,"stroke-width":668,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1002,
+  cy: 902,
+  r: 372,
+  'stroke-dasharray': 25,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.63,"cy":0.63,"r":0.41,"stroke-dasharray":0.08,"stroke-width":0.16,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1002,"cy":902,"r":587,"stroke-dasharray":114,"stroke-width":254,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1002,
+  cy: 902,
+  r: 587,
+  'stroke-dasharray': 114,
+  'stroke-width': 254,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0425,"stroke-width":0.35,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":61,"stroke-width":557,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 61,
+  'stroke-width': 557,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.65,"x2":0.65,"y1":0,"y2":1,"stroke-dasharray":0.0275,"stroke-width":0.21,"stroke":"#ffcc00"}}
+atts = {"x1":1034,"x2":1034,"y1":0,"y2":1431,"stroke-dasharray":39,"stroke-width":334,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1034,
+  x2: 1034,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 39,
+  'stroke-width': 334,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.65,"y2":0.65,"stroke-dasharray":0.04,"stroke-width":0.3,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":930,"y2":930,"stroke-dasharray":57,"stroke-width":477,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 930,
+  y2: 930,
+  'stroke-dasharray': 57,
+  'stroke-width': 477,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.65,"x2":0.65,"y1":0,"y2":1,"stroke-dasharray":0.02125,"stroke-width":0.27,"stroke":"#000000"}}
+atts = {"x1":1034,"x2":1034,"y1":0,"y2":1431,"stroke-dasharray":30,"stroke-width":429,"stroke":"#000000"}
+tag = line
+{
+  x1: 1034,
+  x2: 1034,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 30,
+  'stroke-width': 429,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.65,"y2":0.65,"stroke-dasharray":0.0275,"stroke-width":0.3,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":930,"y2":930,"stroke-dasharray":39,"stroke-width":477,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 930,
+  y2: 930,
+  'stroke-dasharray': 39,
+  'stroke-width': 477,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.65,"cy":0.65,"r":0.37,"stroke-dasharray":0.0425,"stroke-width":0.42,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1034,"cy":930,"r":529,"stroke-dasharray":61,"stroke-width":668,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1034,
+  cy: 930,
+  r: 529,
+  'stroke-dasharray': 61,
+  'stroke-width': 668,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.65,"cy":0.65,"r":0.25,"stroke-dasharray":0.04,"stroke-width":0.12,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1034,"cy":930,"r":358,"stroke-dasharray":57,"stroke-width":191,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1034,
+  cy: 930,
+  r: 358,
+  'stroke-dasharray': 57,
+  'stroke-width': 191,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0475,"stroke-width":0.4,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":68,"stroke-width":636,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 68,
+  'stroke-width': 636,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.67,"x2":0.67,"y1":0,"y2":1,"stroke-dasharray":0.0225,"stroke-width":0.15,"stroke":"#ffcc00"}}
+atts = {"x1":1065,"x2":1065,"y1":0,"y2":1431,"stroke-dasharray":32,"stroke-width":239,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1065,
+  x2: 1065,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 32,
+  'stroke-width': 239,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.67,"y2":0.67,"stroke-dasharray":0.075,"stroke-width":0.39,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":959,"y2":959,"stroke-dasharray":107,"stroke-width":620,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 959,
+  y2: 959,
+  'stroke-dasharray': 107,
+  'stroke-width': 620,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.67,"x2":0.67,"y1":0,"y2":1,"stroke-dasharray":0.035,"stroke-width":0.26,"stroke":"#000000"}}
+atts = {"x1":1065,"x2":1065,"y1":0,"y2":1431,"stroke-dasharray":50,"stroke-width":413,"stroke":"#000000"}
+tag = line
+{
+  x1: 1065,
+  x2: 1065,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 413,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.67,"y2":0.67,"stroke-dasharray":0.03,"stroke-width":0.35,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":959,"y2":959,"stroke-dasharray":43,"stroke-width":557,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 959,
+  y2: 959,
+  'stroke-dasharray': 43,
+  'stroke-width': 557,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.67,"cy":0.67,"r":0.14,"stroke-dasharray":0.0725,"stroke-width":0.44,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1065,"cy":959,"r":200,"stroke-dasharray":104,"stroke-width":700,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1065,
+  cy: 959,
+  r: 200,
+  'stroke-dasharray': 104,
+  'stroke-width': 700,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.67,"cy":0.67,"r":0.42,"stroke-dasharray":0.02,"stroke-width":0.19,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1065,"cy":959,"r":601,"stroke-dasharray":29,"stroke-width":302,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1065,
+  cy: 959,
+  r: 601,
+  'stroke-dasharray': 29,
+  'stroke-width': 302,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0725,"stroke-width":0.38,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":104,"stroke-width":604,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 104,
+  'stroke-width': 604,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.69,"x2":0.69,"y1":0,"y2":1,"stroke-dasharray":0.0925,"stroke-width":0.42,"stroke":"#ffcc00"}}
+atts = {"x1":1097,"x2":1097,"y1":0,"y2":1431,"stroke-dasharray":132,"stroke-width":668,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1097,
+  x2: 1097,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 132,
+  'stroke-width': 668,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.69,"y2":0.69,"stroke-dasharray":0.09,"stroke-width":0.26,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":987,"y2":987,"stroke-dasharray":129,"stroke-width":413,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 987,
+  y2: 987,
+  'stroke-dasharray': 129,
+  'stroke-width': 413,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.69,"x2":0.69,"y1":0,"y2":1,"stroke-dasharray":0.045,"stroke-width":0.18,"stroke":"#000000"}}
+atts = {"x1":1097,"x2":1097,"y1":0,"y2":1431,"stroke-dasharray":64,"stroke-width":286,"stroke":"#000000"}
+tag = line
+{
+  x1: 1097,
+  x2: 1097,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 64,
+  'stroke-width': 286,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.69,"y2":0.69,"stroke-dasharray":0.0375,"stroke-width":0.41,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":987,"y2":987,"stroke-dasharray":54,"stroke-width":652,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 987,
+  y2: 987,
+  'stroke-dasharray': 54,
+  'stroke-width': 652,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.69,"cy":0.69,"r":0.22,"stroke-dasharray":0.0775,"stroke-width":0.46,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1097,"cy":987,"r":315,"stroke-dasharray":111,"stroke-width":731,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1097,
+  cy: 987,
+  r: 315,
+  'stroke-dasharray': 111,
+  'stroke-width': 731,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.69,"cy":0.69,"r":0.1,"stroke-dasharray":0.03,"stroke-width":0.35,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1097,"cy":987,"r":143,"stroke-dasharray":43,"stroke-width":557,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1097,
+  cy: 987,
+  r: 143,
+  'stroke-dasharray': 43,
+  'stroke-width': 557,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0475,"stroke-width":0.25,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":68,"stroke-width":398,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 68,
+  'stroke-width': 398,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.71,"x2":0.71,"y1":0,"y2":1,"stroke-dasharray":0.0975,"stroke-width":0.14,"stroke":"#ffcc00"}}
+atts = {"x1":1129,"x2":1129,"y1":0,"y2":1431,"stroke-dasharray":140,"stroke-width":223,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1129,
+  x2: 1129,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 140,
+  'stroke-width': 223,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.71,"y2":0.71,"stroke-dasharray":0.0275,"stroke-width":0.22,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1016,"y2":1016,"stroke-dasharray":39,"stroke-width":350,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1016,
+  y2: 1016,
+  'stroke-dasharray': 39,
+  'stroke-width': 350,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.71,"x2":0.71,"y1":0,"y2":1,"stroke-dasharray":0.00625,"stroke-width":0.1,"stroke":"#000000"}}
+atts = {"x1":1129,"x2":1129,"y1":0,"y2":1431,"stroke-dasharray":9,"stroke-width":159,"stroke":"#000000"}
+tag = line
+{
+  x1: 1129,
+  x2: 1129,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 9,
+  'stroke-width': 159,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.71,"y2":0.71,"stroke-dasharray":0.04625,"stroke-width":0.42,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1016,"y2":1016,"stroke-dasharray":66,"stroke-width":668,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1016,
+  y2: 1016,
+  'stroke-dasharray': 66,
+  'stroke-width': 668,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.71,"cy":0.71,"r":0.3,"stroke-dasharray":0.0575,"stroke-width":0.3,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1129,"cy":1016,"r":429,"stroke-dasharray":82,"stroke-width":477,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1129,
+  cy: 1016,
+  r: 429,
+  'stroke-dasharray': 82,
+  'stroke-width': 477,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.71,"cy":0.71,"r":0.14,"stroke-dasharray":0.0625,"stroke-width":0.38,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1129,"cy":1016,"r":200,"stroke-dasharray":89,"stroke-width":604,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1129,
+  cy: 1016,
+  r: 200,
+  'stroke-dasharray': 89,
+  'stroke-width': 604,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0125,"stroke-width":0.34,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":18,"stroke-width":541,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 18,
+  'stroke-width': 541,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.73,"x2":0.73,"y1":0,"y2":1,"stroke-dasharray":0.055,"stroke-width":0.24,"stroke":"#ffcc00"}}
+atts = {"x1":1161,"x2":1161,"y1":0,"y2":1431,"stroke-dasharray":79,"stroke-width":382,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1161,
+  x2: 1161,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 79,
+  'stroke-width': 382,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.73,"y2":0.73,"stroke-dasharray":0.0325,"stroke-width":0.46,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1045,"y2":1045,"stroke-dasharray":47,"stroke-width":731,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1045,
+  y2: 1045,
+  'stroke-dasharray': 47,
+  'stroke-width': 731,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.73,"x2":0.73,"y1":0,"y2":1,"stroke-dasharray":0.0075,"stroke-width":0.43,"stroke":"#000000"}}
+atts = {"x1":1161,"x2":1161,"y1":0,"y2":1431,"stroke-dasharray":11,"stroke-width":684,"stroke":"#000000"}
+tag = line
+{
+  x1: 1161,
+  x2: 1161,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 11,
+  'stroke-width': 684,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.73,"y2":0.73,"stroke-dasharray":0.04375,"stroke-width":0.3,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1045,"y2":1045,"stroke-dasharray":63,"stroke-width":477,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1045,
+  y2: 1045,
+  'stroke-dasharray': 63,
+  'stroke-width': 477,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.73,"cy":0.73,"r":0.32,"stroke-dasharray":0.0225,"stroke-width":0.41,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1161,"cy":1045,"r":458,"stroke-dasharray":32,"stroke-width":652,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1161,
+  cy: 1045,
+  r: 458,
+  'stroke-dasharray': 32,
+  'stroke-width': 652,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.73,"cy":0.73,"r":0.11,"stroke-dasharray":0.03,"stroke-width":0.18,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1161,"cy":1045,"r":157,"stroke-dasharray":43,"stroke-width":286,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1161,
+  cy: 1045,
+  r: 157,
+  'stroke-dasharray': 43,
+  'stroke-width': 286,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0675,"stroke-width":0.35,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":97,"stroke-width":557,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 97,
+  'stroke-width': 557,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.75,"x2":0.75,"y1":0,"y2":1,"stroke-dasharray":0.095,"stroke-width":0.33,"stroke":"#ffcc00"}}
+atts = {"x1":1193,"x2":1193,"y1":0,"y2":1431,"stroke-dasharray":136,"stroke-width":525,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1193,
+  x2: 1193,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 136,
+  'stroke-width': 525,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.75,"y2":0.75,"stroke-dasharray":0.05,"stroke-width":0.25,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1073,"y2":1073,"stroke-dasharray":72,"stroke-width":398,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1073,
+  y2: 1073,
+  'stroke-dasharray': 72,
+  'stroke-width': 398,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.75,"x2":0.75,"y1":0,"y2":1,"stroke-dasharray":0.00625,"stroke-width":0.16,"stroke":"#000000"}}
+atts = {"x1":1193,"x2":1193,"y1":0,"y2":1431,"stroke-dasharray":9,"stroke-width":254,"stroke":"#000000"}
+tag = line
+{
+  x1: 1193,
+  x2: 1193,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 9,
+  'stroke-width': 254,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.75,"y2":0.75,"stroke-dasharray":0.03875,"stroke-width":0.38,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1073,"y2":1073,"stroke-dasharray":55,"stroke-width":604,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1073,
+  y2: 1073,
+  'stroke-dasharray': 55,
+  'stroke-width': 604,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.75,"cy":0.75,"r":0.13,"stroke-dasharray":0.0275,"stroke-width":0.12,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1193,"cy":1073,"r":186,"stroke-dasharray":39,"stroke-width":191,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1193,
+  cy: 1073,
+  r: 186,
+  'stroke-dasharray': 39,
+  'stroke-width': 191,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.75,"cy":0.75,"r":0.16,"stroke-dasharray":0.07,"stroke-width":0.36,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1193,"cy":1073,"r":229,"stroke-dasharray":100,"stroke-width":572,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1193,
+  cy: 1073,
+  r: 229,
+  'stroke-dasharray': 100,
+  'stroke-width': 572,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.09,"stroke-width":0.2,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":129,"stroke-width":318,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 129,
+  'stroke-width': 318,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.77,"x2":0.77,"y1":0,"y2":1,"stroke-dasharray":0.09,"stroke-width":0.35,"stroke":"#ffcc00"}}
+atts = {"x1":1224,"x2":1224,"y1":0,"y2":1431,"stroke-dasharray":129,"stroke-width":557,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1224,
+  x2: 1224,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 129,
+  'stroke-width': 557,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.77,"y2":0.77,"stroke-dasharray":0.04,"stroke-width":0.23,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1102,"y2":1102,"stroke-dasharray":57,"stroke-width":366,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1102,
+  y2: 1102,
+  'stroke-dasharray': 57,
+  'stroke-width': 366,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.77,"x2":0.77,"y1":0,"y2":1,"stroke-dasharray":0.01,"stroke-width":0.16,"stroke":"#000000"}}
+atts = {"x1":1224,"x2":1224,"y1":0,"y2":1431,"stroke-dasharray":14,"stroke-width":254,"stroke":"#000000"}
+tag = line
+{
+  x1: 1224,
+  x2: 1224,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 14,
+  'stroke-width': 254,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.77,"y2":0.77,"stroke-dasharray":0.045,"stroke-width":0.31,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1102,"y2":1102,"stroke-dasharray":64,"stroke-width":493,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1102,
+  y2: 1102,
+  'stroke-dasharray': 64,
+  'stroke-width': 493,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.77,"cy":0.77,"r":0.29,"stroke-dasharray":0.0925,"stroke-width":0.24,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1224,"cy":1102,"r":415,"stroke-dasharray":132,"stroke-width":382,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1224,
+  cy: 1102,
+  r: 415,
+  'stroke-dasharray': 132,
+  'stroke-width': 382,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.77,"cy":0.77,"r":0.33,"stroke-dasharray":0.0625,"stroke-width":0.41,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1224,"cy":1102,"r":472,"stroke-dasharray":89,"stroke-width":652,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1224,
+  cy: 1102,
+  r: 472,
+  'stroke-dasharray': 89,
+  'stroke-width': 652,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.0825,"stroke-width":0.31,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":118,"stroke-width":493,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 118,
+  'stroke-width': 493,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.79,"x2":0.79,"y1":0,"y2":1,"stroke-dasharray":0.0975,"stroke-width":0.18,"stroke":"#ffcc00"}}
+atts = {"x1":1256,"x2":1256,"y1":0,"y2":1431,"stroke-dasharray":140,"stroke-width":286,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1256,
+  x2: 1256,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 140,
+  'stroke-width': 286,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.79,"y2":0.79,"stroke-dasharray":0.07,"stroke-width":0.41,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1130,"y2":1130,"stroke-dasharray":100,"stroke-width":652,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1130,
+  y2: 1130,
+  'stroke-dasharray': 100,
+  'stroke-width': 652,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.79,"x2":0.79,"y1":0,"y2":1,"stroke-dasharray":0.00625,"stroke-width":0.39,"stroke":"#000000"}}
+atts = {"x1":1256,"x2":1256,"y1":0,"y2":1431,"stroke-dasharray":9,"stroke-width":620,"stroke":"#000000"}
+tag = line
+{
+  x1: 1256,
+  x2: 1256,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 9,
+  'stroke-width': 620,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.79,"y2":0.79,"stroke-dasharray":0.03375,"stroke-width":0.38,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1130,"y2":1130,"stroke-dasharray":48,"stroke-width":604,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1130,
+  y2: 1130,
+  'stroke-dasharray': 48,
+  'stroke-width': 604,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.79,"cy":0.79,"r":0.25,"stroke-dasharray":0.03,"stroke-width":0.27,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1256,"cy":1130,"r":358,"stroke-dasharray":43,"stroke-width":429,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1256,
+  cy: 1130,
+  r: 358,
+  'stroke-dasharray': 43,
+  'stroke-width': 429,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.79,"cy":0.79,"r":0.24,"stroke-dasharray":0.0475,"stroke-width":0.15,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1256,"cy":1130,"r":343,"stroke-dasharray":68,"stroke-width":239,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1256,
+  cy: 1130,
+  r: 343,
+  'stroke-dasharray': 68,
+  'stroke-width': 239,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.02,"stroke-width":0.26,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":29,"stroke-width":413,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 29,
+  'stroke-width': 413,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.81,"x2":0.81,"y1":0,"y2":1,"stroke-dasharray":0.0625,"stroke-width":0.4,"stroke":"#ffcc00"}}
+atts = {"x1":1288,"x2":1288,"y1":0,"y2":1431,"stroke-dasharray":89,"stroke-width":636,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1288,
+  x2: 1288,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 89,
+  'stroke-width': 636,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.81,"y2":0.81,"stroke-dasharray":0.06,"stroke-width":0.36,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1159,"y2":1159,"stroke-dasharray":86,"stroke-width":572,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1159,
+  y2: 1159,
+  'stroke-dasharray': 86,
+  'stroke-width': 572,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.81,"x2":0.81,"y1":0,"y2":1,"stroke-dasharray":0.0175,"stroke-width":0.22,"stroke":"#000000"}}
+atts = {"x1":1288,"x2":1288,"y1":0,"y2":1431,"stroke-dasharray":25,"stroke-width":350,"stroke":"#000000"}
+tag = line
+{
+  x1: 1288,
+  x2: 1288,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 25,
+  'stroke-width': 350,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.81,"y2":0.81,"stroke-dasharray":0.00875,"stroke-width":0.15,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1159,"y2":1159,"stroke-dasharray":13,"stroke-width":239,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1159,
+  y2: 1159,
+  'stroke-dasharray': 13,
+  'stroke-width': 239,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.81,"cy":0.81,"r":0.24,"stroke-dasharray":0.075,"stroke-width":0.36,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1288,"cy":1159,"r":343,"stroke-dasharray":107,"stroke-width":572,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1288,
+  cy: 1159,
+  r: 343,
+  'stroke-dasharray': 107,
+  'stroke-width': 572,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.81,"cy":0.81,"r":0.14,"stroke-dasharray":0.0125,"stroke-width":0.23,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1288,"cy":1159,"r":200,"stroke-dasharray":18,"stroke-width":366,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1288,
+  cy: 1159,
+  r: 200,
+  'stroke-dasharray': 18,
+  'stroke-width': 366,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x":0,"y":0,"width":1,"height":1,"stroke-dasharray":0.035,"stroke-width":0.46,"stroke":"#000000","fill":"#000000"}}
+atts = {"x":0,"y":0,"width":1590,"height":1431,"stroke-dasharray":50,"stroke-width":731,"stroke":"#000000","fill":"#000000"}
+tag = rect
+{
+  x: 0,
+  y: 0,
+  width: 1590,
+  height: 1431,
+  'stroke-dasharray': 50,
+  'stroke-width': 731,
+  stroke: '#000000',
+  fill: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.83,"x2":0.83,"y1":0,"y2":1,"stroke-dasharray":0.06,"stroke-width":0.18,"stroke":"#ffcc00"}}
+atts = {"x1":1320,"x2":1320,"y1":0,"y2":1431,"stroke-dasharray":86,"stroke-width":286,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 1320,
+  x2: 1320,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 86,
+  'stroke-width': 286,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.83,"y2":0.83,"stroke-dasharray":0.0225,"stroke-width":0.2,"stroke":"#ffcc00"}}
+atts = {"x1":0,"x2":1590,"y1":1188,"y2":1188,"stroke-dasharray":32,"stroke-width":318,"stroke":"#ffcc00"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1188,
+  y2: 1188,
+  'stroke-dasharray': 32,
+  'stroke-width': 318,
+  stroke: '#ffcc00'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0.83,"x2":0.83,"y1":0,"y2":1,"stroke-dasharray":0.015,"stroke-width":0.11,"stroke":"#000000"}}
+atts = {"x1":1320,"x2":1320,"y1":0,"y2":1431,"stroke-dasharray":21,"stroke-width":175,"stroke":"#000000"}
+tag = line
+{
+  x1: 1320,
+  x2: 1320,
+  y1: 0,
+  y2: 1431,
+  'stroke-dasharray': 21,
+  'stroke-width': 175,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"x1":0,"x2":1,"y1":0.83,"y2":0.83,"stroke-dasharray":0.03125,"stroke-width":0.44,"stroke":"#000000"}}
+atts = {"x1":0,"x2":1590,"y1":1188,"y2":1188,"stroke-dasharray":45,"stroke-width":700,"stroke":"#000000"}
+tag = line
+{
+  x1: 0,
+  x2: 1590,
+  y1: 1188,
+  y2: 1188,
+  'stroke-dasharray': 45,
+  'stroke-width': 700,
+  stroke: '#000000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.83,"cy":0.83,"r":0.32,"stroke-dasharray":0.025,"stroke-width":0.47,"stroke":"#ffffff","fill":"#9a0000"}}
+atts = {"cx":1320,"cy":1188,"r":458,"stroke-dasharray":36,"stroke-width":747,"stroke":"#ffffff","fill":"#9a0000"}
+tag = circle
+{
+  cx: 1320,
+  cy: 1188,
+  r: 458,
+  'stroke-dasharray': 36,
+  'stroke-width': 747,
+  stroke: '#ffffff',
+  fill: '#9a0000'
+}
+b.attributes = {"ischange":true,"attributes":{"cx":0.83,"cy":0.83,"r":0.22,"stroke-dasharray":0.09,"stroke-width":0.19,"stroke":"#ffffff","fill":"#ffcc00"}}
+atts = {"cx":1320,"cy":1188,"r":315,"stroke-dasharray":129,"stroke-width":302,"stroke":"#ffffff","fill":"#ffcc00"}
+tag = circle
+{
+  cx: 1320,
+  cy: 1188,
+  r: 315,
+  'stroke-dasharray': 129,
+  'stroke-width': 302,
+  stroke: '#ffffff',
+  fill: '#ffcc00'
+}
+[
+  '/opt/homebrew/Cellar/node/20.4.0/bin/node',
+  '/Users/mctavish/Documents/nodes/manifesto/mill/bookMill',
+  './data/mill1690224832'
+]
+poemid=001
+poemid=002
+poemid=003
+poemid=004
+poemid=005
+poemid=006
+poemid=007
+poemid=008
+poemid=009
+poemid=010
+poemid=011
+poemid=012
+poemid=013
+poemid=014
+poemid=015
+poemid=016
+poemid=017
+poemid=018
+poemid=019
+poemid=020
+poemid=021
+poemid=022
+poemid=023
+poemid=024
+poemid=025
+poemid=026
+poemid=027
+poemid=028
+poemid=029
+poemid=030
+poemid=031
+poemid=032
+poemid=033
+poemid=034
+poemid=035
+poemid=036
+poemid=037
+poemid=038
+poemid=039
+poemid=040
+poemid=041
+poemid=001
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="125" stroke-width="382" stroke="#000000" fill="#000000" /> <line x1="0" x2="0" y1="0" y2="1431" stroke-dasharray="43" stroke-width="429" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="0" y2="0" stroke-dasharray="104" stroke-width="588" stroke="#ffcc00" /> <line x1="0" x2="0" y1="0" y2="1431" stroke-dasharray="36" stroke-width="652" stroke="#000000" /> <line x1="0" x2="1590" y1="0" y2="0" stroke-dasharray="20" stroke-width="175" stroke="#000000" /> <circle cx="0" cy="0" r="501" stroke-dasharray="107" stroke-width="604" stroke="#ffffff" fill="#9a0000" /> <circle cx="0" cy="0" r="186" stroke-dasharray="68" stroke-width="445" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=002
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="79" stroke-width="700" stroke="#000000" fill="#000000" /> <line x1="32" x2="32" y1="0" y2="1431" stroke-dasharray="118" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="29" y2="29" stroke-dasharray="104" stroke-width="509" stroke="#ffcc00" /> <line x1="32" x2="32" y1="0" y2="1431" stroke-dasharray="38" stroke-width="493" stroke="#000000" /> <line x1="0" x2="1590" y1="29" y2="29" stroke-dasharray="50" stroke-width="636" stroke="#000000" /> <circle cx="32" cy="29" r="329" stroke-dasharray="61" stroke-width="541" stroke="#ffffff" fill="#9a0000" /> <circle cx="32" cy="29" r="301" stroke-dasharray="47" stroke-width="668" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=003
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="25" stroke-width="366" stroke="#000000" fill="#000000" /> <line x1="64" x2="64" y1="0" y2="1431" stroke-dasharray="129" stroke-width="175" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="57" y2="57" stroke-dasharray="97" stroke-width="382" stroke="#ffcc00" /> <line x1="64" x2="64" y1="0" y2="1431" stroke-dasharray="18" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="57" y2="57" stroke-dasharray="9" stroke-width="159" stroke="#000000" /> <circle cx="64" cy="57" r="315" stroke-dasharray="72" stroke-width="429" stroke="#ffffff" fill="#9a0000" /> <circle cx="64" cy="57" r="272" stroke-dasharray="82" stroke-width="445" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=004
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="129" stroke-width="302" stroke="#000000" fill="#000000" /> <line x1="95" x2="95" y1="0" y2="1431" stroke-dasharray="21" stroke-width="636" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="86" y2="86" stroke-dasharray="82" stroke-width="731" stroke="#ffcc00" /> <line x1="95" x2="95" y1="0" y2="1431" stroke-dasharray="27" stroke-width="652" stroke="#000000" /> <line x1="0" x2="1590" y1="86" y2="86" stroke-dasharray="34" stroke-width="700" stroke="#000000" /> <circle cx="95" cy="86" r="515" stroke-dasharray="32" stroke-width="509" stroke="#ffffff" fill="#9a0000" /> <circle cx="95" cy="86" r="487" stroke-dasharray="47" stroke-width="509" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=005
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="75" stroke-width="398" stroke="#000000" fill="#000000" /> <line x1="127" x2="127" y1="0" y2="1431" stroke-dasharray="89" stroke-width="747" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="114" y2="114" stroke-dasharray="50" stroke-width="668" stroke="#ffcc00" /> <line x1="127" x2="127" y1="0" y2="1431" stroke-dasharray="14" stroke-width="254" stroke="#000000" /> <line x1="0" x2="1590" y1="114" y2="114" stroke-dasharray="50" stroke-width="636" stroke="#000000" /> <circle cx="127" cy="114" r="558" stroke-dasharray="54" stroke-width="350" stroke="#ffffff" fill="#9a0000" /> <circle cx="127" cy="114" r="272" stroke-dasharray="72" stroke-width="525" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=006
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="82" stroke-width="636" stroke="#000000" fill="#000000" /> <line x1="159" x2="159" y1="0" y2="1431" stroke-dasharray="29" stroke-width="429" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="143" y2="143" stroke-dasharray="100" stroke-width="159" stroke="#ffcc00" /> <line x1="159" x2="159" y1="0" y2="1431" stroke-dasharray="52" stroke-width="509" stroke="#000000" /> <line x1="0" x2="1590" y1="143" y2="143" stroke-dasharray="25" stroke-width="286" stroke="#000000" /> <circle cx="159" cy="143" r="343" stroke-dasharray="75" stroke-width="747" stroke="#ffffff" fill="#9a0000" /> <circle cx="159" cy="143" r="429" stroke-dasharray="54" stroke-width="636" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=007
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="61" stroke-width="318" stroke="#000000" fill="#000000" /> <line x1="207" x2="207" y1="0" y2="1431" stroke-dasharray="47" stroke-width="509" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="186" y2="186" stroke-dasharray="129" stroke-width="254" stroke="#ffcc00" /> <line x1="207" x2="207" y1="0" y2="1431" stroke-dasharray="52" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="186" y2="186" stroke-dasharray="50" stroke-width="302" stroke="#000000" /> <circle cx="207" cy="186" r="229" stroke-dasharray="114" stroke-width="509" stroke="#ffffff" fill="#9a0000" /> <circle cx="207" cy="186" r="286" stroke-dasharray="118" stroke-width="461" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=008
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="107" stroke-width="731" stroke="#000000" fill="#000000" /> <line x1="239" x2="239" y1="0" y2="1431" stroke-dasharray="107" stroke-width="747" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="215" y2="215" stroke-dasharray="140" stroke-width="429" stroke="#ffcc00" /> <line x1="239" x2="239" y1="0" y2="1431" stroke-dasharray="45" stroke-width="541" stroke="#000000" /> <line x1="0" x2="1590" y1="215" y2="215" stroke-dasharray="70" stroke-width="318" stroke="#000000" /> <circle cx="239" cy="215" r="572" stroke-dasharray="57" stroke-width="461" stroke="#ffffff" fill="#9a0000" /> <circle cx="239" cy="215" r="444" stroke-dasharray="18" stroke-width="620" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=009
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="79" stroke-width="413" stroke="#000000" fill="#000000" /> <line x1="270" x2="270" y1="0" y2="1431" stroke-dasharray="122" stroke-width="731" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="243" y2="243" stroke-dasharray="64" stroke-width="318" stroke="#ffcc00" /> <line x1="270" x2="270" y1="0" y2="1431" stroke-dasharray="23" stroke-width="382" stroke="#000000" /> <line x1="0" x2="1590" y1="243" y2="243" stroke-dasharray="66" stroke-width="239" stroke="#000000" /> <circle cx="270" cy="243" r="315" stroke-dasharray="104" stroke-width="509" stroke="#ffffff" fill="#9a0000" /> <circle cx="270" cy="243" r="601" stroke-dasharray="86" stroke-width="334" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=010
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="25" stroke-width="254" stroke="#000000" fill="#000000" /> <line x1="302" x2="302" y1="0" y2="1431" stroke-dasharray="72" stroke-width="477" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="272" y2="272" stroke-dasharray="32" stroke-width="366" stroke="#ffcc00" /> <line x1="302" x2="302" y1="0" y2="1431" stroke-dasharray="18" stroke-width="461" stroke="#000000" /> <line x1="0" x2="1590" y1="272" y2="272" stroke-dasharray="64" stroke-width="716" stroke="#000000" /> <circle cx="302" cy="272" r="458" stroke-dasharray="89" stroke-width="620" stroke="#ffffff" fill="#9a0000" /> <circle cx="302" cy="272" r="243" stroke-dasharray="47" stroke-width="572" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=011
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="79" stroke-width="159" stroke="#000000" fill="#000000" /> <line x1="334" x2="334" y1="0" y2="1431" stroke-dasharray="75" stroke-width="747" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="301" y2="301" stroke-dasharray="132" stroke-width="207" stroke="#ffcc00" /> <line x1="334" x2="334" y1="0" y2="1431" stroke-dasharray="38" stroke-width="175" stroke="#000000" /> <line x1="0" x2="1590" y1="301" y2="301" stroke-dasharray="43" stroke-width="159" stroke="#000000" /> <circle cx="334" cy="301" r="544" stroke-dasharray="32" stroke-width="270" stroke="#ffffff" fill="#9a0000" /> <circle cx="334" cy="301" r="243" stroke-dasharray="118" stroke-width="509" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=012
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="122" stroke-width="445" stroke="#000000" fill="#000000" /> <line x1="366" x2="366" y1="0" y2="1431" stroke-dasharray="122" stroke-width="366" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="329" y2="329" stroke-dasharray="79" stroke-width="413" stroke="#ffcc00" /> <line x1="366" x2="366" y1="0" y2="1431" stroke-dasharray="14" stroke-width="382" stroke="#000000" /> <line x1="0" x2="1590" y1="329" y2="329" stroke-dasharray="34" stroke-width="716" stroke="#000000" /> <circle cx="366" cy="329" r="544" stroke-dasharray="125" stroke-width="398" stroke="#ffffff" fill="#9a0000" /> <circle cx="366" cy="329" r="415" stroke-dasharray="21" stroke-width="382" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=013
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="36" stroke-width="716" stroke="#000000" fill="#000000" /> <line x1="398" x2="398" y1="0" y2="1431" stroke-dasharray="122" stroke-width="318" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="358" y2="358" stroke-dasharray="29" stroke-width="477" stroke="#ffcc00" /> <line x1="398" x2="398" y1="0" y2="1431" stroke-dasharray="20" stroke-width="413" stroke="#000000" /> <line x1="0" x2="1590" y1="358" y2="358" stroke-dasharray="18" stroke-width="429" stroke="#000000" /> <circle cx="398" cy="358" r="529" stroke-dasharray="75" stroke-width="731" stroke="#ffffff" fill="#9a0000" /> <circle cx="398" cy="358" r="587" stroke-dasharray="97" stroke-width="350" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=014
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="68" stroke-width="604" stroke="#000000" fill="#000000" /> <line x1="429" x2="429" y1="0" y2="1431" stroke-dasharray="89" stroke-width="731" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="386" y2="386" stroke-dasharray="68" stroke-width="684" stroke="#ffcc00" /> <line x1="429" x2="429" y1="0" y2="1431" stroke-dasharray="29" stroke-width="493" stroke="#000000" /> <line x1="0" x2="1590" y1="386" y2="386" stroke-dasharray="48" stroke-width="302" stroke="#000000" /> <circle cx="429" cy="386" r="458" stroke-dasharray="111" stroke-width="175" stroke="#ffffff" fill="#9a0000" /> <circle cx="429" cy="386" r="487" stroke-dasharray="89" stroke-width="239" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=015
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="100" stroke-width="382" stroke="#000000" fill="#000000" /> <line x1="461" x2="461" y1="0" y2="1431" stroke-dasharray="140" stroke-width="636" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="415" y2="415" stroke-dasharray="18" stroke-width="191" stroke="#ffcc00" /> <line x1="461" x2="461" y1="0" y2="1431" stroke-dasharray="18" stroke-width="747" stroke="#000000" /> <line x1="0" x2="1590" y1="415" y2="415" stroke-dasharray="13" stroke-width="668" stroke="#000000" /> <circle cx="461" cy="415" r="458" stroke-dasharray="43" stroke-width="207" stroke="#ffffff" fill="#9a0000" /> <circle cx="461" cy="415" r="143" stroke-dasharray="111" stroke-width="700" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=016
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="50" stroke-width="684" stroke="#000000" fill="#000000" /> <line x1="493" x2="493" y1="0" y2="1431" stroke-dasharray="79" stroke-width="175" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="444" y2="444" stroke-dasharray="140" stroke-width="684" stroke="#ffcc00" /> <line x1="493" x2="493" y1="0" y2="1431" stroke-dasharray="70" stroke-width="557" stroke="#000000" /> <line x1="0" x2="1590" y1="444" y2="444" stroke-dasharray="63" stroke-width="286" stroke="#000000" /> <circle cx="493" cy="444" r="343" stroke-dasharray="136" stroke-width="318" stroke="#ffffff" fill="#9a0000" /> <circle cx="493" cy="444" r="272" stroke-dasharray="86" stroke-width="254" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=017
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="118" stroke-width="207" stroke="#000000" fill="#000000" /> <line x1="525" x2="525" y1="0" y2="1431" stroke-dasharray="100" stroke-width="652" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="472" y2="472" stroke-dasharray="47" stroke-width="207" stroke="#ffcc00" /> <line x1="525" x2="525" y1="0" y2="1431" stroke-dasharray="16" stroke-width="429" stroke="#000000" /> <line x1="0" x2="1590" y1="472" y2="472" stroke-dasharray="66" stroke-width="668" stroke="#000000" /> <circle cx="525" cy="472" r="544" stroke-dasharray="104" stroke-width="652" stroke="#ffffff" fill="#9a0000" /> <circle cx="525" cy="472" r="272" stroke-dasharray="132" stroke-width="302" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=018
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="118" stroke-width="557" stroke="#000000" fill="#000000" /> <line x1="557" x2="557" y1="0" y2="1431" stroke-dasharray="47" stroke-width="270" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="501" y2="501" stroke-dasharray="54" stroke-width="270" stroke="#ffcc00" /> <line x1="557" x2="557" y1="0" y2="1431" stroke-dasharray="29" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="501" y2="501" stroke-dasharray="14" stroke-width="461" stroke="#000000" /> <circle cx="557" cy="501" r="143" stroke-dasharray="89" stroke-width="302" stroke="#ffffff" fill="#9a0000" /> <circle cx="557" cy="501" r="200" stroke-dasharray="100" stroke-width="572" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=019
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="100" stroke-width="445" stroke="#000000" fill="#000000" /> <line x1="604" x2="604" y1="0" y2="1431" stroke-dasharray="50" stroke-width="509" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="544" y2="544" stroke-dasharray="32" stroke-width="191" stroke="#ffcc00" /> <line x1="604" x2="604" y1="0" y2="1431" stroke-dasharray="32" stroke-width="191" stroke="#000000" /> <line x1="0" x2="1590" y1="544" y2="544" stroke-dasharray="61" stroke-width="445" stroke="#000000" /> <circle cx="604" cy="544" r="301" stroke-dasharray="86" stroke-width="366" stroke="#ffffff" fill="#9a0000" /> <circle cx="604" cy="544" r="329" stroke-dasharray="18" stroke-width="620" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=020
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="82" stroke-width="700" stroke="#000000" fill="#000000" /> <line x1="636" x2="636" y1="0" y2="1431" stroke-dasharray="79" stroke-width="461" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="572" y2="572" stroke-dasharray="68" stroke-width="557" stroke="#ffcc00" /> <line x1="636" x2="636" y1="0" y2="1431" stroke-dasharray="20" stroke-width="286" stroke="#000000" /> <line x1="0" x2="1590" y1="572" y2="572" stroke-dasharray="27" stroke-width="429" stroke="#000000" /> <circle cx="636" cy="572" r="601" stroke-dasharray="107" stroke-width="684" stroke="#ffffff" fill="#9a0000" /> <circle cx="636" cy="572" r="587" stroke-dasharray="140" stroke-width="477" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=021
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="82" stroke-width="668" stroke="#000000" fill="#000000" /> <line x1="668" x2="668" y1="0" y2="1431" stroke-dasharray="136" stroke-width="302" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="601" y2="601" stroke-dasharray="64" stroke-width="159" stroke="#ffcc00" /> <line x1="668" x2="668" y1="0" y2="1431" stroke-dasharray="32" stroke-width="302" stroke="#000000" /> <line x1="0" x2="1590" y1="601" y2="601" stroke-dasharray="41" stroke-width="191" stroke="#000000" /> <circle cx="668" cy="601" r="458" stroke-dasharray="75" stroke-width="286" stroke="#ffffff" fill="#9a0000" /> <circle cx="668" cy="601" r="358" stroke-dasharray="89" stroke-width="254" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=022
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="47" stroke-width="668" stroke="#000000" fill="#000000" /> <line x1="700" x2="700" y1="0" y2="1431" stroke-dasharray="57" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="630" y2="630" stroke-dasharray="97" stroke-width="636" stroke="#ffcc00" /> <line x1="700" x2="700" y1="0" y2="1431" stroke-dasharray="16" stroke-width="445" stroke="#000000" /> <line x1="0" x2="1590" y1="630" y2="630" stroke-dasharray="9" stroke-width="604" stroke="#000000" /> <circle cx="700" cy="630" r="229" stroke-dasharray="61" stroke-width="668" stroke="#ffffff" fill="#9a0000" /> <circle cx="700" cy="630" r="286" stroke-dasharray="100" stroke-width="572" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=023
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="54" stroke-width="477" stroke="#000000" fill="#000000" /> <line x1="731" x2="731" y1="0" y2="1431" stroke-dasharray="114" stroke-width="604" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="658" y2="658" stroke-dasharray="100" stroke-width="207" stroke="#ffcc00" /> <line x1="731" x2="731" y1="0" y2="1431" stroke-dasharray="21" stroke-width="445" stroke="#000000" /> <line x1="0" x2="1590" y1="658" y2="658" stroke-dasharray="36" stroke-width="572" stroke="#000000" /> <circle cx="731" cy="658" r="501" stroke-dasharray="89" stroke-width="175" stroke="#ffffff" fill="#9a0000" /> <circle cx="731" cy="658" r="258" stroke-dasharray="140" stroke-width="398" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=024
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="129" stroke-width="207" stroke="#000000" fill="#000000" /> <line x1="763" x2="763" y1="0" y2="1431" stroke-dasharray="39" stroke-width="445" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="687" y2="687" stroke-dasharray="136" stroke-width="509" stroke="#ffcc00" /> <line x1="763" x2="763" y1="0" y2="1431" stroke-dasharray="25" stroke-width="398" stroke="#000000" /> <line x1="0" x2="1590" y1="687" y2="687" stroke-dasharray="41" stroke-width="668" stroke="#000000" /> <circle cx="763" cy="687" r="186" stroke-dasharray="129" stroke-width="700" stroke="#ffffff" fill="#9a0000" /> <circle cx="763" cy="687" r="501" stroke-dasharray="47" stroke-width="541" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=025
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="29" stroke-width="302" stroke="#000000" fill="#000000" /> <line x1="795" x2="795" y1="0" y2="1431" stroke-dasharray="89" stroke-width="239" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="715" y2="715" stroke-dasharray="39" stroke-width="684" stroke="#ffcc00" /> <line x1="795" x2="795" y1="0" y2="1431" stroke-dasharray="20" stroke-width="223" stroke="#000000" /> <line x1="0" x2="1590" y1="715" y2="715" stroke-dasharray="23" stroke-width="223" stroke="#000000" /> <circle cx="795" cy="715" r="572" stroke-dasharray="129" stroke-width="588" stroke="#ffffff" fill="#9a0000" /> <circle cx="795" cy="715" r="186" stroke-dasharray="43" stroke-width="557" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=026
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="29" stroke-width="541" stroke="#000000" fill="#000000" /> <line x1="827" x2="827" y1="0" y2="1431" stroke-dasharray="61" stroke-width="747" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="744" y2="744" stroke-dasharray="111" stroke-width="445" stroke="#ffcc00" /> <line x1="827" x2="827" y1="0" y2="1431" stroke-dasharray="36" stroke-width="445" stroke="#000000" /> <line x1="0" x2="1590" y1="744" y2="744" stroke-dasharray="36" stroke-width="445" stroke="#000000" /> <circle cx="827" cy="744" r="487" stroke-dasharray="114" stroke-width="207" stroke="#ffffff" fill="#9a0000" /> <circle cx="827" cy="744" r="286" stroke-dasharray="47" stroke-width="668" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=027
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="89" stroke-width="668" stroke="#000000" fill="#000000" /> <line x1="859" x2="859" y1="0" y2="1431" stroke-dasharray="50" stroke-width="413" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="773" y2="773" stroke-dasharray="104" stroke-width="191" stroke="#ffcc00" /> <line x1="859" x2="859" y1="0" y2="1431" stroke-dasharray="14" stroke-width="684" stroke="#000000" /> <line x1="0" x2="1590" y1="773" y2="773" stroke-dasharray="68" stroke-width="588" stroke="#000000" /> <circle cx="859" cy="773" r="415" stroke-dasharray="75" stroke-width="620" stroke="#ffffff" fill="#9a0000" /> <circle cx="859" cy="773" r="615" stroke-dasharray="132" stroke-width="286" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=028
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="114" stroke-width="716" stroke="#000000" fill="#000000" /> <line x1="890" x2="890" y1="0" y2="1431" stroke-dasharray="47" stroke-width="716" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="801" y2="801" stroke-dasharray="125" stroke-width="175" stroke="#ffcc00" /> <line x1="890" x2="890" y1="0" y2="1431" stroke-dasharray="54" stroke-width="382" stroke="#000000" /> <line x1="0" x2="1590" y1="801" y2="801" stroke-dasharray="61" stroke-width="191" stroke="#000000" /> <circle cx="890" cy="801" r="472" stroke-dasharray="39" stroke-width="668" stroke="#ffffff" fill="#9a0000" /> <circle cx="890" cy="801" r="401" stroke-dasharray="122" stroke-width="604" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=029
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="445" stroke="#000000" fill="#000000" /> <line x1="922" x2="922" y1="0" y2="1431" stroke-dasharray="125" stroke-width="477" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="830" y2="830" stroke-dasharray="125" stroke-width="350" stroke="#ffcc00" /> <line x1="922" x2="922" y1="0" y2="1431" stroke-dasharray="38" stroke-width="191" stroke="#000000" /> <line x1="0" x2="1590" y1="830" y2="830" stroke-dasharray="70" stroke-width="334" stroke="#000000" /> <circle cx="922" cy="830" r="358" stroke-dasharray="86" stroke-width="382" stroke="#ffffff" fill="#9a0000" /> <circle cx="922" cy="830" r="529" stroke-dasharray="125" stroke-width="525" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=030
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="50" stroke-width="525" stroke="#000000" fill="#000000" /> <line x1="954" x2="954" y1="0" y2="1431" stroke-dasharray="72" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="859" y2="859" stroke-dasharray="29" stroke-width="254" stroke="#ffcc00" /> <line x1="954" x2="954" y1="0" y2="1431" stroke-dasharray="36" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="859" y2="859" stroke-dasharray="43" stroke-width="509" stroke="#000000" /> <circle cx="954" cy="859" r="386" stroke-dasharray="50" stroke-width="429" stroke="#ffffff" fill="#9a0000" /> <circle cx="954" cy="859" r="258" stroke-dasharray="107" stroke-width="700" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=031
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="50" stroke-width="509" stroke="#000000" fill="#000000" /> <line x1="1002" x2="1002" y1="0" y2="1431" stroke-dasharray="43" stroke-width="413" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="902" y2="902" stroke-dasharray="82" stroke-width="525" stroke="#ffcc00" /> <line x1="1002" x2="1002" y1="0" y2="1431" stroke-dasharray="61" stroke-width="350" stroke="#000000" /> <line x1="0" x2="1590" y1="902" y2="902" stroke-dasharray="47" stroke-width="716" stroke="#000000" /> <circle cx="1002" cy="902" r="372" stroke-dasharray="25" stroke-width="668" stroke="#ffffff" fill="#9a0000" /> <circle cx="1002" cy="902" r="587" stroke-dasharray="114" stroke-width="254" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=032
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="61" stroke-width="557" stroke="#000000" fill="#000000" /> <line x1="1034" x2="1034" y1="0" y2="1431" stroke-dasharray="39" stroke-width="334" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="930" y2="930" stroke-dasharray="57" stroke-width="477" stroke="#ffcc00" /> <line x1="1034" x2="1034" y1="0" y2="1431" stroke-dasharray="30" stroke-width="429" stroke="#000000" /> <line x1="0" x2="1590" y1="930" y2="930" stroke-dasharray="39" stroke-width="477" stroke="#000000" /> <circle cx="1034" cy="930" r="529" stroke-dasharray="61" stroke-width="668" stroke="#ffffff" fill="#9a0000" /> <circle cx="1034" cy="930" r="358" stroke-dasharray="57" stroke-width="191" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=033
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="68" stroke-width="636" stroke="#000000" fill="#000000" /> <line x1="1065" x2="1065" y1="0" y2="1431" stroke-dasharray="32" stroke-width="239" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="959" y2="959" stroke-dasharray="107" stroke-width="620" stroke="#ffcc00" /> <line x1="1065" x2="1065" y1="0" y2="1431" stroke-dasharray="50" stroke-width="413" stroke="#000000" /> <line x1="0" x2="1590" y1="959" y2="959" stroke-dasharray="43" stroke-width="557" stroke="#000000" /> <circle cx="1065" cy="959" r="200" stroke-dasharray="104" stroke-width="700" stroke="#ffffff" fill="#9a0000" /> <circle cx="1065" cy="959" r="601" stroke-dasharray="29" stroke-width="302" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=034
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="104" stroke-width="604" stroke="#000000" fill="#000000" /> <line x1="1097" x2="1097" y1="0" y2="1431" stroke-dasharray="132" stroke-width="668" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="987" y2="987" stroke-dasharray="129" stroke-width="413" stroke="#ffcc00" /> <line x1="1097" x2="1097" y1="0" y2="1431" stroke-dasharray="64" stroke-width="286" stroke="#000000" /> <line x1="0" x2="1590" y1="987" y2="987" stroke-dasharray="54" stroke-width="652" stroke="#000000" /> <circle cx="1097" cy="987" r="315" stroke-dasharray="111" stroke-width="731" stroke="#ffffff" fill="#9a0000" /> <circle cx="1097" cy="987" r="143" stroke-dasharray="43" stroke-width="557" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=035
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="68" stroke-width="398" stroke="#000000" fill="#000000" /> <line x1="1129" x2="1129" y1="0" y2="1431" stroke-dasharray="140" stroke-width="223" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1016" y2="1016" stroke-dasharray="39" stroke-width="350" stroke="#ffcc00" /> <line x1="1129" x2="1129" y1="0" y2="1431" stroke-dasharray="9" stroke-width="159" stroke="#000000" /> <line x1="0" x2="1590" y1="1016" y2="1016" stroke-dasharray="66" stroke-width="668" stroke="#000000" /> <circle cx="1129" cy="1016" r="429" stroke-dasharray="82" stroke-width="477" stroke="#ffffff" fill="#9a0000" /> <circle cx="1129" cy="1016" r="200" stroke-dasharray="89" stroke-width="604" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=036
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="541" stroke="#000000" fill="#000000" /> <line x1="1161" x2="1161" y1="0" y2="1431" stroke-dasharray="79" stroke-width="382" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1045" y2="1045" stroke-dasharray="47" stroke-width="731" stroke="#ffcc00" /> <line x1="1161" x2="1161" y1="0" y2="1431" stroke-dasharray="11" stroke-width="684" stroke="#000000" /> <line x1="0" x2="1590" y1="1045" y2="1045" stroke-dasharray="63" stroke-width="477" stroke="#000000" /> <circle cx="1161" cy="1045" r="458" stroke-dasharray="32" stroke-width="652" stroke="#ffffff" fill="#9a0000" /> <circle cx="1161" cy="1045" r="157" stroke-dasharray="43" stroke-width="286" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=037
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="97" stroke-width="557" stroke="#000000" fill="#000000" /> <line x1="1193" x2="1193" y1="0" y2="1431" stroke-dasharray="136" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1073" y2="1073" stroke-dasharray="72" stroke-width="398" stroke="#ffcc00" /> <line x1="1193" x2="1193" y1="0" y2="1431" stroke-dasharray="9" stroke-width="254" stroke="#000000" /> <line x1="0" x2="1590" y1="1073" y2="1073" stroke-dasharray="55" stroke-width="604" stroke="#000000" /> <circle cx="1193" cy="1073" r="186" stroke-dasharray="39" stroke-width="191" stroke="#ffffff" fill="#9a0000" /> <circle cx="1193" cy="1073" r="229" stroke-dasharray="100" stroke-width="572" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=038
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="129" stroke-width="318" stroke="#000000" fill="#000000" /> <line x1="1224" x2="1224" y1="0" y2="1431" stroke-dasharray="129" stroke-width="557" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1102" y2="1102" stroke-dasharray="57" stroke-width="366" stroke="#ffcc00" /> <line x1="1224" x2="1224" y1="0" y2="1431" stroke-dasharray="14" stroke-width="254" stroke="#000000" /> <line x1="0" x2="1590" y1="1102" y2="1102" stroke-dasharray="64" stroke-width="493" stroke="#000000" /> <circle cx="1224" cy="1102" r="415" stroke-dasharray="132" stroke-width="382" stroke="#ffffff" fill="#9a0000" /> <circle cx="1224" cy="1102" r="472" stroke-dasharray="89" stroke-width="652" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=039
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="118" stroke-width="493" stroke="#000000" fill="#000000" /> <line x1="1256" x2="1256" y1="0" y2="1431" stroke-dasharray="140" stroke-width="286" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1130" y2="1130" stroke-dasharray="100" stroke-width="652" stroke="#ffcc00" /> <line x1="1256" x2="1256" y1="0" y2="1431" stroke-dasharray="9" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="1130" y2="1130" stroke-dasharray="48" stroke-width="604" stroke="#000000" /> <circle cx="1256" cy="1130" r="358" stroke-dasharray="43" stroke-width="429" stroke="#ffffff" fill="#9a0000" /> <circle cx="1256" cy="1130" r="343" stroke-dasharray="68" stroke-width="239" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=040
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="29" stroke-width="413" stroke="#000000" fill="#000000" /> <line x1="1288" x2="1288" y1="0" y2="1431" stroke-dasharray="89" stroke-width="636" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1159" y2="1159" stroke-dasharray="86" stroke-width="572" stroke="#ffcc00" /> <line x1="1288" x2="1288" y1="0" y2="1431" stroke-dasharray="25" stroke-width="350" stroke="#000000" /> <line x1="0" x2="1590" y1="1159" y2="1159" stroke-dasharray="13" stroke-width="239" stroke="#000000" /> <circle cx="1288" cy="1159" r="343" stroke-dasharray="107" stroke-width="572" stroke="#ffffff" fill="#9a0000" /> <circle cx="1288" cy="1159" r="200" stroke-dasharray="18" stroke-width="366" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+poemid=041
+
+	<svg viewBox="0 0 1590 1430.9999999999998">
+		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="50" stroke-width="731" stroke="#000000" fill="#000000" /> <line x1="1320" x2="1320" y1="0" y2="1431" stroke-dasharray="86" stroke-width="286" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1188" y2="1188" stroke-dasharray="32" stroke-width="318" stroke="#ffcc00" /> <line x1="1320" x2="1320" y1="0" y2="1431" stroke-dasharray="21" stroke-width="175" stroke="#000000" /> <line x1="0" x2="1590" y1="1188" y2="1188" stroke-dasharray="45" stroke-width="700" stroke="#000000" /> <circle cx="1320" cy="1188" r="458" stroke-dasharray="36" stroke-width="747" stroke="#ffffff" fill="#9a0000" /> <circle cx="1320" cy="1188" r="315" stroke-dasharray="129" stroke-width="302" stroke="#ffffff" fill="#ffcc00" />
+	</svg>
+	
+prince ./data/mill1690224832/print.html -o ./data/mill1690224832/print.pdf
+open ./data/mill1690224832/print.pdf
+cd data/mill1690224832
+done

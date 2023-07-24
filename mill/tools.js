@@ -203,9 +203,10 @@ let tools = {
 	},
 	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
 		let p = b.attributes;
-		let attmap = att => { console.log(att); return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
+		console.log("b.attributes = "+JSON.stringify(b));
+		let attmap = att => {return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
 		let atts = Object.keys(p).reduce( (acc,key) => {
-			if(isNaN(p[key]) && key!=="ischange") {
+			if(isNaN(p[key])) {
 				acc[key]=p[key];
 			}
 			else {
@@ -213,7 +214,8 @@ let tools = {
 			}
 			return acc; 
 		},{});
-		console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
+		console.log("atts = "+JSON.stringify(atts));
+		//console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
 		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 	},
 	curves: {

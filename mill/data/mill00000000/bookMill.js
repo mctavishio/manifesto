@@ -16,8 +16,6 @@ const margin = book.bookmargin+"in";
 const margingutter = (book.bookmargin*1+0.2)+"in";
 const svgwidth = book.bookwidth*300;
 const svgheight = book.bookheight*300;
-console.log("width="+width);
-console.log("margingutter="+margingutter);
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
@@ -203,9 +201,10 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	console.log(poem.figure.picture);
 	if(poem.figure.picture) {
 		poemstr = poemstr + `
-		<div class="frame">
+		<figure class="frame">
 		${poem.figure.picture}
-		</div>`
+		<figcaption>${poem.figure.caption}</figcaption>
+		</figure>`
 	}
 	poemstr = poemstr + `
 </article>`;

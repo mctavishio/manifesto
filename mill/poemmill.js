@@ -34,9 +34,6 @@ const bookfile = `${path}/book.js`;
 const poems = require("./fieldnotespoems.js");
 const npoems = poems.length;
 
-console.log("width="+width);
-console.log("margingutter="+margingutter);
-
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
@@ -75,13 +72,14 @@ let bookobj = {
 
 let canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight),max:Math.max(svgwidth,svgheight)};
 let blength = B.b.length;
+console.log("blength="+blength);
 let poemsobj = poems.map( (poem,t) => {
 	let elementdraw = B.elements.map( (el,j) => {
-		console.log("B.b[t%blength][j] = "+JSON.stringify(B.b[t%blength][j]));
-		console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
+		//console.log("B.b[t%blength][j] = "+JSON.stringify(B.b[t%blength][j]));
+		//console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
 		return tools.drawf(canvas,B.b[t%blength][j],el.tag);
 	}).join(" ");
-	let textarray = poem.text.split(" ")
+	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
 	poem.figure = {
 	picture:`

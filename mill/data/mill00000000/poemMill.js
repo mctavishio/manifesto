@@ -25,7 +25,7 @@ const innerheight = ih+bookunits;
 const margin = bookmargin+bookunits;
 const margingutter = (m+0.2)+bookunits;
 const svgwidth = (iw-(m+0.2))*pixelsperunit;
-const svgheight = (ih-(m+0.2))*pixelsperunit;
+const svgheight = .9*(ih-(m+0.2))*pixelsperunit;
 
 const bookid = process.argv[4] ? process.argv[4] : "testmill";
 const poemsfile = `${path}/poems.js`;
@@ -33,9 +33,6 @@ const bookfile = `${path}/book.js`;
 
 const poems = require("./fieldnotespoems.js");
 const npoems = poems.length;
-
-console.log("width="+width);
-console.log("margingutter="+margingutter);
 
 let dt = new Date();
 let timestamp = dt.getTime();
@@ -75,19 +72,22 @@ let bookobj = {
 
 let canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight),max:Math.max(svgwidth,svgheight)};
 let blength = B.b.length;
+console.log("blength="+blength);
 let poemsobj = poems.map( (poem,t) => {
 	let elementdraw = B.elements.map( (el,j) => {
-		console.log("B.b[t%blength][j] = "+JSON.stringify(B.b[t%blength][j]));
-		console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
+		//console.log("B.b[t%blength][j] = "+JSON.stringify(B.b[t%blength][j]));
+		//console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
 		return tools.drawf(canvas,B.b[t%blength][j],el.tag);
 	}).join(" ");
+	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
+	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
 	poem.figure = {
 	picture:`
 	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
 		${elementdraw}
 	</svg>
 	`,
-	caption:`caption ${t.toString().padStart(2, '0')}`};
+	caption:`${captiontext} ::: ${(t+1).toString().padStart(2, '0')}`};
 	return poem;
 });
 

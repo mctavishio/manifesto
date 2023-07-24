@@ -1,5 +1,5 @@
 let input = {
-	nticks: 24*4,
+	nticks: 24*2,
 	bookunits: "in",
 	bookwidth: 8.5,
 	bookheight: 8.5,
