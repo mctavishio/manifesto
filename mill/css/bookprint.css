@@ -86,13 +86,35 @@
 		content: "";
 	}
 }
+/*
 @page pagefigure {
 	@bottom-left {
-		content: "";
+    	content: "";
 	}
 	@bottom-right {
 		content: "";
 	}
+}
+*/
+@page pagefigure :right{
+counter-increment: figurenum;
+  @bottom-right {
+    content: "figure #" counter(figurenum);
+	font-weight:400;
+	font-size: 20pt;
+	color: var(--richgray3);
+    margin-bottom: 0.6in;
+  }
+}
+@page pagefigure :left{
+counter-increment: figurenum;
+  @bottom-left {
+    content: "figure #" counter(figurenum);
+	font-weight:400;
+	font-size: 20pt;
+	color: var(--richgray3);
+    margin-bottom: 0.6in;
+  }
 }
 @page pagelowerstart {
 	margin-top: 30%;
@@ -213,6 +235,7 @@ html {
 body {
 	font: 11pt var(--textfont1);
 	line-height: 1.4;
+	counter-reset: figurenum;
 }
 main > header, section#prelude > header {
 	text-align: center;
@@ -324,6 +347,21 @@ article {
 div.blank {
   page: blank;
 }
+.graphic figcaption{
+    background:#F00;
+    color:#FFF;
+    width:100%;
+    height:20%;
+    text-align:center;
+    padding:5px;
+}
+.graphic img {
+    width:100%;
+    height:80%;
+}
+figure:before {
+	/*counter-increment: figurenum;*/
+}
 figure, div.frame {
 	display: block;
 	top:0; left:0;
@@ -331,8 +369,8 @@ figure, div.frame {
 	height: var(--innerheight);
 	min-width: var(--innerwidth);
 	min-height: var(--innerheight);
-	background-color: #999999;
 	padding-top:0;
+	margin:0;
   	break-before: recto;
 	page: pagefigure;
 }
@@ -340,11 +378,14 @@ svg {
 	top:0; left:0;
 	width: var(--innerwidth);
 	height: var(--innerheight);
-	/*width: var(--width);
-	height: var(--height);
 	width:100%;
-	height:100%;*/
+	height:90%;
 }
+figcaption {
+	font-size:.8em;
+	height: 8%;
+}
+
 /*
 .address {
 	line-height: 1.2;

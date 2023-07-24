@@ -42,18 +42,18 @@ let Bobj = {
 let entry0 = ( j => {
 	let cx=Math.round(j/nticks*100)/100,cy=Math.round(j/nticks*100)/100;
 	let bt = [];
-	let attributes = {x:0,y:0,width:1,height:1,"stroke-dasharray":tools.randominteger(2,8)/100,"stroke-width":tools.randominteger(4,18)/100,stroke:"#000000",fill:"#000000"}; 
+	let attributes = {x:0,y:0,width:1,height:1,"stroke-dasharray":tools.randominteger(2,6)/300,"stroke-width":tools.randominteger(4,18)/100,stroke:"#000000",fill:"#000000"}; 
 	bt[0] = {ischange:true, attributes};
-	attributes = {x1:cx,x2:cx,y1:0,y2:1,"stroke-dasharray":tools.randominteger(2,8)/100,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffcc00"};
+	attributes = {x1:cx,x2:cx,y1:0,y2:1,"stroke-dasharray":tools.randominteger(2,6)/300,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffcc00"};
 	bt[1] = {ischange:true, attributes};
-	attributes = {x1:0,x2:1,y1:cy,y2:cy,"stroke-dasharray":tools.randominteger(2,8)/100,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffcc00"};
+	attributes = {x1:0,x2:1,y1:cy,y2:cy,"stroke-dasharray":tools.randominteger(2,6)/300,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffcc00"};
 	bt[2] = {ischange:true, attributes};
-	attributes = {cx:cx,cy:cy,r:tools.randominteger(10,44)/100,"stroke-dasharray":tools.randominteger(2,8)/100,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffffff",fill:"#9a0000"};
+	attributes = {cx:cx,cy:cy,r:tools.randominteger(10,44)/100,"stroke-dasharray":tools.randominteger(2,6)/300,"stroke-width":tools.randominteger(4,18)/100,stroke:"#ffffff",fill:"#9a0000"};
 	bt[3] = {ischange:true, attributes};
 	return entry = {prev:bt,curr:bt};
 })(0);
 Bobj.b = [...new Array(nticks).keys()].reduce( (acc,j) => {
-	let cx=j/nticks,cy=j/nticks;
+	let cx=Math.round(j/nticks*100)/100,cy=Math.round(j/nticks*100)/100;
 	let bt = [];
 	let attributes = {x:0,y:0,width:1,height:1,"stroke-dasharray":tools.randominteger(5,40)/100,"stroke-width":tools.randominteger(10,48)/100,stroke:"#000000",fill:"#000000"}; 
 	bt[0] = j===0 ? {ischange:true, attributes} : {ischange:false, attributes:acc[j-1].curr[0].attributes};

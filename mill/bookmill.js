@@ -203,9 +203,10 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	console.log(poem.figure.picture);
 	if(poem.figure.picture) {
 		poemstr = poemstr + `
-		<div class="frame">
+		<figure class="frame">
 		${poem.figure.picture}
-		</div>`
+		<figcaption>${poem.figure.caption}</figcaption>
+		</figure>`
 	}
 	poemstr = poemstr + `
 </article>`;

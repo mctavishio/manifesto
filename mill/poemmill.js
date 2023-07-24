@@ -25,7 +25,7 @@ const innerheight = ih+bookunits;
 const margin = bookmargin+bookunits;
 const margingutter = (m+0.2)+bookunits;
 const svgwidth = (iw-(m+0.2))*pixelsperunit;
-const svgheight = (ih-(m+0.2))*pixelsperunit;
+const svgheight = .9*(ih-(m+0.2))*pixelsperunit;
 
 const bookid = process.argv[4] ? process.argv[4] : "testmill";
 const poemsfile = `${path}/poems.js`;
@@ -81,13 +81,15 @@ let poemsobj = poems.map( (poem,t) => {
 		console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
 		return tools.drawf(canvas,B.b[t%blength][j],el.tag);
 	}).join(" ");
+	let textarray = poem.text.split(" ")
+	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
 	poem.figure = {
 	picture:`
 	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
 		${elementdraw}
 	</svg>
 	`,
-	caption:`caption ${t.toString().padStart(2, '0')}`};
+	caption:`${captiontext} ::: ${(t+1).toString().padStart(2, '0')}`};
 	return poem;
 });
 
