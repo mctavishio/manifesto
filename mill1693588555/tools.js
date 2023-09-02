@@ -12,6 +12,11 @@ let tools = {
 	randominteger: (min, max) => {
 		return Math.floor( min + Math.random()*(max-min));
 	},
+	toFixed: (number,place) => {
+		// The output of this is: 18.15
+		//return Math.round((number + Number.EPSILON) * 100) / 100);
+		return parseFloat(number).toFixed(place);
+	},
 	reifyWeightedArray: arr => {
 		return arr.reduce( (acc, item, j) => {
 			Array.prototype.push.apply(acc,[...Array(item[1]).keys()].reduce( (acc2,k) => { acc2.push(item[0]); return acc2 },[]) );

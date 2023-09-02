@@ -1,7 +1,7 @@
 const fs = require("fs"); 
 console.log(process.argv);
 let args = process.argv;
-const dirTimestamp = 00000000;
+const dirTimestamp = "1690833109";
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
@@ -39,6 +39,7 @@ let Bobj = {
 		{tag:"line", role:"hline"},
 		{tag:"circle"}, 
 		{tag:"circle"}, 
+		{tag:"circle"}, 
 	],
 };
 
@@ -60,6 +61,8 @@ Bobj.b = [...new Array(nticks).keys()].map( j => {
 	bt[5] = {ischange:true, attributes};
 	attributes = {cx:cx,cy:cy,r:tools.randominteger(10,44)/100,"stroke-dasharray":tools.randominteger(5,40)/400,"stroke-width":tools.randominteger(10,48)/100,stroke:"#ffffff",fill:"#ffcc00"};
 	bt[6] = {ischange:true, attributes};
+	attributes = {cx:cx,cy:cy,r:tools.randominteger(4,14)/100,"stroke-dasharray":tools.randominteger(2,20)/400,"stroke-width":tools.randominteger(4,18)/100,stroke:"#000000",fill:"#000000"};
+	bt[7] = {ischange:true, attributes};
 	return bt;
 });
 let Bstr = `let B =
@@ -81,7 +84,7 @@ echo "ts=${dirTimestamp}"
 mkdir data/mill${dirTimestamp}
 cp BmillTemplate.js data/mill${dirTimestamp}/Bmill_temp.js
 cp inputTemplate.js data/mill${dirTimestamp}/input.js
-sed "s/00000000/\"${dirTimestamp}\"/" data/mill${dirTimestamp}/Bmill_temp.js > data/mill${dirTimestamp}/Bmill.js
+sed "s/"1690833109"/\"${dirTimestamp}\"/" data/mill${dirTimestamp}/Bmill_temp.js > data/mill${dirTimestamp}/Bmill.js
 rm data/mill${dirTimestamp}/Bmill_temp.js
 node data/mill${dirTimestamp}/Bmill.js
 node poemMill ./data/mill${dirTimestamp}
