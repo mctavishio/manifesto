@@ -63,21 +63,46 @@ let bookobj = {
 			title: "the repair(*)",
 			inscription: "it was like this every morning ...",
 			cssclasses: ["pagestartnumbers"],
-			poems: poems.map( (poem,j) => { return poem.id }), 
+			//poems: poems.map( (poem,j) => { return poem.id }), 
+			poems: [...new Array(nticks).keys()].map( j => { return poems[j%poems.length].id }), 
 		},
 	],
-	poemids: poems.map( (poem,j) => { return poem.id }),
+	/*poemids: poems.map( (poem,j) => { return poem.id }),*/
+	poemids: [...new Array(nticks).keys()].map( j => { return poems[j%poems.length].id }), 
 };
 
 
 let canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight),max:Math.max(svgwidth,svgheight)};
-let blength = B.b.length;
-console.log("blength="+blength);
+//let blength = B.elements[0][0].b.length;
+let blength = nticks;
+
+let poemsobj = [...new Array(nticks).keys()].map( j => {
+	let poem = poems[j%poems.length];
+	let elementdraw = B.elements.map( layer => {
+	 return layer.map( el => {
+		return tools.drawf(canvas,el.b[j%blength],el.tag);
+		}).join(" ");
+	}).join(" ");
+	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
+	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
+	poem.figure = {
+	picture:`
+	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
+		${elementdraw}
+	</svg>
+	`,
+	caption:`${captiontext} ::: ${(j+1).toString().padStart(2, '0')}`};
+	return poem;
+});
+
+/*
 let poemsobj = poems.map( (poem,t) => {
-	let elementdraw = B.elements.map( (el,j) => {
+	let elementdraw = B.elements.map( layer => {
+	 return layer.map( (el,j) => {
 		//console.log("B.b[t%blength][j] = "+JSON.stringify(B.b[t%blength][j]));
 		//console.log("drawf = "+tools.drawf(canvas,B.b[t%blength][j],el.tag));
-		return tools.drawf(canvas,B.b[t%blength][j],el.tag);
+		return tools.drawf(canvas,el.b[t%blength],el.tag);
+		}).join(" ");
 	}).join(" ");
 	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
@@ -90,7 +115,7 @@ let poemsobj = poems.map( (poem,t) => {
 	caption:`${captiontext} ::: ${(t+1).toString().padStart(2, '0')}`};
 	return poem;
 });
-
+*/
 let bookstr = `let book =
 ${JSON.stringify(bookobj, null, "\t")};
 module.exports = book;`

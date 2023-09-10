@@ -1,4 +1,4 @@
-module.exports = {
+let tools = {
 	logmsg: msg => {
 		try { 
 			// console.log("### ::: " + msg); 
@@ -11,6 +11,11 @@ module.exports = {
 	},
 	randominteger: (min, max) => {
 		return Math.floor( min + Math.random()*(max-min));
+	},
+	toFixed: (number,place) => {
+		// The output of this is: 18.15
+		//return Math.round((number + Number.EPSILON) * 100) / 100);
+		return parseFloat(number).toFixed(place);
 	},
 	reifyWeightedArray: arr => {
 		return arr.reduce( (acc, item, j) => {
@@ -107,18 +112,44 @@ module.exports = {
 			return flat.concat(Array.isArray(item) ? z.tools.flatten(item) : item);
 		}, []);
 	},
-	createElementStr: ({tag="div", attributes=[], cssclasses=[], cssstyles=[], ns="none"}) => {
+	jsonToHTMLFields: {
+		title: value => {return "<h1>"+value+"</h1>"}, 
+		subtitle: value => {return "<h2>"+value+"</h2>"}, 
+		description: value => {return tools.createElementStr({tag:"div", cssclasses:["description"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
+		text: value => {return tools.createElementStr({tag:"div", cssclasses:["text"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
+		keywords: value => {return tools.createElementStr({tag:"div", cssclasses:["keywords"], value:value.join(", ")}) + tools.createElementCloseStr({tag:"div"})}, 
+		figure: value => {return tools.createElementStr({tag:"div", cssclasses:["frame figure"], value:value}) + tools.createElementCloseStr({tag:"div"})}, 
+	},
+	jsonToHTMLArticle: ({article, attributes={}, cssclasses=[], cssstyles={}, ns="none"}={}) => {
+		let articlestr = tools.createElementTagStr({tag:"article",attributes,cssclasses,cssstyles}); 
+		conole.log("articlestr = "+articlestr);
+		articlestr = articlestr + tools.createElementTagStr({tag:"header"});
+		articlestr =  articlestr + tools.createElementCloseStr({tag:"article"});
+		let contents = Object.keys(article).reduce( (acc,key) => {
+			try {
+				acc = acc + tools.jsonToHTMLFields[key](article[key]);
+			}
+			catch(err) {
+				console.log("can't translate: "+key);
+			}
+			return acc;	
+		},"");
+		return tools.createElementStr({tag, cssclasses, value:contents});
+	},
+	createElementTagStr: ({tag="div", attributes={}, cssclasses=[], cssstyles={}, ns="none", value="", isEmpty=false}={}) => {
+		console.log("tag = "+tag);
+		console.log(attributes);
 		let el=`<${tag} `;
 		if(ns!=="none") {
 			el = el + `xmlns="${ns}" `;
 		}
-		attributes.forEach( entry => {
+		Object.entries(attributes).forEach( entry => {
 			el = el + `${entry[0]}="${entry[1]}" `;
 		});
 		if(cssstyles.length>0) {
-			el = el + `style="`;
-			cssstyles.forEach( entry => {
-				el = el + `${entry[0]}:${entry[1]};`;
+			el = el + `style=" `;
+			Object.entries(cssstyles).forEach( entry => {
+				el = el + `${entry[0]}:${entry[1]}; `;
 			});
 			el = el + `" `;
 		}
@@ -129,24 +160,34 @@ module.exports = {
 			});
 			el = el + `" `;
 		}
+		if(!isEmpty) { 
+			el = el + `>
+				${value}
+			`;
+		}
+		else { el = el + "/>" }
 		tools.logmsg(`element created: ${el}`);
 		return el;
 	},
-	createElement: ({parentel=document.querySelector("body"), tag="div", attributes=[], cssclasses=[], cssstyles=[], ns="none"}) => {
+	createElementCloseStr: (tag="div",isEmpty=false) => {
+		let closeStr = isEmpty ? "/>" : `</${tag}>`;
+		return closeStr; 
+	},
+	createElement: ({parentel=document.querySelector("body"), tag="div", attributes={}, cssclasses=[], cssstyles={}, ns="none"}={}) => {
 		let el;
 		if(ns!=="none") {
 			el = document.createElementNS(ns, tag);
-			attributes.forEach( entry => {
+			Object.entries(attributes).forEach( entry => {
 				el.setAttributeNS(null, entry[0], entry[1]);
 			});
 		}
 		else {
 			el = document.createElement(tag);
-			attributes.forEach( entry => {
+			Object.entries(attributes).forEach( entry => {
 				el.setAttribute(entry[0], entry[1]);
 			});
 		}
-		cssstyles.forEach( entry => {
+		Object.entries(cssstyles).forEach( entry => {
 			z.tools.logmsg("entry = " + entry)
 			el.style[entry[0]] = entry[1];
 		});
@@ -164,6 +205,23 @@ module.exports = {
 				else el.style[ key ] = css[key];
 			}
 		}
+	},
+	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
+		let p = b;
+		console.log("b = "+JSON.stringify(b));
+		let attmap = att => {return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
+		let atts = Object.keys(p).reduce( (acc,key) => {
+			if(isNaN(p[key])) {
+				acc[key]=p[key];
+			}
+			else {
+				acc[key] = Math.round(p[key]*attmap(key));
+			}
+			return acc; 
+		},{});
+		console.log("atts = "+JSON.stringify(atts));
+		//console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
+		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 	},
 	curves: {
 		init:  () => {
@@ -263,3 +321,4 @@ module.exports = {
 		},
 	},
 };
+module.exports = tools;

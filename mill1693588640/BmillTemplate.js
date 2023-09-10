@@ -32,13 +32,28 @@ const colors = [...new Array(nticks).keys()].map( j=> {
  * for each tick
  * for each (x,y,z) a parameter obj (r,sw,sd,color)
  * */
-let rmin = 1, rmax = 40;
-let swmin = 1, swmax = 40;
-let sdmin = 1, sdmax = 80;
+let rmin = .5, rmax = 40;
+let swmin = .5, swmax = 20;
+let sdmin = .5, sdmax = 20;
+let cxs = [...new Array(nx).keys()].map( x => {
+	return Math.round(100*x/nx)/100;
+}).push(1);
+cxs=[0,0.25,0.5,0.75,1.0];
+let cys = [...new Array(ny).keys()].map( y => {
+	return Math.round(100*y/ny)/100;
+}).push(1);
+cys=[0,0.25,0.5,0.75,1.0];
+console.log(cys);
 const pgrid = [...new Array(nticks).keys()].map( j=> {
-	let t = Math.round(100*j/nticks)/100;
-	let cx = [0,0.5-t,0.5+t,1];
-	let cy = [0,t,1-t,1];
+	let cx = [...new Array(nx).keys()].map( x => {
+		return cxs[tools.randominteger(0,cxs.length)];
+	});
+	let cy = [...new Array(ny).keys()].map( y => {
+		return cys[tools.randominteger(0,cys.length)];
+	});
+	let sos = [[2,0],[5,1]].flatMap(wx=>{
+		return [...new Array(wx[0]).keys()].map( w=>wx[1] );
+	});
 	return [...new Array(nx).keys()].map( x => {
 		return [...new Array(ny).keys()].map( y => {
 			let rz = [...new Array(nz).keys()].map( z => {
@@ -50,10 +65,9 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 			let sdz = [...new Array(nz).keys()].map( z => {
 				return tools.randominteger(sdmin,sdmax)/100;
 			}).sort( (a,b) => b-a );
-			let so0 = tools.randominteger(0,1);
 			return [...new Array(nz).keys()].map( z => {
 				//strokeopacity
-				let so = (so0+z)%2;
+				let so = tools.randominteger(0,sos.length);
 				//fillopacity
 				let fo = (so+1)%2;
 				return {cx:cx[x],cy:cy[y],r:rz[z],sw:swz[z],sd:sdz[z],so,fo};
@@ -61,7 +75,6 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 		});
 	});
 });
-console.log(`pgrid=${JSON.stringify(pgrid)}`);
 let drawp = {
 	circle: p => { return {cx:p.cx,cy:p.cy,r:p.r,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
 	rect: p => { return {x:p.cx,y:p.cy,width:p.w,height:p.h,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
@@ -71,7 +84,6 @@ let drawp = {
 let B = {nticks};
 
 let elements = [...new Array(nz-2).keys()].reduce( (acc,z) => {
-	console.log(`acc=${JSON.stringify(acc)}`);
 	let zels = [];
 	[...new Array(nx).keys()].forEach( x => {
 		zels.push({tag:"line", b:[]});
@@ -88,7 +100,7 @@ let elements = [...new Array(nz-2).keys()].reduce( (acc,z) => {
 	return acc;
 }, [[{tag:"rect", b:[]},{tag:"rect", b:[]}]]);
 
-elements.push([{tag:"line", b:[]},{tag:"line", b:[]},{tag:"circle", b:[]},{tag:"circle", b:[]}]);
+//elements.push([{tag:"line", b:[]},{tag:"line", b:[]},{tag:"circle", b:[]},{tag:"circle", b:[]}]);
 let Bobj = {
 	nticks: nticks,
 	elements: elements,
@@ -96,7 +108,6 @@ let Bobj = {
 let changes = [[3,0],[2,1]].flatMap(wx=>{
 	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 });
-console.log(`changes=${changes}`);
 let ischange = [];
 ischange[0] = [...new Array(nx).keys()].map( x => { 
 	return [...new Array(ny).keys()].map( y => { 
@@ -137,10 +148,10 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 		el.b = [...new Array(nticks).keys()].map( j => {
 			let bt = [];
 			if(n%0===0) {
-				bt = drawp.vline({cx:pgrid[j][n%nx][0][z].cx,cy:0,sw:pgrid[j][n%nx][n%ny][z].sw,sd:pgrid[j][n%nx][n%ny][z].sd,so:1,fo:0,color:colors[n%colors[j].length]});
+				bt = drawp.vline({cx:pgrid[j][n%nx][0][z].cx,cy:0,sw:pgrid[j][n%nx][n%ny][z].sw,sd:pgrid[j][n%nx][n%ny][z].sd,so:1,fo:0,color:colors[j][n%colors[j].length]});
 			}
 			else {
-				bt = drawp.hline({cx:0,cy:pgrid[j][0][n%ny][z].cy,sw:pgrid[j][n%nx][n%ny][z].sw,sd:pgrid[j][n%nx][n%ny][z].sd,so:1,fo:0,color:colors[n%colors[j].length]});
+				bt = drawp.hline({cx:0,cy:pgrid[j][0][n%ny][z].cy,sw:pgrid[j][n%nx][n%ny][z].sw,sd:pgrid[j][n%nx][n%ny][z].sd,so:1,fo:0,color:colors[j][n%colors[j].length]});
 			}
 			return bt;
 		});
@@ -149,10 +160,10 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 		let x = el.x, y = el.y;
 		el.b = [...new Array(nticks).keys()].map( j => {
 			let bt = [];
-			if(ischange[x][y][z]===1) {
-				bt = drawp.circle({cx:pgrid[j][x][y][z].cx,cy:pgrid[j][x][y][z].cy,r:[x][y][z],sw:pgrid[j][x][y][z].sw,sd:pgrid[j][x][y][z].sd,so:pgrid[j].so[x][y][z],fo:pgrid[j].fo[x][y][z],color:colors[j][(n+z)%colors[j].length]});
-			}
-			else { bt = el.b[j-1] }
+			//if(ischange[x][y][z]===1) {
+			bt = drawp.circle({cx:pgrid[j][x][y][z].cx,cy:pgrid[j][x][y][z].cy,r:pgrid[j][x][y][z].r,sw:pgrid[j][x][y][z].sw,sd:pgrid[j][x][y][z].sd,so:pgrid[j][x][y][z].so,fo:pgrid[j][x][y][z].fo,color:colors[j][(n+z)%colors[j].length]});
+			//}
+			//else { bt = el.b[j-1] }
 			return bt;
 		});
 	});
