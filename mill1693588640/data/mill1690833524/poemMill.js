@@ -24,8 +24,8 @@ const innerwidth = iw+bookunits;
 const innerheight = ih+bookunits;
 const margin = bookmargin+bookunits;
 const margingutter = (m+0.2)+bookunits;
-const svgwidth = Math.floor((iw-(m+0.2))*pixelsperunit);
-const svgheight = Math.floor(.9*(ih-(m+0.2))*pixelsperunit);
+const svgwidth = (iw-(m+0.2))*pixelsperunit;
+const svgheight = .9*(ih-(m+0.2))*pixelsperunit;
 
 const bookid = process.argv[4] ? process.argv[4] : "testmill";
 const poemsfile = `${path}/poems.js`;
