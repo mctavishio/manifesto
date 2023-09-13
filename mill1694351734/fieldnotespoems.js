@@ -1,105 +1,8 @@
-<html>
-<head>
-	<title>field notes</title>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-	<meta name="description" content="the rider passenger repair(*)"/>
-	<meta name="author" content="mctavish">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org",
-			"@type": "WebPage",
-			"name": "field notes",
-			"breadcrumb": "core text",
-          	"url": "https://bluerider.work/indexbook.html",
-			"description": "the rider passenger repair(*)",
-			"datePublished": "Mon Jul 31 2023",
-          	"image": "/apple-touch-icon.png",
-			"author": "https://mctavish.work/index.html",
-			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
-		}
-	</script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0989MECNZV"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-0989MECNZV');
-	</script>
-	<link rel="stylesheet" media="screen" href="css/bookweb.css"/>
-	<link rel="stylesheet" media="print" href="css/printBook1693769865.css"/>
-	<style>
-	:root {
-		--margin:1in;
-		--margingutter:1.2in;
-		--width:8.5in;
-		--height:8.5in;
-		--innerwidth: 6.5in;
-		--innerheight: 6.5in;
-	}
-	@page {
-		--margin:1in;
-		--width:8.5in;
-		--height:8.5in;
-		--innerwidth: 6.5in;
-		--innerheight: 6.5in;
-		margin: var(--margin);
-		size: var(--width) var(--height);
-		}
-
-@page {
-  margin: var(--margin);
-  size: var(--width) var(--height);
-  background: #484848;
-  background-size: 104%;
-  marks: crop cross;
-  bleed: 0.25in;
-  -prince-trim: 0.25in;
-}
-svg {
-	width:120%;
-	height:120%;
-}
-@page pagefigure {
-	margin: 0;
-}
-	</style>
-	<script src=""></script>
-</head>
-<body><main id="top">
-<header>
-	<h1>field notes</h1>
-	<h2>blueatlas ::: fieldnotes</h2>
-	<h3 id="author">mctavish</h3>
-	<h4 id="publisher">mctavish</h4>
-</header>
-<section class="interior num0 pagenonumbers notoc" id="sectiontoc">
-<header>
-	<h1>Table of Contents</h1>
-</header>
-	<div id="toc"><nav>
-		<div class="sectionlink"><a id="link_sectionfieldnotes" href="#sectionfieldnotes">the repair(*)</a></div>
-		<ul id="list_sectionfieldnotes"><li><a id="link_001" href="#001">001</a></li><li><a id="link_002" href="#002">002</a></li><li><a id="link_003" href="#003">003</a></li><li><a id="link_004" href="#004">004</a></li><li><a id="link_005" href="#005">005</a></li><li><a id="link_006" href="#006">006</a></li><li><a id="link_007" href="#007">007</a></li><li><a id="link_008" href="#008">008</a></li><li><a id="link_009" href="#009">009</a></li><li><a id="link_010" href="#010">010</a></li><li><a id="link_011" href="#011">011</a></li><li><a id="link_012" href="#012">012</a></li><li><a id="link_013" href="#013">013</a></li><li><a id="link_014" href="#014">014</a></li><li><a id="link_015" href="#015">015</a></li><li><a id="link_016" href="#016">016</a></li><li><a id="link_017" href="#017">017</a></li><li><a id="link_018" href="#018">018</a></li><li><a id="link_019" href="#019">019</a></li><li><a id="link_020" href="#020">020</a></li><li><a id="link_021" href="#021">021</a></li><li><a id="link_022" href="#022">022</a></li><li><a id="link_023" href="#023">023</a></li><li><a id="link_024" href="#024">024</a></li><li><a id="link_025" href="#025">025</a></li><li><a id="link_026" href="#026">026</a></li><li><a id="link_027" href="#027">027</a></li><li><a id="link_028" href="#028">028</a></li><li><a id="link_029" href="#029">029</a></li><li><a id="link_030" href="#030">030</a></li><li><a id="link_031" href="#031">031</a></li><li><a id="link_032" href="#032">032</a></li><li><a id="link_033" href="#033">033</a></li><li><a id="link_034" href="#034">034</a></li><li><a id="link_035" href="#035">035</a></li><li><a id="link_036" href="#036">036</a></li><li><a id="link_037" href="#037">037</a></li><li><a id="link_038" href="#038">038</a></li><li><a id="link_039" href="#039">039</a></li><li><a id="link_040" href="#040">040</a></li><li><a id="link_041" href="#041">041</a></li>
-		</ul>
-	</nav></div>
-</section>
-<section class="interior num2 pagestartnumbers" id="sectionfieldnotes">
-<header>
-	<h1>the repair(*)</h1>
-</header>
-	<div class="inscription">
-	it was like this every morning ...
-	</div>
-<article id="001" class="">
-<header>
-	<h1>001 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+ let poems = [
+{
+id:"001",
+title:"001",
+text:`
 <ul class="stanza expand">
 <li>the repairman rider passenger lone bird</li>
 </ul>
@@ -116,20 +19,12 @@ svg {
 <li>repair reclaim rebuild reweave restore</li>
 <li>this prairie meadow sequestration</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="64" stroke-width="254" stroke="#000000" fill="#000000" /> <line x1="0" x2="0" y1="0" y2="1431" stroke-dasharray="43" stroke-width="445" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="0" y2="0" stroke-dasharray="86" stroke-width="318" stroke="#ffcc00" /> <line x1="0" x2="0" y1="0" y2="1431" stroke-dasharray="61" stroke-width="334" stroke="#9a0000" /> <line x1="0" x2="1590" y1="0" y2="0" stroke-dasharray="27" stroke-width="509" stroke="#9a0000" /> <line x1="0" x2="0" y1="0" y2="1431" stroke-dasharray="48" stroke-width="270" stroke="#000000" /> <line x1="0" x2="1590" y1="0" y2="0" stroke-dasharray="41" stroke-width="270" stroke="#000000" />
-	</svg>
-	
-		<figcaption>meadow :|: reclaim :|: the ::: 01</figcaption>
-		</figure>
-</article>
-<article id="002" class="">
-<header>
-	<h1>002 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"002",
+title:"002",
+text:`
 <ul class="stanza">
 <li>receiver net web electron field short wave thatch</li>
 <li>wireless signal code</li>
@@ -147,20 +42,12 @@ svg {
 <li>a name uttered speak again</li>
 <li>reclaim restore correct</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="118" stroke-width="716" stroke="#000000" fill="#000000" /> <line x1="32" x2="32" y1="0" y2="1431" stroke-dasharray="79" stroke-width="747" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="29" y2="29" stroke-dasharray="68" stroke-width="731" stroke="#ffcc00" /> <line x1="32" x2="32" y1="0" y2="1431" stroke-dasharray="34" stroke-width="716" stroke="#9a0000" /> <line x1="0" x2="1590" y1="29" y2="29" stroke-dasharray="16" stroke-width="223" stroke="#9a0000" /> <line x1="32" x2="32" y1="0" y2="1431" stroke-dasharray="41" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="29" y2="29" stroke-dasharray="47" stroke-width="223" stroke="#000000" />
-	</svg>
-	
-		<figcaption>paper :|: worn :|: liquid ::: 02</figcaption>
-		</figure>
-</article>
-<article id="003" class="">
-<header>
-	<h1>003 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"003",
+title:"003",
+text:`
 <ul class="stanza">
 <li>downward glance creased map marked path</li>
 <li>radio research building institute</li>
@@ -186,20 +73,12 @@ svg {
 <li>dried pressed limbs reed blade stem seed</li>
 <li>circuit diagram equations</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="111" stroke-width="541" stroke="#000000" fill="#000000" /> <line x1="64" x2="64" y1="0" y2="1431" stroke-dasharray="122" stroke-width="731" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="57" y2="57" stroke-dasharray="21" stroke-width="541" stroke="#ffcc00" /> <line x1="64" x2="64" y1="0" y2="1431" stroke-dasharray="38" stroke-width="254" stroke="#9a0000" /> <line x1="0" x2="1590" y1="57" y2="57" stroke-dasharray="25" stroke-width="175" stroke="#9a0000" /> <line x1="64" x2="64" y1="0" y2="1431" stroke-dasharray="70" stroke-width="334" stroke="#000000" /> <line x1="0" x2="1590" y1="57" y2="57" stroke-dasharray="66" stroke-width="477" stroke="#000000" />
-	</svg>
-	
-		<figcaption>suitcase :|: rusted :|: sandwich ::: 03</figcaption>
-		</figure>
-</article>
-<article id="004" class="">
-<header>
-	<h1>004 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"004",
+title:"004",
+text:`
 <ul class="stanza">
 <li>this was the morning this was the place</li>
 </ul>
@@ -252,20 +131,12 @@ svg {
 <ul class="stanza">
 <li>ignite !</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="89" stroke-width="700" stroke="#000000" fill="#000000" /> <line x1="95" x2="95" y1="0" y2="1431" stroke-dasharray="97" stroke-width="398" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="86" y2="86" stroke-dasharray="118" stroke-width="525" stroke="#ffcc00" /> <line x1="95" x2="95" y1="0" y2="1431" stroke-dasharray="25" stroke-width="525" stroke="#9a0000" /> <line x1="0" x2="1590" y1="86" y2="86" stroke-dasharray="48" stroke-width="239" stroke="#9a0000" /> <line x1="95" x2="95" y1="0" y2="1431" stroke-dasharray="13" stroke-width="525" stroke="#000000" /> <line x1="0" x2="1590" y1="86" y2="86" stroke-dasharray="52" stroke-width="191" stroke="#000000" />
-	</svg>
-	
-		<figcaption>worn :|: meadow :|: urgent ::: 04</figcaption>
-		</figure>
-</article>
-<article id="005" class="">
-<header>
-	<h1>005 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"005",
+title:"005",
+text:`
 <ul class="stanza">
 <li>the repairman rider passenger lone bird</li>
 <li>grass blade dyke (our hero zero rider ze)</li>
@@ -322,20 +193,12 @@ svg {
 <li>archive find search echo</li>
 <li>resonate release</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="136" stroke-width="207" stroke="#000000" fill="#000000" /> <line x1="127" x2="127" y1="0" y2="1431" stroke-dasharray="57" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="114" y2="114" stroke-dasharray="57" stroke-width="684" stroke="#ffcc00" /> <line x1="127" x2="127" y1="0" y2="1431" stroke-dasharray="21" stroke-width="254" stroke="#9a0000" /> <line x1="0" x2="1590" y1="114" y2="114" stroke-dasharray="64" stroke-width="477" stroke="#9a0000" /> <line x1="127" x2="127" y1="0" y2="1431" stroke-dasharray="38" stroke-width="398" stroke="#000000" /> <line x1="0" x2="1590" y1="114" y2="114" stroke-dasharray="21" stroke-width="477" stroke="#000000" />
-	</svg>
-	
-		<figcaption>meadow :|: depot :|: station ::: 05</figcaption>
-		</figure>
-</article>
-<article id="006" class="">
-<header>
-	<h1>006 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"006",
+title:"006",
+text:`
 <ul class="stanza">
 <li>fire ash carbon gone</li>
 <li>nothing none empty not</li>
@@ -406,20 +269,12 @@ svg {
 <li>not a huge hole in the</li>
 <li>sky</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="97" stroke-width="525" stroke="#000000" fill="#000000" /> <line x1="159" x2="159" y1="0" y2="1431" stroke-dasharray="47" stroke-width="175" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="143" y2="143" stroke-dasharray="136" stroke-width="239" stroke="#ffcc00" /> <line x1="159" x2="159" y1="0" y2="1431" stroke-dasharray="21" stroke-width="493" stroke="#9a0000" /> <line x1="0" x2="1590" y1="143" y2="143" stroke-dasharray="59" stroke-width="413" stroke="#9a0000" /> <line x1="159" x2="159" y1="0" y2="1431" stroke-dasharray="57" stroke-width="588" stroke="#000000" /> <line x1="0" x2="1590" y1="143" y2="143" stroke-dasharray="29" stroke-width="700" stroke="#000000" />
-	</svg>
-	
-		<figcaption>suitcase :|: coffee :|: rusted ::: 06</figcaption>
-		</figure>
-</article>
-<article id="007" class="">
-<header>
-	<h1>007 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"007",
+title:"007",
+text:`
 <ul class="stanza">
 <li>parameter variable matrix</li>
 <li>grid structure thing</li>
@@ -462,20 +317,12 @@ svg {
 <li>tonality ecology dynamics systems weather</li>
 <li>synthesis loom radio sky</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="125" stroke-width="286" stroke="#000000" fill="#000000" /> <line x1="207" x2="207" y1="0" y2="1431" stroke-dasharray="68" stroke-width="270" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="186" y2="186" stroke-dasharray="114" stroke-width="572" stroke="#ffcc00" /> <line x1="207" x2="207" y1="0" y2="1431" stroke-dasharray="30" stroke-width="572" stroke="#9a0000" /> <line x1="0" x2="1590" y1="186" y2="186" stroke-dasharray="61" stroke-width="493" stroke="#9a0000" /> <line x1="207" x2="207" y1="0" y2="1431" stroke-dasharray="29" stroke-width="700" stroke="#000000" /> <line x1="0" x2="1590" y1="186" y2="186" stroke-dasharray="66" stroke-width="366" stroke="#000000" />
-	</svg>
-	
-		<figcaption>repair :|: lukewarm :|: restore ::: 07</figcaption>
-		</figure>
-</article>
-<article id="008" class="">
-<header>
-	<h1>008 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"008",
+title:"008",
+text:`
 <ul class="stanza">
 <li>photosynthetic fusion carbon pool</li>
 <li>sequester sequester bury deeper</li>
@@ -539,20 +386,12 @@ svg {
 <li>grass blade dyke (our hero zero rider ze)</li>
 <li>thatch radio signal static dial clock pulse receiver</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="39" stroke-width="175" stroke="#000000" fill="#000000" /> <line x1="239" x2="239" y1="0" y2="1431" stroke-dasharray="72" stroke-width="731" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="215" y2="215" stroke-dasharray="29" stroke-width="334" stroke="#ffcc00" /> <line x1="239" x2="239" y1="0" y2="1431" stroke-dasharray="25" stroke-width="350" stroke="#9a0000" /> <line x1="0" x2="1590" y1="215" y2="215" stroke-dasharray="57" stroke-width="541" stroke="#9a0000" /> <line x1="239" x2="239" y1="0" y2="1431" stroke-dasharray="54" stroke-width="286" stroke="#000000" /> <line x1="0" x2="1590" y1="215" y2="215" stroke-dasharray="25" stroke-width="398" stroke="#000000" />
-	</svg>
-	
-		<figcaption>liquid :|: station :|: meadow ::: 08</figcaption>
-		</figure>
-</article>
-<article id="009" class="">
-<header>
-	<h1>009 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"009",
+title:"009",
+text:`
 <ul class="stanza">
 <li>database of tools</li>
 <li>inventory manuscript</li>
@@ -587,20 +426,12 @@ svg {
 <li>a one by one flower hover</li>
 <li>sparse set pollen heat</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="350" stroke="#000000" fill="#000000" /> <line x1="270" x2="270" y1="0" y2="1431" stroke-dasharray="132" stroke-width="159" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="243" y2="243" stroke-dasharray="136" stroke-width="588" stroke="#ffcc00" /> <line x1="270" x2="270" y1="0" y2="1431" stroke-dasharray="30" stroke-width="207" stroke="#9a0000" /> <line x1="0" x2="1590" y1="243" y2="243" stroke-dasharray="21" stroke-width="620" stroke="#9a0000" /> <line x1="270" x2="270" y1="0" y2="1431" stroke-dasharray="59" stroke-width="461" stroke="#000000" /> <line x1="0" x2="1590" y1="243" y2="243" stroke-dasharray="41" stroke-width="604" stroke="#000000" />
-	</svg>
-	
-		<figcaption>map :|: prairie :|: suitcase ::: 09</figcaption>
-		</figure>
-</article>
-<article id="010" class="">
-<header>
-	<h1>010 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"010",
+title:"010",
+text:`
 <ul class="stanza">
 <li>no rain again last night</li>
 <li>humidity swallowed by air</li>
@@ -664,20 +495,12 @@ svg {
 <li>drew in whole</li>
 <li>years</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="54" stroke-width="445" stroke="#000000" fill="#000000" /> <line x1="302" x2="302" y1="0" y2="1431" stroke-dasharray="107" stroke-width="286" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="272" y2="272" stroke-dasharray="122" stroke-width="429" stroke="#ffcc00" /> <line x1="302" x2="302" y1="0" y2="1431" stroke-dasharray="14" stroke-width="445" stroke="#9a0000" /> <line x1="0" x2="1590" y1="272" y2="272" stroke-dasharray="66" stroke-width="429" stroke="#9a0000" /> <line x1="302" x2="302" y1="0" y2="1431" stroke-dasharray="34" stroke-width="636" stroke="#000000" /> <line x1="0" x2="1590" y1="272" y2="272" stroke-dasharray="34" stroke-width="493" stroke="#000000" />
-	</svg>
-	
-		<figcaption>liquid :|: suitcase :|: meadow ::: 10</figcaption>
-		</figure>
-</article>
-<article id="011" class="">
-<header>
-	<h1>011 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"011",
+title:"011",
+text:`
 <ul class="stanza">
 <li>solitude</li>
 <li>not silence</li>
@@ -717,20 +540,12 @@ svg {
 <li>empty hands</li>
 <li>vacant skull</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="129" stroke-width="270" stroke="#000000" fill="#000000" /> <line x1="334" x2="334" y1="0" y2="1431" stroke-dasharray="39" stroke-width="493" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="301" y2="301" stroke-dasharray="107" stroke-width="318" stroke="#ffcc00" /> <line x1="334" x2="334" y1="0" y2="1431" stroke-dasharray="66" stroke-width="398" stroke="#9a0000" /> <line x1="0" x2="1590" y1="301" y2="301" stroke-dasharray="20" stroke-width="700" stroke="#9a0000" /> <line x1="334" x2="334" y1="0" y2="1431" stroke-dasharray="41" stroke-width="461" stroke="#000000" /> <line x1="0" x2="1590" y1="301" y2="301" stroke-dasharray="59" stroke-width="239" stroke="#000000" />
-	</svg>
-	
-		<figcaption>mission :|: rusted :|: paper ::: 11</figcaption>
-		</figure>
-</article>
-<article id="012" class="">
-<header>
-	<h1>012 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"012",
+title:"012",
+text:`
 <ul class="stanza">
 <li>dusty</li>
 <li>dry</li>
@@ -771,20 +586,12 @@ svg {
 <li>stop the gears bend the tide</li>
 <li>stitch mend reweave restore rewind</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="32" stroke-width="270" stroke="#000000" fill="#000000" /> <line x1="366" x2="366" y1="0" y2="1431" stroke-dasharray="75" stroke-width="318" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="329" y2="329" stroke-dasharray="129" stroke-width="382" stroke="#ffcc00" /> <line x1="366" x2="366" y1="0" y2="1431" stroke-dasharray="27" stroke-width="445" stroke="#9a0000" /> <line x1="0" x2="1590" y1="329" y2="329" stroke-dasharray="55" stroke-width="652" stroke="#9a0000" /> <line x1="366" x2="366" y1="0" y2="1431" stroke-dasharray="34" stroke-width="239" stroke="#000000" /> <line x1="0" x2="1590" y1="329" y2="329" stroke-dasharray="39" stroke-width="366" stroke="#000000" />
-	</svg>
-	
-		<figcaption>reclaim :|: meadow :|: tepid ::: 12</figcaption>
-		</figure>
-</article>
-<article id="013" class="">
-<header>
-	<h1>013 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"013",
+title:"013",
+text:`
 <ul class="stanza">
 <li>homeostasis functions script energy production</li>
 <li>flows & motion</li>
@@ -838,20 +645,12 @@ svg {
 <li>two or more railway lines</li>
 <li>junction meet or cross</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="100" stroke-width="302" stroke="#000000" fill="#000000" /> <line x1="398" x2="398" y1="0" y2="1431" stroke-dasharray="86" stroke-width="509" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="358" y2="358" stroke-dasharray="72" stroke-width="731" stroke="#ffcc00" /> <line x1="398" x2="398" y1="0" y2="1431" stroke-dasharray="29" stroke-width="334" stroke="#9a0000" /> <line x1="0" x2="1590" y1="358" y2="358" stroke-dasharray="13" stroke-width="286" stroke="#9a0000" /> <line x1="398" x2="398" y1="0" y2="1431" stroke-dasharray="64" stroke-width="731" stroke="#000000" /> <line x1="0" x2="1590" y1="358" y2="358" stroke-dasharray="23" stroke-width="652" stroke="#000000" />
-	</svg>
-	
-		<figcaption>thermosi :|: rusted :|: the ::: 13</figcaption>
-		</figure>
-</article>
-<article id="014" class="">
-<header>
-	<h1>014 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"014",
+title:"014",
+text:`
 <ul class="stanza">
 <li>data modeling ecosystem transcription</li>
 <li>contour core motion</li>
@@ -891,20 +690,13 @@ svg {
 <li>containment category rope bind</li>
 <li>join</li>
 </ul>
+`
+},
 
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="122" stroke-width="636" stroke="#000000" fill="#000000" /> <line x1="429" x2="429" y1="0" y2="1431" stroke-dasharray="75" stroke-width="223" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="386" y2="386" stroke-dasharray="29" stroke-width="700" stroke="#ffcc00" /> <line x1="429" x2="429" y1="0" y2="1431" stroke-dasharray="45" stroke-width="413" stroke="#9a0000" /> <line x1="0" x2="1590" y1="386" y2="386" stroke-dasharray="57" stroke-width="334" stroke="#9a0000" /> <line x1="429" x2="429" y1="0" y2="1431" stroke-dasharray="14" stroke-width="557" stroke="#000000" /> <line x1="0" x2="1590" y1="386" y2="386" stroke-dasharray="9" stroke-width="747" stroke="#000000" />
-	</svg>
-	
-		<figcaption>fix :|: map :|: city ::: 14</figcaption>
-		</figure>
-</article>
-<article id="015" class="">
-<header>
-	<h1>015 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+{
+id:"015",
+title:"015",
+text:`
 <ul class="stanza">
 <li>fact ::: hyperspace</li>
 <li>a cube an axe</li>
@@ -938,20 +730,12 @@ svg {
 <li>a measurement</li>
 <li>unveiled revealed made plain</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="122" stroke-width="731" stroke="#000000" fill="#000000" /> <line x1="461" x2="461" y1="0" y2="1431" stroke-dasharray="125" stroke-width="700" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="415" y2="415" stroke-dasharray="47" stroke-width="509" stroke="#ffcc00" /> <line x1="461" x2="461" y1="0" y2="1431" stroke-dasharray="36" stroke-width="207" stroke="#9a0000" /> <line x1="0" x2="1590" y1="415" y2="415" stroke-dasharray="25" stroke-width="254" stroke="#9a0000" /> <line x1="461" x2="461" y1="0" y2="1431" stroke-dasharray="20" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="415" y2="415" stroke-dasharray="34" stroke-width="509" stroke="#000000" />
-	</svg>
-	
-		<figcaption>liquid :|: station :|: rebuild ::: 15</figcaption>
-		</figure>
-</article>
-<article id="016" class="">
-<header>
-	<h1>016 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"016",
+title:"016",
+text:`
 <ul class="stanza">
 <li>lexicon of relations</li>
 <li>linguistics language</li>
@@ -994,20 +778,12 @@ svg {
 <li>classifiers theorem provers</li>
 <li>maps</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="79" stroke-width="223" stroke="#000000" fill="#000000" /> <line x1="493" x2="493" y1="0" y2="1431" stroke-dasharray="86" stroke-width="652" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="444" y2="444" stroke-dasharray="107" stroke-width="413" stroke="#ffcc00" /> <line x1="493" x2="493" y1="0" y2="1431" stroke-dasharray="34" stroke-width="175" stroke="#9a0000" /> <line x1="0" x2="1590" y1="444" y2="444" stroke-dasharray="57" stroke-width="572" stroke="#9a0000" /> <line x1="493" x2="493" y1="0" y2="1431" stroke-dasharray="39" stroke-width="700" stroke="#000000" /> <line x1="0" x2="1590" y1="444" y2="444" stroke-dasharray="23" stroke-width="413" stroke="#000000" />
-	</svg>
-	
-		<figcaption>prairie :|: urgent :|: city ::: 16</figcaption>
-		</figure>
-</article>
-<article id="017" class="">
-<header>
-	<h1>017 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"017",
+title:"017",
+text:`
 <ul class="stanza">
 <li>us / them / ze / I</li>
 <li>the body plural the collection the ecology of I</li>
@@ -1030,20 +806,12 @@ svg {
 <li>every angel every bird every fire</li>
 <li>every light</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="136" stroke-width="302" stroke="#000000" fill="#000000" /> <line x1="525" x2="525" y1="0" y2="1431" stroke-dasharray="21" stroke-width="604" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="472" y2="472" stroke-dasharray="140" stroke-width="572" stroke="#ffcc00" /> <line x1="525" x2="525" y1="0" y2="1431" stroke-dasharray="59" stroke-width="429" stroke="#9a0000" /> <line x1="0" x2="1590" y1="472" y2="472" stroke-dasharray="54" stroke-width="318" stroke="#9a0000" /> <line x1="525" x2="525" y1="0" y2="1431" stroke-dasharray="25" stroke-width="572" stroke="#000000" /> <line x1="0" x2="1590" y1="472" y2="472" stroke-dasharray="11" stroke-width="652" stroke="#000000" />
-	</svg>
-	
-		<figcaption>urgent :|: arrived :|: rusted ::: 17</figcaption>
-		</figure>
-</article>
-<article id="018" class="">
-<header>
-	<h1>018 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"018",
+title:"018",
+text:`
 <ul class="stanza">
 <li>volcanic eruptions colossal explosive summer of night</li>
 <li>cloud of ash eternal winter sky</li>
@@ -1083,20 +851,12 @@ svg {
 <ul class="stanza">
 <li>dust bowl prairie loss</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="731" stroke="#000000" fill="#000000" /> <line x1="557" x2="557" y1="0" y2="1431" stroke-dasharray="97" stroke-width="493" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="501" y2="501" stroke-dasharray="114" stroke-width="398" stroke="#ffcc00" /> <line x1="557" x2="557" y1="0" y2="1431" stroke-dasharray="32" stroke-width="572" stroke="#9a0000" /> <line x1="0" x2="1590" y1="501" y2="501" stroke-dasharray="14" stroke-width="366" stroke="#9a0000" /> <line x1="557" x2="557" y1="0" y2="1431" stroke-dasharray="57" stroke-width="557" stroke="#000000" /> <line x1="0" x2="1590" y1="501" y2="501" stroke-dasharray="43" stroke-width="445" stroke="#000000" />
-	</svg>
-	
-		<figcaption>liquid :|: paper :|: paper ::: 18</figcaption>
-		</figure>
-</article>
-<article id="019" class="">
-<header>
-	<h1>019 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"019",
+title:"019",
+text:`
 <ul class="stanza">
 <li>handbook of codes (1938 ::: 4th edition)</li>
 <li>corner ledger entry</li>
@@ -1137,20 +897,12 @@ svg {
 <li>a sound restated now</li>
 <li>perhaps could permeate the ether</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="684" stroke="#000000" fill="#000000" /> <line x1="604" x2="604" y1="0" y2="1431" stroke-dasharray="29" stroke-width="572" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="544" y2="544" stroke-dasharray="82" stroke-width="509" stroke="#ffcc00" /> <line x1="604" x2="604" y1="0" y2="1431" stroke-dasharray="9" stroke-width="493" stroke="#9a0000" /> <line x1="0" x2="1590" y1="544" y2="544" stroke-dasharray="47" stroke-width="620" stroke="#9a0000" /> <line x1="604" x2="604" y1="0" y2="1431" stroke-dasharray="70" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="544" y2="544" stroke-dasharray="25" stroke-width="191" stroke="#000000" />
-	</svg>
-	
-		<figcaption>prairie :|: brown :|: paper ::: 19</figcaption>
-		</figure>
-</article>
-<article id="020" class="">
-<header>
-	<h1>020 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"020",
+title:"020",
+text:`
 <ul class="stanza">
 <li>a cast back cellular recording</li>
 <li>etched on vinyl record number 43</li>
@@ -1190,20 +942,12 @@ svg {
 <li>verdant song radar language rubbed wings</li>
 <li>quickening pulse through stalk & reed</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="54" stroke-width="541" stroke="#000000" fill="#000000" /> <line x1="636" x2="636" y1="0" y2="1431" stroke-dasharray="72" stroke-width="254" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="572" y2="572" stroke-dasharray="97" stroke-width="254" stroke="#ffcc00" /> <line x1="636" x2="636" y1="0" y2="1431" stroke-dasharray="25" stroke-width="207" stroke="#9a0000" /> <line x1="0" x2="1590" y1="572" y2="572" stroke-dasharray="30" stroke-width="588" stroke="#9a0000" /> <line x1="636" x2="636" y1="0" y2="1431" stroke-dasharray="18" stroke-width="270" stroke="#000000" /> <line x1="0" x2="1590" y1="572" y2="572" stroke-dasharray="13" stroke-width="175" stroke="#000000" />
-	</svg>
-	
-		<figcaption>reweave :|: coffee :|: folded ::: 20</figcaption>
-		</figure>
-</article>
-<article id="021" class="">
-<header>
-	<h1>021 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"021",
+title:"021",
+text:`
 <ul class="stanza">
 <li>downward glance creased map old building vacant transmission</li>
 <li>radio station cement wire wood vinyl recordings</li>
@@ -1220,20 +964,12 @@ svg {
 <li>catalysts circulations taut dependencies resilience arithmetics liminal clocks</li>
 <li>the eco-polyphonics of all living systems</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="136" stroke-width="159" stroke="#000000" fill="#000000" /> <line x1="668" x2="668" y1="0" y2="1431" stroke-dasharray="82" stroke-width="620" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="601" y2="601" stroke-dasharray="79" stroke-width="557" stroke="#ffcc00" /> <line x1="668" x2="668" y1="0" y2="1431" stroke-dasharray="34" stroke-width="207" stroke="#9a0000" /> <line x1="0" x2="1590" y1="601" y2="601" stroke-dasharray="21" stroke-width="541" stroke="#9a0000" /> <line x1="668" x2="668" y1="0" y2="1431" stroke-dasharray="57" stroke-width="366" stroke="#000000" /> <line x1="0" x2="1590" y1="601" y2="601" stroke-dasharray="64" stroke-width="445" stroke="#000000" />
-	</svg>
-	
-		<figcaption>folded :|: texaco :|: repair ::: 21</figcaption>
-		</figure>
-</article>
-<article id="022" class="">
-<header>
-	<h1>022 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"022",
+title:"022",
+text:`
 <ul class="stanza">
 <li>faded animations faded colors green yellow brown => gray</li>
 <li>plant specimens stamped time-stamped the walker rider passenger</li>
@@ -1254,20 +990,12 @@ svg {
 <li>maybe just || nothing</li>
 <li>rectify & join</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="668" stroke="#000000" fill="#000000" /> <line x1="700" x2="700" y1="0" y2="1431" stroke-dasharray="43" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="630" y2="630" stroke-dasharray="125" stroke-width="398" stroke="#ffcc00" /> <line x1="700" x2="700" y1="0" y2="1431" stroke-dasharray="11" stroke-width="731" stroke="#9a0000" /> <line x1="0" x2="1590" y1="630" y2="630" stroke-dasharray="38" stroke-width="366" stroke="#9a0000" /> <line x1="700" x2="700" y1="0" y2="1431" stroke-dasharray="64" stroke-width="159" stroke="#000000" /> <line x1="0" x2="1590" y1="630" y2="630" stroke-dasharray="14" stroke-width="493" stroke="#000000" />
-	</svg>
-	
-		<figcaption>alone :|: tepid :|: greasy ::: 22</figcaption>
-		</figure>
-</article>
-<article id="023" class="">
-<header>
-	<h1>023 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"023",
+title:"023",
+text:`
 <ul class="stanza">
 <li>layers of heaven</li>
 <li>cardinalities</li>
@@ -1307,20 +1035,12 @@ svg {
 <li>zero</li>
 <li>ghosts</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="97" stroke-width="254" stroke="#000000" fill="#000000" /> <line x1="731" x2="731" y1="0" y2="1431" stroke-dasharray="100" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="658" y2="658" stroke-dasharray="64" stroke-width="731" stroke="#ffcc00" /> <line x1="731" x2="731" y1="0" y2="1431" stroke-dasharray="43" stroke-width="588" stroke="#9a0000" /> <line x1="0" x2="1590" y1="658" y2="658" stroke-dasharray="48" stroke-width="239" stroke="#9a0000" /> <line x1="731" x2="731" y1="0" y2="1431" stroke-dasharray="66" stroke-width="557" stroke="#000000" /> <line x1="0" x2="1590" y1="658" y2="658" stroke-dasharray="18" stroke-width="731" stroke="#000000" />
-	</svg>
-	
-		<figcaption>arrived :|: texaco :|: restore ::: 23</figcaption>
-		</figure>
-</article>
-<article id="024" class="">
-<header>
-	<h1>024 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"024",
+title:"024",
+text:`
 <ul class="stanza">
 <li>industry!</li>
 <li>gears machines efficiency</li>
@@ -1333,20 +1053,12 @@ svg {
 <li>web cycle graph system lattice</li>
 <li>plumes & spills</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="100" stroke-width="398" stroke="#000000" fill="#000000" /> <line x1="763" x2="763" y1="0" y2="1431" stroke-dasharray="29" stroke-width="239" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="687" y2="687" stroke-dasharray="39" stroke-width="286" stroke="#ffcc00" /> <line x1="763" x2="763" y1="0" y2="1431" stroke-dasharray="50" stroke-width="302" stroke="#9a0000" /> <line x1="0" x2="1590" y1="687" y2="687" stroke-dasharray="64" stroke-width="318" stroke="#9a0000" /> <line x1="763" x2="763" y1="0" y2="1431" stroke-dasharray="52" stroke-width="270" stroke="#000000" /> <line x1="0" x2="1590" y1="687" y2="687" stroke-dasharray="66" stroke-width="159" stroke="#000000" />
-	</svg>
-	
-		<figcaption>sandwich :|: liquid :|: greasy ::: 24</figcaption>
-		</figure>
-</article>
-<article id="025" class="">
-<header>
-	<h1>025 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"025",
+title:"025",
+text:`
 <ul class="stanza">
 <li>transformation</li>
 <li>noise</li>
@@ -1372,20 +1084,12 @@ svg {
 <li>bagpipe</li>
 <li>meadow score</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="125" stroke-width="493" stroke="#000000" fill="#000000" /> <line x1="795" x2="795" y1="0" y2="1431" stroke-dasharray="86" stroke-width="382" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="715" y2="715" stroke-dasharray="36" stroke-width="318" stroke="#ffcc00" /> <line x1="795" x2="795" y1="0" y2="1431" stroke-dasharray="25" stroke-width="493" stroke="#9a0000" /> <line x1="0" x2="1590" y1="715" y2="715" stroke-dasharray="23" stroke-width="270" stroke="#9a0000" /> <line x1="795" x2="795" y1="0" y2="1431" stroke-dasharray="18" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="715" y2="715" stroke-dasharray="13" stroke-width="525" stroke="#000000" />
-	</svg>
-	
-		<figcaption>suitcase :|: reclaim :|: alone ::: 25</figcaption>
-		</figure>
-</article>
-<article id="026" class="">
-<header>
-	<h1>026 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"026",
+title:"026",
+text:`
 <ul class="stanza">
 <li>on the afternoon of the 8th day</li>
 <li>repairman rider passenger lone bird</li>
@@ -1402,20 +1106,12 @@ svg {
 <li>animate turn breathe</li>
 <li>circulate & mend</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="61" stroke-width="652" stroke="#000000" fill="#000000" /> <line x1="827" x2="827" y1="0" y2="1431" stroke-dasharray="39" stroke-width="382" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="744" y2="744" stroke-dasharray="21" stroke-width="254" stroke="#ffcc00" /> <line x1="827" x2="827" y1="0" y2="1431" stroke-dasharray="20" stroke-width="191" stroke="#9a0000" /> <line x1="0" x2="1590" y1="744" y2="744" stroke-dasharray="18" stroke-width="620" stroke="#9a0000" /> <line x1="827" x2="827" y1="0" y2="1431" stroke-dasharray="59" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="744" y2="744" stroke-dasharray="16" stroke-width="159" stroke="#000000" />
-	</svg>
-	
-		<figcaption>folded :|: prairie :|: rusted ::: 26</figcaption>
-		</figure>
-</article>
-<article id="027" class="">
-<header>
-	<h1>027 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"027",
+title:"027",
+text:`
 <ul class="stanza">
 <li>stitch</li>
 <li>carbon cycle</li>
@@ -1456,20 +1152,12 @@ svg {
 <ul class="stanza">
 <li>no time now time soon time</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="43" stroke-width="270" stroke="#000000" fill="#000000" /> <line x1="859" x2="859" y1="0" y2="1431" stroke-dasharray="54" stroke-width="572" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="773" y2="773" stroke-dasharray="82" stroke-width="413" stroke="#ffcc00" /> <line x1="859" x2="859" y1="0" y2="1431" stroke-dasharray="21" stroke-width="270" stroke="#9a0000" /> <line x1="0" x2="1590" y1="773" y2="773" stroke-dasharray="47" stroke-width="159" stroke="#9a0000" /> <line x1="859" x2="859" y1="0" y2="1431" stroke-dasharray="48" stroke-width="525" stroke="#000000" /> <line x1="0" x2="1590" y1="773" y2="773" stroke-dasharray="34" stroke-width="191" stroke="#000000" />
-	</svg>
-	
-		<figcaption>tepid :|: coffee :|: city ::: 27</figcaption>
-		</figure>
-</article>
-<article id="028" class="">
-<header>
-	<h1>028 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"028",
+title:"028",
+text:`
 <ul class="stanza">
 <li>how is this night different from all other nights?</li>
 <li>short trophic chains</li>
@@ -1485,20 +1173,12 @@ svg {
 <li>evolution adaptation</li>
 <li>form(s) of change</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="61" stroke-width="588" stroke="#000000" fill="#000000" /> <line x1="890" x2="890" y1="0" y2="1431" stroke-dasharray="111" stroke-width="652" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="801" y2="801" stroke-dasharray="25" stroke-width="191" stroke="#ffcc00" /> <line x1="890" x2="890" y1="0" y2="1431" stroke-dasharray="11" stroke-width="445" stroke="#9a0000" /> <line x1="0" x2="1590" y1="801" y2="801" stroke-dasharray="63" stroke-width="716" stroke="#9a0000" /> <line x1="890" x2="890" y1="0" y2="1431" stroke-dasharray="38" stroke-width="588" stroke="#000000" /> <line x1="0" x2="1590" y1="801" y2="801" stroke-dasharray="47" stroke-width="700" stroke="#000000" />
-	</svg>
-	
-		<figcaption>urgent :|: sequestration :|: worn ::: 28</figcaption>
-		</figure>
-</article>
-<article id="029" class="">
-<header>
-	<h1>029 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"029",
+title:"029",
+text:`
 <ul class="stanza">
 <li>why is this night this day this hour this moment different from all others?</li>
 <li>stable state equilibrium</li>
@@ -1527,20 +1207,12 @@ svg {
 <li>time spinning</li>
 <li>gears</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="382" stroke="#000000" fill="#000000" /> <line x1="922" x2="922" y1="0" y2="1431" stroke-dasharray="136" stroke-width="493" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="830" y2="830" stroke-dasharray="25" stroke-width="668" stroke="#ffcc00" /> <line x1="922" x2="922" y1="0" y2="1431" stroke-dasharray="64" stroke-width="684" stroke="#9a0000" /> <line x1="0" x2="1590" y1="830" y2="830" stroke-dasharray="16" stroke-width="175" stroke="#9a0000" /> <line x1="922" x2="922" y1="0" y2="1431" stroke-dasharray="61" stroke-width="493" stroke="#000000" /> <line x1="0" x2="1590" y1="830" y2="830" stroke-dasharray="20" stroke-width="588" stroke="#000000" />
-	</svg>
-	
-		<figcaption>mission :|: mission :|: the ::: 29</figcaption>
-		</figure>
-</article>
-<article id="030" class="">
-<header>
-	<h1>030 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"030",
+title:"030",
+text:`
 <ul class="stanza">
 <li>tuning discontinuity fragmentation</li>
 <li>multiplicity assemblage blur</li>
@@ -1553,20 +1225,12 @@ svg {
 <li>body axes mapped static system structure</li>
 <li>food chain length & flow</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="89" stroke-width="207" stroke="#000000" fill="#000000" /> <line x1="954" x2="954" y1="0" y2="1431" stroke-dasharray="97" stroke-width="254" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="859" y2="859" stroke-dasharray="132" stroke-width="731" stroke="#ffcc00" /> <line x1="954" x2="954" y1="0" y2="1431" stroke-dasharray="34" stroke-width="270" stroke="#9a0000" /> <line x1="0" x2="1590" y1="859" y2="859" stroke-dasharray="55" stroke-width="620" stroke="#9a0000" /> <line x1="954" x2="954" y1="0" y2="1431" stroke-dasharray="66" stroke-width="223" stroke="#000000" /> <line x1="0" x2="1590" y1="859" y2="859" stroke-dasharray="11" stroke-width="477" stroke="#000000" />
-	</svg>
-	
-		<figcaption>suitcase :|: arrived :|: folded ::: 30</figcaption>
-		</figure>
-</article>
-<article id="031" class="">
-<header>
-	<h1>031 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"031",
+title:"031",
+text:`
 <ul class="stanza">
 <li>on that day that hour researcher</li>
 <li>lab-coat gatherer archive net bird memory</li>
@@ -1594,20 +1258,12 @@ svg {
 <li>vinyl voice specimen body bones feather</li>
 <li>lock drawer archive ivy building room</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="97" stroke-width="684" stroke="#000000" fill="#000000" /> <line x1="1002" x2="1002" y1="0" y2="1431" stroke-dasharray="111" stroke-width="620" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="902" y2="902" stroke-dasharray="122" stroke-width="604" stroke="#ffcc00" /> <line x1="1002" x2="1002" y1="0" y2="1431" stroke-dasharray="25" stroke-width="700" stroke="#9a0000" /> <line x1="0" x2="1590" y1="902" y2="902" stroke-dasharray="13" stroke-width="557" stroke="#9a0000" /> <line x1="1002" x2="1002" y1="0" y2="1431" stroke-dasharray="64" stroke-width="334" stroke="#000000" /> <line x1="0" x2="1590" y1="902" y2="902" stroke-dasharray="13" stroke-width="509" stroke="#000000" />
-	</svg>
-	
-		<figcaption>coffee :|: tepid :|: texaco ::: 31</figcaption>
-		</figure>
-</article>
-<article id="032" class="">
-<header>
-	<h1>032 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"032",
+title:"032",
+text:`
 <ul class="stanza">
 <li>the passenger left & wandered to the river edge</li>
 <li>tall grass abandoned plot slope tangled bank</li>
@@ -1641,20 +1297,12 @@ svg {
 <li>a conversion a reclamation a redemption</li>
 <li>a deep cellar window of light</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="75" stroke-width="270" stroke="#000000" fill="#000000" /> <line x1="1034" x2="1034" y1="0" y2="1431" stroke-dasharray="82" stroke-width="429" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="930" y2="930" stroke-dasharray="89" stroke-width="429" stroke="#ffcc00" /> <line x1="1034" x2="1034" y1="0" y2="1431" stroke-dasharray="43" stroke-width="429" stroke="#9a0000" /> <line x1="0" x2="1590" y1="930" y2="930" stroke-dasharray="41" stroke-width="429" stroke="#9a0000" /> <line x1="1034" x2="1034" y1="0" y2="1431" stroke-dasharray="55" stroke-width="620" stroke="#000000" /> <line x1="0" x2="1590" y1="930" y2="930" stroke-dasharray="29" stroke-width="382" stroke="#000000" />
-	</svg>
-	
-		<figcaption>reweave :|: mission :|: city ::: 32</figcaption>
-		</figure>
-</article>
-<article id="033" class="">
-<header>
-	<h1>033 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"033",
+title:"033",
+text:`
 <ul class="stanza">
 <li>electricity insight action</li>
 <li>poet singer cantor coder</li>
@@ -1752,20 +1400,12 @@ svg {
 <li>dense matrix</li>
 <li>sparse sky</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="18" stroke-width="350" stroke="#000000" fill="#000000" /> <line x1="1065" x2="1065" y1="0" y2="1431" stroke-dasharray="57" stroke-width="716" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="959" y2="959" stroke-dasharray="39" stroke-width="159" stroke="#ffcc00" /> <line x1="1065" x2="1065" y1="0" y2="1431" stroke-dasharray="21" stroke-width="366" stroke="#9a0000" /> <line x1="0" x2="1590" y1="959" y2="959" stroke-dasharray="38" stroke-width="159" stroke="#9a0000" /> <line x1="1065" x2="1065" y1="0" y2="1431" stroke-dasharray="57" stroke-width="525" stroke="#000000" /> <line x1="0" x2="1590" y1="959" y2="959" stroke-dasharray="29" stroke-width="382" stroke="#000000" />
-	</svg>
-	
-		<figcaption>tepid :|: paper :|: texaco ::: 33</figcaption>
-		</figure>
-</article>
-<article id="034" class="">
-<header>
-	<h1>034 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"034",
+title:"034",
+text:`
 <ul class="stanza">
 <li>city of sleep city of masks city of subway & turnstile</li>
 <li>too close stand back headlights</li>
@@ -1809,20 +1449,12 @@ svg {
 <li>the deep & tangled dark sea horizon wind sail blades of grass</li>
 <li>sky to earth to text texture textile</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="125" stroke-width="223" stroke="#000000" fill="#000000" /> <line x1="1097" x2="1097" y1="0" y2="1431" stroke-dasharray="104" stroke-width="525" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="987" y2="987" stroke-dasharray="36" stroke-width="207" stroke="#ffcc00" /> <line x1="1097" x2="1097" y1="0" y2="1431" stroke-dasharray="48" stroke-width="477" stroke="#9a0000" /> <line x1="0" x2="1590" y1="987" y2="987" stroke-dasharray="48" stroke-width="668" stroke="#9a0000" /> <line x1="1097" x2="1097" y1="0" y2="1431" stroke-dasharray="38" stroke-width="159" stroke="#000000" /> <line x1="0" x2="1590" y1="987" y2="987" stroke-dasharray="55" stroke-width="270" stroke="#000000" />
-	</svg>
-	
-		<figcaption>tepid :|: brown :|: thermosi ::: 34</figcaption>
-		</figure>
-</article>
-<article id="035" class="">
-<header>
-	<h1>035 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"035",
+title:"035",
+text:`
 <ul class="stanza">
 <li>physical laws governing theorems systems form & function</li>
 <li>n-body species interaction multi lingual multi scale stoichiometric</li>
@@ -1857,20 +1489,12 @@ svg {
 <li>navigation a compass the ocean</li>
 <li>a sailor ropes & tackle wind & helm</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="114" stroke-width="366" stroke="#000000" fill="#000000" /> <line x1="1129" x2="1129" y1="0" y2="1431" stroke-dasharray="29" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1016" y2="1016" stroke-dasharray="118" stroke-width="620" stroke="#ffcc00" /> <line x1="1129" x2="1129" y1="0" y2="1431" stroke-dasharray="61" stroke-width="254" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1016" y2="1016" stroke-dasharray="29" stroke-width="286" stroke="#9a0000" /> <line x1="1129" x2="1129" y1="0" y2="1431" stroke-dasharray="36" stroke-width="700" stroke="#000000" /> <line x1="0" x2="1590" y1="1016" y2="1016" stroke-dasharray="43" stroke-width="413" stroke="#000000" />
-	</svg>
-	
-		<figcaption>brown :|: the :|: mission ::: 35</figcaption>
-		</figure>
-</article>
-<article id="036" class="">
-<header>
-	<h1>036 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"036",
+title:"036",
+text:`
 <ul class="stanza">
 <li>it was like this every morning</li>
 <li>every night</li>
@@ -1898,20 +1522,12 @@ svg {
 <li>systems cognition circuits learning emergence flux flow</li>
 <li>code embedded deep in cell in memory in twisted strands an alphabet a code</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="57" stroke-width="239" stroke="#000000" fill="#000000" /> <line x1="1161" x2="1161" y1="0" y2="1431" stroke-dasharray="107" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1045" y2="1045" stroke-dasharray="82" stroke-width="429" stroke="#ffcc00" /> <line x1="1161" x2="1161" y1="0" y2="1431" stroke-dasharray="63" stroke-width="398" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1045" y2="1045" stroke-dasharray="50" stroke-width="716" stroke="#9a0000" /> <line x1="1161" x2="1161" y1="0" y2="1431" stroke-dasharray="9" stroke-width="254" stroke="#000000" /> <line x1="0" x2="1590" y1="1045" y2="1045" stroke-dasharray="32" stroke-width="429" stroke="#000000" />
-	</svg>
-	
-		<figcaption>suitcase :|: prairie :|: urgent ::: 36</figcaption>
-		</figure>
-</article>
-<article id="037" class="">
-<header>
-	<h1>037 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"037",
+title:"037",
+text:`
 <ul class="stanza">
 <li>memory motel memory text textile knots</li>
 <li>memory prayer memory fair memory microscope</li>
@@ -1945,20 +1561,12 @@ svg {
 <li>root stem leaves flowerhead</li>
 <li>culm (blade & sheath) inflorescent splendor</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="43" stroke-width="525" stroke="#000000" fill="#000000" /> <line x1="1193" x2="1193" y1="0" y2="1431" stroke-dasharray="36" stroke-width="509" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1073" y2="1073" stroke-dasharray="136" stroke-width="668" stroke="#ffcc00" /> <line x1="1193" x2="1193" y1="0" y2="1431" stroke-dasharray="55" stroke-width="684" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1073" y2="1073" stroke-dasharray="36" stroke-width="477" stroke="#9a0000" /> <line x1="1193" x2="1193" y1="0" y2="1431" stroke-dasharray="45" stroke-width="493" stroke="#000000" /> <line x1="0" x2="1590" y1="1073" y2="1073" stroke-dasharray="57" stroke-width="684" stroke="#000000" />
-	</svg>
-	
-		<figcaption>prairie :|: lukewarm :|: mission ::: 37</figcaption>
-		</figure>
-</article>
-<article id="038" class="">
-<header>
-	<h1>038 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"038",
+title:"038",
+text:`
 <ul class="stanza">
 <li>honored listeners present & absent today (yesterday)</li>
 <li>honored receivers future reception</li>
@@ -2030,20 +1638,12 @@ svg {
 <li>vial drop science</li>
 <li>torn curtain broken window chaos science</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="111" stroke-width="413" stroke="#000000" fill="#000000" /> <line x1="1224" x2="1224" y1="0" y2="1431" stroke-dasharray="114" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1102" y2="1102" stroke-dasharray="64" stroke-width="286" stroke="#ffcc00" /> <line x1="1224" x2="1224" y1="0" y2="1431" stroke-dasharray="63" stroke-width="493" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1102" y2="1102" stroke-dasharray="63" stroke-width="382" stroke="#9a0000" /> <line x1="1224" x2="1224" y1="0" y2="1431" stroke-dasharray="64" stroke-width="429" stroke="#000000" /> <line x1="0" x2="1590" y1="1102" y2="1102" stroke-dasharray="68" stroke-width="334" stroke="#000000" />
-	</svg>
-	
-		<figcaption>meadow :|: repair :|: alone ::: 38</figcaption>
-		</figure>
-</article>
-<article id="039" class="">
-<header>
-	<h1>039 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"039",
+title:"039",
+text:`
 <ul class="stanza">
 <li>skull telescope</li>
 <li>recorded playback frame</li>
@@ -2113,20 +1713,12 @@ svg {
 <li>variation noise signal caught taxonomy of system observation of change</li>
 <li>record function deduction of web</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="68" stroke-width="382" stroke="#000000" fill="#000000" /> <line x1="1256" x2="1256" y1="0" y2="1431" stroke-dasharray="89" stroke-width="207" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1130" y2="1130" stroke-dasharray="104" stroke-width="445" stroke="#ffcc00" /> <line x1="1256" x2="1256" y1="0" y2="1431" stroke-dasharray="64" stroke-width="239" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1130" y2="1130" stroke-dasharray="38" stroke-width="398" stroke="#9a0000" /> <line x1="1256" x2="1256" y1="0" y2="1431" stroke-dasharray="59" stroke-width="588" stroke="#000000" /> <line x1="0" x2="1590" y1="1130" y2="1130" stroke-dasharray="61" stroke-width="684" stroke="#000000" />
-	</svg>
-	
-		<figcaption>tepid :|: sandwich :|: restore ::: 39</figcaption>
-		</figure>
-</article>
-<article id="040" class="">
-<header>
-	<h1>040 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"040",
+title:"040",
+text:`
 <ul class="stanza">
 <li>fires wind walls cross the plains</li>
 <li>siberian methane craters epoch ice mass glaciers melted</li>
@@ -2151,20 +1743,12 @@ svg {
 <li>& citizen knapsack bandaged wanderers</li>
 <li>greasy coughing last-legs diner masked ghosts</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="21" stroke-width="159" stroke="#000000" fill="#000000" /> <line x1="1288" x2="1288" y1="0" y2="1431" stroke-dasharray="64" stroke-width="413" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1159" y2="1159" stroke-dasharray="86" stroke-width="668" stroke="#ffcc00" /> <line x1="1288" x2="1288" y1="0" y2="1431" stroke-dasharray="66" stroke-width="207" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1159" y2="1159" stroke-dasharray="68" stroke-width="239" stroke="#9a0000" /> <line x1="1288" x2="1288" y1="0" y2="1431" stroke-dasharray="61" stroke-width="477" stroke="#000000" /> <line x1="0" x2="1590" y1="1159" y2="1159" stroke-dasharray="52" stroke-width="318" stroke="#000000" />
-	</svg>
-	
-		<figcaption>rebuild :|: lukewarm :|: suitcase ::: 40</figcaption>
-		</figure>
-</article>
-<article id="041" class="">
-<header>
-	<h1>041 <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>
+`
+},
+{
+id:"041",
+title:"041",
+text:`
 <ul class="stanza">
 <li>why is this day unlike any other day?</li>
 <li>this moment this view this inflection bending curve like no other</li>
@@ -2192,17 +1776,7 @@ svg {
 <li>compass light</li>
 <li>lucky strike</li>
 </ul>
-
-		<figure class="frame">
-		
-	<svg viewBox="0 0 1590 1430.9999999999998">
-		<rect x="0" y="0" width="1590" height="1431" stroke-dasharray="43" stroke-width="493" stroke="#000000" fill="#000000" /> <line x1="1320" x2="1320" y1="0" y2="1431" stroke-dasharray="104" stroke-width="191" stroke="#ffcc00" /> <line x1="0" x2="1590" y1="1188" y2="1188" stroke-dasharray="72" stroke-width="461" stroke="#ffcc00" /> <line x1="1320" x2="1320" y1="0" y2="1431" stroke-dasharray="39" stroke-width="286" stroke="#9a0000" /> <line x1="0" x2="1590" y1="1188" y2="1188" stroke-dasharray="55" stroke-width="270" stroke="#9a0000" /> <line x1="1320" x2="1320" y1="0" y2="1431" stroke-dasharray="70" stroke-width="652" stroke="#000000" /> <line x1="0" x2="1590" y1="1188" y2="1188" stroke-dasharray="45" stroke-width="175" stroke="#000000" />
-	</svg>
-	
-		<figcaption>coffee :|: paper :|: arrived ::: 41</figcaption>
-		</figure>
-</article>
-</section>
-</main>
-</body>
-</html>
+`
+},
+];
+module.exports = poems;

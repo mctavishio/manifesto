@@ -1,0 +1,47 @@
+/*https://www.w3.org/TR/css-page-3/ */
+/*https://www.princexml.com/doc/paged/ */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --red: #9a0000;
+  --yellow: #ffcc00;
+  --blue: #006699;
+  --bluegreen: #006969;
+  --black: #000000;
+  --warmblack: #191918;
+  --gray: #484848;
+  --lightgray: #888888;
+  --warmgray: #4b4b44;
+  --warmlightgray: #656560;
+  --white: #ffffff;
+  --warmwhite: #fcfbe3;
+  --richblack: #010203;
+  --richgray1: #2a2a2b;
+  --richgray2: #4f4f50;
+  --richgray3: #777878;
+  --richgray4: #a2a3a3;
+  --richgray5: #d0d0d0;
+  --richgray6: #ffffff;
+  --indent1: 2em;
+  --indent2: 4em;
+  --indent3: 6em;
+  --indent4: 8em;
+  --indent5: 10em;
+  --margin: 1in;
+  --margingutter: 1.2in;
+  --width: 8in;
+  --height: 8in;
+  --innerwidth: 5.8in;
+  --innerheight: 5.8in; /*pageheight - margin - margingutter*/
+  --monospace_code: Courier, 'Andale Mono', AndaleMono, Monaco, monospace;
+  --monospace: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --monospace_zeroslash: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
+  --monospace_zerodot: 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --typewriter: 'American Typewriter', Didot, 'Times New Roman', serif;
+  --sans: Verdana, Helvetica, Arial, Tahoma, 'Trebuchet MS', sans-serif;
+  --serif: Georgia, Didot, 'Times New Roman', Times, serif;
+  --cursive: 'Bradley Hand', 'Comic Sans MS', cursive, sans-serif;
+  --dragons: Luminari, 'Bradley Hand', cursive, sans-serif;
+  --oldbook: 'Palatino Linotype', 'Book Antiqua', Palatino, 'American Typewriter', 'Times New Roman', serif;
+  --poetry: 'Crimson Pro', serif;
+  --textfont1: var(--monospace_code);
+}

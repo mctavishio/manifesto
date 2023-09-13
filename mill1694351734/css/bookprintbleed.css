@@ -26,29 +26,21 @@
   --indent3: 6em;
   --indent4: 8em;
   --indent5: 10em;
+  --poetry: 'Crimson Pro', serif;
   --margin: 1in;
-  --margingutter: 1.2in;
+  --figuremargin: 0in;
   --width: 8in;
   --height: 8in;
-  --innerwidth: 5.8in;
-  --innerheight: 5.8in; /*pageheight - margin - margingutter*/
-  --monospace_code: Courier, 'Andale Mono', AndaleMono, Monaco, monospace;
-  --monospace: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
-  --monospace_zeroslash: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
-  --monospace_zerodot: 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
-  --typewriter: 'American Typewriter', Didot, 'Times New Roman', serif;
-  --sans: Verdana, Helvetica, Arial, Tahoma, 'Trebuchet MS', sans-serif;
-  --serif: Georgia, Didot, 'Times New Roman', Times, serif;
-  --cursive: 'Bradley Hand', 'Comic Sans MS', cursive, sans-serif;
-  --dragons: Luminari, 'Bradley Hand', cursive, sans-serif;
-  --oldbook: 'Palatino Linotype', 'Book Antiqua', Palatino, 'American Typewriter', 'Times New Roman', serif;
-  --poetry: 'Crimson Pro', serif;
-  --textfont1: var(--poetry);
+  --innerwidth: 6in;
+  --innerheight: 6in;
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/break-before */
 @page {
   margin: var(--margin);
   size: var(--width) var(--height);
+  marks: crop cross;
+  bleed: 0.25in;
+  -prince-trim: 0.25in;
 }
 @page blank :left{
   @bottom-left {
@@ -86,27 +78,15 @@
 		content: "";
 	}
 }
-/*
 @page pagefigure {
+	margin: 0;
+	margin: var(--figuremargin);
 	@bottom-left {
-    	content: "";
+		content: "";
 	}
 	@bottom-right {
 		content: "";
 	}
-}
-*/
-@page pagefigure :right{
-counter-increment: figurenum;
-  @bottom-right {
-    content: "page ::: " counter(page) " figure # => " counter(figurenum);
-  }
-}
-@page pagefigure :left{
-counter-increment: figurenum;
-  @bottom-left {
-    content: "page:" counter(page) "figure #" counter(figurenum);
-  }
 }
 @page pagelowerstart {
 	margin-top: 30%;
@@ -127,11 +107,9 @@ counter-increment: figurenum;
 */
 @page :left {
   margin-right: 1.2in;
-  margin-right: var(--margingutter);
 }
 @page :right {
   margin-left: 1.2in;
-  margin-left: var(--margingutter);
 }
 /*
 @page :right {
@@ -146,7 +124,7 @@ counter-increment: figurenum;
   @bottom-right {
     content: counter(page);
 	font-weight:400;
-	/*font-size: 20pt;*/
+	font-size: 20pt;
 	color: var(--richgray3);
     margin-bottom: 0.6in;
   }
@@ -155,7 +133,7 @@ counter-increment: figurenum;
   @bottom-left {
     content: counter(page);
 	font-weight:400;
-	/*font-size: 20pt;*/
+	font-size: 20pt;
 	color: var(--richgray3);
     margin-bottom: 0.6in;
   }
@@ -225,9 +203,8 @@ html {
 	color: var(--richblack);
 }
 body {
-	font: 11pt var(--textfont1);
+	font: 11pt var(--poetry);
 	line-height: 1.4;
-	counter-reset: figurenum;
 }
 main > header, section#prelude > header {
 	text-align: center;
@@ -309,7 +286,7 @@ section > div.inscription {
 #copyright,#publisher {
 	margin-top:8em;
 }
-figure, div.frame {
+figure {
   break-before: page;
 }
 article {
@@ -339,45 +316,24 @@ article {
 div.blank {
   page: blank;
 }
-.graphic figcaption{
-    background:#F00;
-    color:#FFF;
-    width:100%;
-    height:20%;
-    text-align:center;
-    padding:5px;
-}
-.graphic img {
-    width:100%;
-    height:80%;
-}
-figure:before {
-	/*counter-increment: figurenum;*/
-}
-figure, div.frame {
-	display: block;
+div.frame {
+	/*position:absolute;*/
 	top:0; left:0;
 	width: var(--innerwidth);
 	height: var(--innerheight);
-	min-width: var(--innerwidth);
-	min-height: var(--innerheight);
+	background-color: #999999;
 	padding-top:0;
-	margin:0;
-  	break-before: recto;
 	page: pagefigure;
 }
 svg {
 	top:0; left:0;
 	width: var(--innerwidth);
 	height: var(--innerheight);
+	/*width: var(--width);
+	height: var(--height);
 	width:100%;
-	height:90%;
+	height:100%;*/
 }
-figcaption {
-	font-size:.8em;
-	height: 8%;
-}
-
 /*
 .address {
 	line-height: 1.2;
@@ -459,106 +415,3 @@ article.prose  p {
   orphans: 2;
   widows: 1;
 }
-
-ul.stanza li {
-	list-style-type: none;
-	display: inline;
-	font-size: 12pt;
-	color: var(--warmblack);
-	font-weight:400;
-	margin:0.1em;
-}
-ul.stanza li:nth-child(4n+0) {
-	color: var(--warmlightgray);
-	font-weight:500;
-}
-ul.stanza li:nth-child(4n+1) {
-	color: var(--warmblack);
-	font-weight:600;
-}
-ul.stanza:nth-child(odd) li:nth-child(4n+1) {
-	color: var(--warmgray);
-	font-weight:400;
-}
-ul.stanza li:nth-child(4n+2) {
-	color: var(--warmlightgray);
-	font-weight:600;
-}
-ul.stanza li:nth-child(4n+3) {
-	color: var(--warmgray);
-	font-weight:400;
-}
-
-ul.stanza > li:nth-child(9n+1):after {
-	color: var(--red);
-	content: " _|.";
-	font-weight:600;
-}
-ul.stanza:nth-child(even) > li:nth-child(9n+1):after {
-	color: var(--yellow);
-	content: " |..|";
-	font-weight:600;
-}
-ul.stanza > li:nth-child(9n+2):after {
-	content: " ..-";
-	color: var(--yellow);
-}
-ul.stanza > li:nth-child(9n+3):after {
-	content: " |+|";
-	color: var(--warmblack);
-}
-ul.stanza > li:nth-child(9n+4):after {
-	content: " #_#";
-	color: var(--warmlighgray);
-	font-weight:600;
-}
-ul.stanza > li:nth-child(9n+5):after {
-	content: " |\|";
-	color: var(--red);
-}
-ul.stanza > li:nth-child(9n+6):after {
-	content: " ^..";
-	color: var(--warmgray);
-}
-ul.stanza > li:nth-child(9n+7):after {
-	content: " &_&";
-	color: var(--warmblack);
-	font-weight:600;
-}
-ul.stanza > li:nth-child(9n+8):after {
-	content: " +0+";
-	color: var(--warmgray);
-}
-ul.stanza > li:nth-child(9n+0):after {
-	content: " |||";
-	color: var(--yellow);
-	font-weight:500;
-}
-
-ul.stanza > li:nth-child(5n+1):before {
-	content: ".|_ ";
-	font-weight:600;
-	color: var(--warmblack);
-}
-ul.stanza:nth-child(even) > li:nth-child(5n+1):before {
-	content: "..|. ";
-	font-weight:600;
-	color: var(--red);
-}
-ul.stanza > li:nth-child(5n+2):before {
-	content: "|.| ";
-	color: var(--yellow);
-}
-ul.stanza > li:nth-child(5n+3):before {
-	content: "|\| ";
-	color: var(--warmgray);
-	font-weight:600;
-}
-ul.stanza > li:nth-child(5n+4):before {
-	content: "+_+ ";
-	color: var(--red);
-}
-ul.stanza > li:nth-child(5n+0):before {
-	content: "&=^ ";
-	color: var(--warmlightgray);
-	font-weight:600;
