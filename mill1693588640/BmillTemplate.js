@@ -38,11 +38,11 @@ let sdmin = .5, sdmax = 20;
 let cxs = [...new Array(nx).keys()].map( x => {
 	return Math.round(100*x/nx)/100;
 }).push(1);
-cxs=[0,0.25,0.5,0.75,1.0];
+cxs=[0,0.5,0.5,0.5,1.0];
 let cys = [...new Array(ny).keys()].map( y => {
 	return Math.round(100*y/ny)/100;
 }).push(1);
-cys=[0,0.25,0.5,0.75,1.0];
+cys=[0,0.5,1.0];
 console.log(cys);
 const pgrid = [...new Array(nticks).keys()].map( j=> {
 	let cx = [...new Array(nx).keys()].map( x => {
