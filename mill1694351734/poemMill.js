@@ -90,18 +90,11 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 	}).join(" ");
 	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
-	poem.text = "";
+	//poem.text = "";
 	poem.figure = {
 	picture:`
 	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
-	<style>
-	  text {
-      font: italic 40px serif;
-      fill: red;
-    }
-  </style>
 		${elementdraw}
-		<text x="20" y="35">${poem.title}</text>
 	</svg>
 	`,
 	caption:`${captiontext} ::: ${(j+1).toString().padStart(2, '0')}`};

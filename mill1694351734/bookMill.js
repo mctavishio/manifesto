@@ -179,12 +179,19 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
 	let cssstr = poem.cssclasses ? poem.cssclasses.join(" ") : "";
 	poemstr = poemstr + `
-<article id="${poem.id}" class="${cssstr}">`;
+<article id="${poem.id}" class="broadside ${cssstr}">`;
+	//console.log(poem.figure.picture);
+	if(poem.figure.picture) {
+		poemstr = poemstr + `
+		<figure class="frame">
+		${poem.figure.picture}
+		<figcaption>${poem.figure.caption}</figcaption>
+		</figure>`
+	}
+	poemstr = poemstr + `<div class="flex"><div class="content">`;
 	if(poem.title) {
 		poemstr = poemstr + `
-<header>
-	<h1>${poem.title} <span class="top"><a href="#sectiontoc" title="back to contents" alt="back to table of contents">&uarr;</a></span></h1>
-</header>`;
+	<header><h1>${poem.title}</h1></header>`;
 	}
 	if(poem.inscription) {
 		poemstr = poemstr + `
@@ -199,14 +206,7 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		</div>`
 	}
 	poemstr = poemstr + `${poem.text}`;
-	//console.log(poem.figure.picture);
-	if(poem.figure.picture) {
-		poemstr = poemstr + `
-		<figure class="frame">
-		${poem.figure.picture}
-		<figcaption>${poem.figure.caption}</figcaption>
-		</figure>`
-	}
+	poemstr = poemstr + `</div></div>`;
 	poemstr = poemstr + `
 </article>`;
 	return poemstr;

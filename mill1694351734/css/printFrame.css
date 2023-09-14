@@ -39,7 +39,7 @@
 }
 @page cover {
 	margin: 0;
-	background-color: var(--warmwhite);
+	/*background-color: var(--warmlightwhite);*/
 	@bottom-left {
 		content: none;
 	}
@@ -187,9 +187,18 @@ section > header > h1 {
 article {
 	break-before: page;
 }
+article.broadside {
+	page: cover;
+	break-before: page;
+}
 article, article header, article header h1 {
 	margin-top:0;
 	padding-top:0;
+}
+article > div.content {
+	position: absolute;
+	top:0; left:0;
+	overflow: clip;
 }
 article h1 {
 	margin-top:0.8em;
@@ -223,7 +232,7 @@ figure, div.frame {
 	top: 0in; left: 0in;
 	width:var(--width); height:var(--height);
 	min-width:var(--width); min-height:var(--height);
-	break-before: page;
+	/*break-before: page;*/
 }
 article {
 	break-before: page;

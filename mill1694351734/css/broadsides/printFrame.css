@@ -1,62 +1,3 @@
-/*https://www.w3.org/TR/css-page-3/ */
-/*https://www.princexml.com/doc/paged/ */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root {
-  /*--red: #9a0000;*/
-	--red: #8F0000; /*panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
-  --yellow: #ffcc00;/*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0) */
-  /*--yellow: #FFD700;/*panatone "Yellow 012 C" rgb(255,215,0), hsl(50.4,100%,50%), cmyk(0,16,100,0) */
-  --blue: #006699; /*rgb(0,102,153), hsl(200,100%,30%), cmyk(100,33,0,40) */
-  /*--blue: #00629B; panatone "3015 C", rgb(0,98,155), hsl(202.1,100%,30.4%), cmyk(100,37,0,39)*/
-  --bluegreen: #006969; /*rgb(0,105,105), hsl(180,100%,20.6%), cmyk(100,0,0,59) */
-  /*--bluegreen: #006666; close to "7715 C" rgb(0,102,102), hsl(180,100%,20%), cmyk(100,0,0,60)*/
-  --black: #000000;
-  --warmblack: #191918;/*panatone "Black 6 C" rgb(25,25,24), hsl(60,2%,9.6%), cmyk(0,0,4,90)*/
-  /*--warmblack: #1A1A19; rgb(26,26,25),hsl(60,2%,10%),cmyk(0,0,4,90) */
-  --gray: #484848;
-  --lightgray: #888888;
-  --warmgray: #4b4b44;
-  --warmlightgray: #656560;
-  --white: #ffffff;
-  --warmwhite: #fcfbe3; /* rgb(252,251,227),hsl(57.6,80.6%,93.9%),cmyk(0,0,10,1)*/
-  /*--warmwhite: #fcfbe3;  rgb(252,252,227),hsl(60,81%,94%),cmyk(0,0,10,1)*/
-  --warmlightwhite:#fdfdf3; /* panatone sort of "P 1-9 C"rgb(253,253,243),hsl(60,71.4%,97.3%),cmyk(0,0,4,1)*/
-  --richblack: #010203;
-  --richgray1: #2a2a2b;
-  --richgray2: #4f4f50;
-  --richgray3: #777878;
-  --richgray4: #a2a3a3;
-  --richgray5: #d0d0d0;
-  --richgray6: #ffffff;
-  --margin: 1in;
-  --margingutter: 1.2in;
-  --bleed: 0.25in;
-  --width: 8.5in;
-  --height: 8.5in;
-  --innerwidth: 6.3in;
-  --innerheight: 6.3in; /*pageheight - margin - margingutter*/
-  --monospace_code: Courier, 'Andale Mono', AndaleMono, Monaco, monospace;
-  --monospace: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
-  --monospace_zeroslash: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
-  --monospace_zerodot: 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
-  --typewriter: 'American Typewriter', Didot, 'Times New Roman', serif;
-  --sans: Verdana, Helvetica, Arial, Tahoma, 'Trebuchet MS', sans-serif;
-  --serif: Georgia, Didot, 'Times New Roman', Times, serif;
-  --cursive: 'Bradley Hand', 'Comic Sans MS', cursive, sans-serif;
-  --dragons: Luminari, 'Bradley Hand', cursive, sans-serif;
-  --oldbook: 'Palatino Linotype', 'Book Antiqua', Palatino, 'American Typewriter', 'Times New Roman', serif;
-  --poetry: 'Crimson Pro', serif;
-  --indent1: 2em;
-  --indent2: 4em;
-  --indent3: 6em;
-  --indent4: 8em;
-  --indent5: 10em;
-  --fontSize0: 12pt;
-  --textfont1: var(--monospace_code);
-  --bgfootnote: var(--warmwhite);
-  --hr1: 2em solid var(--warmblack);
-  --hr2: 1em solid var(--warmblack);
-}
 @page {
 	margin: var(--margin);
 	size: var(--width) var(--height);
@@ -98,7 +39,7 @@
 }
 @page cover {
 	margin: 0;
-	background: var(--warmwhite);
+	/*background-color: var(--warmlightwhite);*/
 	@bottom-left {
 		content: none;
 	}
@@ -219,6 +160,8 @@ main > header > h4 {
 	color: var(--richgray2);
 }
 h1 {
+	position: absolute;
+	top:10%;left:10%;
 	font-family:  var(--monospace_zerodot);
 	font-size: 1.8em;
 	letter-spacing: 0.05em;
@@ -242,15 +185,25 @@ section > header > h1 {
 	break-after: avoid-page;
 }
 article {
-	position:absolute;
+	break-before: page;
+}
+article.broadside {
+	page: cover;
 	break-before: page;
 }
 article, article header, article header h1 {
 	margin-top:0;
 	padding-top:0;
 }
+article > div.content {
+	position: absolute;
+	top:0; left:0;
+	overflow: clip;
+}
 article h1 {
+	margin-top:0.8em;
 	margin-bottom:0.8em;
+	z-index:40000;
 }
 article:has(div.inscription) header h1 {
 	margin-bottom:0.1em;
@@ -272,14 +225,14 @@ section > div.inscription {
 	margin-top:8em;
 }
 figure, div.frame {
+	position: absolute;
 	display: block;
 	padding: 0in;
 	margin: 0in;
-	position: absolute;
 	top: 0in; left: 0in;
 	width:var(--width); height:var(--height);
 	min-width:var(--width); min-height:var(--height);
-	break-before: page;
+	/*break-before: page;*/
 }
 article {
 	break-before: page;
@@ -321,11 +274,11 @@ div.blank {
 	height:80%;
 }
 svg {
+	position:absolute;
 	top:0; left:0;
 	margin:0;
 	padding:0;
 	width:var(--width); height:var(--height);
-	width:100%;height:100%;
 }
 figcaption {
 	display:none;
@@ -543,48 +496,4 @@ article a::after {
     width: 2em;
     padding-right: 1em;
     text-align: right;
-}
-body > main > header > h1 {
-	string-set: stringBookTitle content();
-}
-section > header > h1 {
-	string-set: stringSectionTitle content();
-}
-article > header > h1 {
-	string-set: stringArticleTitle content();
-}
-figcaption {
-	string-set: stringFigCaption content();
-}
-#author {
-	string-set: stringAuthor content();
-}
-#documentTimeStamp {
-	string-set: stringDocumentTimeStamp content();
-}
-#documentDateTime {
-	string-set: stringDateTime content();
-}
-#documentId {
-	string-set: stringDocumentId content();
-}
-@page {
-	counter-reset: counterFootnote 1;
-}
-body {
-	counter-reset: counterFootnote 1;
-	counter-reset: counterFigure 1;
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-	counter-reset: counterArticle 1;
-}
-section.pagestartnumbers {
-	counter-reset: counterPage 1;
-}
-section.interior:nth-child(0) {
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-}
-section.interior > article:nth-child(0) {
-	counter-reset: counterArticle 1;
 }

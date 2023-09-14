@@ -18,15 +18,15 @@ const nticks = input.nticks || 240;
 let nx = 2, ny = 2, nz = 4; 
 /*
 const colorsets = [
-	["#fcfbe3", "#191918"], //"warmbw",
-	["#9a0000", "#fcfbe3", "#191918"], //"warmbwred",
-	["#fcfbe3", "#191918"], //"warmbw",
-	["#ffcc00", "#fcfbe3", "#191918"], //"warmbwyellow",
-	["#fcfbe3", "#191918"], //"warmbw",
-	//["#006699", "#fcfbe3", "#191918"], //"warmbwblue",
+	["#fdfdf3", "#191918"], //"warmbw",
+	["#8F0000", "#fdfdf3", "#191918"], //"warmbwred",
+	["#fdfdf3", "#191918"], //"warmbw",
+	["#ffcc00", "#fdfdf3", "#191918"], //"warmbwyellow",
+	["#fdfdf3", "#191918"], //"warmbw",
+	//["#006699", "#fdfdf3", "#191918"], //"warmbwblue",
 ];
 */
-const colorsets = [[[["#fcfbe3", "#191918"],3],[["#9a0000", "#fcfbe3", "#191918"],1],[["#fcfbe3", "#191918"],2],[["#9a0000", "#fcfbe3", "#191918"],1]].map(wx=>{
+const colorsets = [[[["#fdfdf3", "#191918"],3],[["#8F0000", "#fdfdf3", "#191918"],1],[["#fdfdf3", "#191918"],2],[["#8F0000", "#fdfdf3", "#191918"],1]].map(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 }).flat(2)];
 
@@ -108,7 +108,8 @@ let elements = [...new Array(nz-2).keys()].reduce( (acc,z) => {
 	});
 	acc.push(zels);
 	return acc;
-}, [[{tag:"rect", b:[]},{tag:"rect", b:[]}]]);
+//}, [[{tag:"rect", b:[]},{tag:"rect", b:[]}]]);
+}, []);
 
 //elements.push([{tag:"line", b:[]},{tag:"line", b:[]},{tag:"circle", b:[]},{tag:"circle", b:[]}]);
 let Bobj = {
@@ -138,11 +139,12 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 /* layer 0
  * rectangle background
  * */
+/*
 [...new Array(elements[0].length).keys()].forEach( n => { 
 	elements[0][n].b = [...new Array(nticks).keys()].map( j => {
 		//let color = colors[j][n%colors[j].length]; 
 		let cx = 0, cy = 0, w = 1, h = 1, sw = 0.01, sd = 1, so = 0, fo = 1;
-		let color = "#fcfbe3";
+		let color = "#fdfdf3";
 		if(n===1) {
 			//if(j%9 !== 0) { color = colors[j-1][n%colors[j-1].length] }
 			w = j%9 === 0 ? 0 : ( j%9 === 1 || j%9 === 8 ? 0.5 : 1 );
@@ -152,9 +154,11 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 		return drawp.rect({cx:cx,cy:cy,w:w,h:h,sw,sd,so,fo,color});
 	});
 });
+*/
 /* layers 1 to z-1
+ layers 0 to z-1
  * */
-[...new Array(nz-2).keys()].map( z => z+1).forEach( z => { 
+[...new Array(nz-2).keys()].map( z => z+0).forEach( z => { 
 	elements[z].filter(el=>el.tag==="line").forEach( (el,n) => { 
 		el.b = [...new Array(nticks).keys()].map( j => {
 			let bt = [];

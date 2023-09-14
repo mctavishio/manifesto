@@ -6,7 +6,7 @@ let input = {
 	bookmargin: 1,
 	bookguttermargin: 1.2,
 	bleed: 0.25,
-	pixelsperunit: 72,
+	pixelsperunit: 300,
 	captionheight: 1,
 	cssstyles: `
 	main {
