@@ -257,8 +257,8 @@ article.broadside {
 article > div.flex {
 	position: absolute;
 	top:0; left:0;
+	display: flex;
 	padding: var(--margin);
-	display: flex; /*table;*/
     width: var(--innerwidth);
     height: var(--innerheight);
 	align-items: center;
@@ -268,16 +268,24 @@ article > div.flex {
 article > div.flex > div.content {
 	/*position: absolute;*/
 	/*top:0; left:0;*/
-	background-color: var(--warmlightwhite);
-	font-size:1.4rem;
+	flex-basis: 1;
+	color: var(--warmblack);
+	font-size:4rem;
 	/*width: var(--innerwidth);
 	height: var(--innerheight);$/
 	/*display: table-cell;
 	vertical-align: middle;*/
 }
-article header > h1 {
-	margin-top: 0.8em;
-	margin-bottom:0.8em;
+article.broadside  header {
+	width: 100%;
+	padding: 1em;
+	/*position: absolute;
+	top: var(--margin);
+	left: var(--margin);*/
+}
+article.broadside  header > h1 {
+	color: var(--red);
+	font-size: 4em;
 }
 article:has(div.inscription) header h1 {
 	margin-bottom:0.1em;

@@ -89,6 +89,10 @@ text:`
 <li>ticket agent paper</li>
 <li>tin cup beggar thief</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>electric magnet migrate translate</li>
 <li>hero zero suitcase clock map train nomad</li>
@@ -145,6 +149,10 @@ text:`
 <ul class="stanza">
 <li>shattered glass cadenza</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>industry(!)</li>
 </ul>
@@ -202,6 +210,10 @@ text:`
 <li>neon vacant blinking light</li>
 <li>empty storm-drain alley</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>cell number table</li>
 <li>column thicket</li>
@@ -334,6 +346,10 @@ text:`
 <li>beer-stained formula calculations configurations</li>
 <li>phase plane transformations</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>trace erosion fragment shadow window time</li>
 <li>season shifted local sundial noon-line fragment</li>
@@ -419,6 +435,10 @@ text:`
 <li>apoplectic news</li>
 <li>heavy rain</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>cast projections</li>
 <li>shadows along</li>
@@ -561,6 +581,10 @@ text:`
 <li>molecular astronomy</li>
 <li>infinite between</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>a hare moves</li>
 <li>half the distance</li>
@@ -828,6 +852,10 @@ text:`
 <li>an ideal polyphony this vital web</li>
 <li>(re)creation would be difficult & risky</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>repairman rider passenger lone bird</li>
 <li>grass blade dyke (our hero zero rider ze)</li>
@@ -1150,6 +1178,12 @@ text:`
 <li>the reedy fishers bent stalks headed trousers folded</li>
 <li>pail in hand to shore chlorophyll surging through limbs</li>
 <li>pulsing turning in the yellow light</li>
+</ul>
+`
+},
+{
+text:`
+<ul class="stanza">
 <li>late summer day dusty strands of light</li>
 <li>taut against the very ether of air & day</li>
 <li>particles stretched into waves cast from far away</li>
@@ -1286,6 +1320,10 @@ text:`
 <li>this place this platform this vacant</li>
 <li>iowa small tool shed top hill grave field</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>field notes double reed hollow log</li>
 <li>breaking hard ground</li>
@@ -1336,6 +1374,10 @@ text:`
 <li>conservation of energy expenditure of energy conflagration carbon</li>
 <li>coal bones oil organics drilled excavated broken harnessed released</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>goal ::: a net for capture seismograph of wind knowledge graphs monads</li>
 <li>cybernetics books boat numerical recipes algorithms formulas dictionaries</li>
@@ -1601,6 +1643,10 @@ text:`
 <li>or why is this day like an other once upon a time dinosaur last-day meteorite explosion</li>
 <li>dusty smoke-filled orange sky</li>
 </ul>
+`
+},
+{
+text:`
 <ul class="stanza">
 <li>start again empty chalkboard</li>
 <li>wound tape deck of cards</li>

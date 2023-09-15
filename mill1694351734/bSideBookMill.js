@@ -89,6 +89,7 @@ let head = `
 	  gtag('config', 'G-0989MECNZV');
 	</script>
 	<link rel="stylesheet" media="screen" href="css/bookweb.css"/>
+	<!--<link rel="stylesheet" media="print" href="css/bookprint.css"/>-->
 	<link rel="stylesheet" media="print" href="css/print.css"/>
 	<style>
 	:root {
@@ -187,8 +188,8 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		</figure>`
 	}
 	poemstr = poemstr + `<div class="flex"><div class="content">`;
-	poemstr = poemstr + `<p class="large">${poem.title}</p>`;
-	poemstr = poemstr + `<p>${poem.figure.caption}</p>`;
+	poemstr = poemstr + `<header><h1>${poem.title}</h1></header>`;
+	poemstr = poemstr + `<p>${poem.text}</p>`;
 	poemstr = poemstr + `</div></div>`;
 	poemstr = poemstr + `
 </article>`;

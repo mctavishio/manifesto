@@ -89,8 +89,7 @@ let head = `
 	  gtag('config', 'G-0989MECNZV');
 	</script>
 	<link rel="stylesheet" media="screen" href="css/bookweb.css"/>
-	<!--<link rel="stylesheet" media="print" href="css/bookprint.css"/>-->
-	<link rel="stylesheet" media="print" href="css/printFilm.css"/>
+	<link rel="stylesheet" media="print" href="css/print.css"/>
 	<style>
 	:root {
 		--margin:${margin};
@@ -185,27 +184,10 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		poemstr = poemstr + `
 		<figure class="frame">
 		${poem.figure.picture}
-		<figcaption>${poem.figure.caption}</figcaption>
 		</figure>`
 	}
 	poemstr = poemstr + `<div class="flex"><div class="content">`;
-	if(poem.title) {
-		poemstr = poemstr + `
-	<header><h1>${poem.title}</h1></header>`;
-	}
-	if(poem.inscription) {
-		poemstr = poemstr + `
-		<div class="inscription">
-		${poem.inscription}
-		</div>`
-	}
-	if(poem.subtitle) {
-		poemstr = poemstr + `
-		<div class="inscription">
-		${poem.subtitle}
-		</div>`
-	}
-	poemstr = poemstr + `${poem.text}`;
+	poemstr = poemstr + `${poem.figure.caption}`;
 	poemstr = poemstr + `</div></div>`;
 	poemstr = poemstr + `
 </article>`;

@@ -218,8 +218,6 @@ article > div.flex > div.content {
 	vertical-align: middle;*/
 }
 article.broadside  header {
-	width: 100%;
-	padding: 1em;
 	/*position: absolute;
 	top: var(--margin);
 	left: var(--margin);*/

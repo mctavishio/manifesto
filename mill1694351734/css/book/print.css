@@ -58,11 +58,14 @@
   --hr2: 1em solid var(--warmblack);
 }
 @page {
+	@footnote {
+		background-color: var(--bgfootnote);
+		border-top: var(--hr2);
+	}
 	margin: var(--margin);
 	size: var(--width) var(--height);
 	marks: crop cross;
 	bleed: 0.25in;
-	bleed: var(--bleed);
 	-prince-trim: 0.25in;
 }
 @page :left {
@@ -87,7 +90,6 @@
 @page :left{
 	@bottom-left {
 		content: counter(page);
-		opacity:0.6;
 		font-family:  var(--monospace_zerodot);
 		font-weight:400;
 		font-size: 20pt;
@@ -98,7 +100,6 @@
 }
 @page cover {
 	margin: 0;
-	/*background-color: var(--warmlightwhite);*/
 	@bottom-left {
 		content: none;
 	}
@@ -161,7 +162,51 @@ main > header, section.pagefrontmatter, section > header > h1, section#prelude, 
 	}
 }
 figure, div.frame {
-	page: cover;
+	page: pagefigure;
+}
+body > main > header > h1 {
+	string-set: stringBookTitle content();
+}
+section > header > h1 {
+	string-set: stringSectionTitle content();
+}
+article > header > h1 {
+	string-set: stringArticleTitle content();
+}
+figcaption {
+	string-set: stringFigCaption content();
+}
+#author {
+	string-set: stringAuthor content();
+}
+#documentTimeStamp {
+	string-set: stringDocumentTimeStamp content();
+}
+#documentDateTime {
+	string-set: stringDateTime content();
+}
+#documentId {
+	string-set: stringDocumentId content();
+}
+@page {
+	counter-reset: counterFootnote 1;
+}
+body {
+	counter-reset: counterFootnote 1;
+	counter-reset: counterFigure 1;
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+	counter-reset: counterArticle 1;
+}
+section.pagestartnumbers {
+	counter-reset: counterPage 1;
+}
+section.interior:nth-child(0) {
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+}
+section.interior > article:nth-child(0) {
+	counter-reset: counterArticle 1;
 }
 section#sectionfrontmatter {
 	font: var(--fontfrontmatter);
@@ -220,7 +265,7 @@ main > header > h4 {
 }
 h1 {
 	font-family:  var(--monospace_zerodot);
-	font-size: 2em;
+	font-size: 1.8em;
 	letter-spacing: 0.05em;
 	font-weight: 600;
 	color: var(--richgray2);
@@ -242,50 +287,14 @@ section > header > h1 {
 	break-after: avoid-page;
 }
 article {
-	break-before: page;
+	break-before: verso;
 }
-article {
+article, article header, article header h1 {
 	margin-top:0;
 	padding-top:0;
 }
-article.broadside {
-	/*position: absolute;*/
-	/*top:0; left:0;*/
-	page: cover;
-	break-before: page;
-}
-article > div.flex {
-	position: absolute;
-	top:0; left:0;
-	display: flex;
-	padding: var(--margin);
-    width: var(--innerwidth);
-    height: var(--innerheight);
-	align-items: center;
-	justify-content: center;
-	overflow: clip;
-}
-article > div.flex > div.content {
-	/*position: absolute;*/
-	/*top:0; left:0;*/
-	flex-basis: 1;
-	background-color: var(--warmlightwhite);
-	font-size:1.4rem;
-	/*width: var(--innerwidth);
-	height: var(--innerheight);$/
-	/*display: table-cell;
-	vertical-align: middle;*/
-}
-article.broadside  header {
-	width: 100%;
-	padding: 1em;
-	/*position: absolute;
-	top: var(--margin);
-	left: var(--margin);*/
-}
-article.broadside  header > h1 {
-	color: var(--red);
-	font-size: 4em;
+article h1 {
+	margin-bottom:0.8em;
 }
 article:has(div.inscription) header h1 {
 	margin-bottom:0.1em;
@@ -307,14 +316,7 @@ section > div.inscription {
 	margin-top:8em;
 }
 figure, div.frame {
-	position: absolute;
-	display: block;
-	padding: 0in;
-	margin: 0in;
-	top: 0in; left: 0in;
-	width:var(--width); height:var(--height);
-	min-width:var(--width); min-height:var(--height);
-	/*break-before: page;*/
+	break-before: page;
 }
 article {
 	break-before: page;
@@ -355,17 +357,27 @@ div.blank {
 	width:100%;
 	height:80%;
 }
-svg {
-	position:absolute;
+figure, div.frame {
+	display: block;
 	top:0; left:0;
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	min-width: var(--innerwidth);
+	min-height: var(--innerheight);
+	padding-top:0;
 	margin:0;
-	padding:0;
-	width:var(--width); height:var(--height);
+	break-before: recto;
+}
+svg {
+	top:0; left:0;
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	width:100%;
+	height:90%;
 }
 figcaption {
-	display:none;
-	/*font-size:.8em;
-	height: 8%;*/
+	font-size:.8em;
+	height: 8%;
 }
 span.indent1 {
 	padding-left: var(--indent1)
@@ -434,10 +446,10 @@ article.prose  p {
 ul.stanza li {
 	list-style-type: none;
 	display: inline;
-	font-size: 1em;
+	font-size: 12pt;
 	color: var(--warmblack);
 	font-weight:400;
-	margin:0.05em;
+	margin:0.1em;
 }
 ul.stanza li:nth-child(4n+0) {
 	color: var(--warmlightgray);
@@ -536,90 +548,46 @@ ul.stanza > li:nth-child(5n+0):before {
 }
 /* Cover  from https://github.com/michaelperrin/blog-css-book-demo/blob/master/book.css*/
 .cover {
-	page: cover;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image: url('cover.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+  page: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cover h1 {
-	margin-top: 1in;
-	margin-left: 1in;
-	margin-right: 1in;
-	color: #333;
-	text-align: left;
-	font-weight: 300;
-	font-size: 3.4rem;
+  margin-top: 1in;
+  margin-left: 1in;
+  margin-right: 1in;
+  color: #333;
+  text-align: left;
+  font-weight: 300;
+  font-size: 3.4rem;
 }
 span.footnote {
-	float: footnote;
+    float: footnote;
 }
 article a {
-	text-decoration: underline;
-	color: inherit;
+  text-decoration: underline;
+  color: inherit;
 }
 article a::after {
-	content: "(" attr(href) ")";
-	color: inherit;
+  content: "(" attr(href) ")";
+  color: inherit;
 }
 .footnote::footnote-call {
-	content: counter(counterFootnote, decimal) " ";
-	color: var(--warmgray);
-	vertical-align: super;
-	font-size: 0.8em;
+    content: counter(counterFootnote, decimal) " ";
+    color: var(--warmgray);
+    vertical-align: super;
+    font-size: 0.8em;
 }
 .footnote::footnote-marker {
-	content: counter(footnote, lower-roman);
-	font-size: 14pt;
-	color: red;
-	display: inline-block;
-	width: 2em;
-	padding-right: 1em;
-	text-align: right;
-}
-body > main > header > h1 {
-	string-set: stringBookTitle content();
-}
-section > header > h1 {
-	string-set: stringSectionTitle content();
-}
-article > header > h1 {
-	string-set: stringArticleTitle content();
-}
-figcaption {
-	string-set: stringFigCaption content();
-}
-#author {
-	string-set: stringAuthor content();
-}
-#documentTimeStamp {
-	string-set: stringDocumentTimeStamp content();
-}
-#documentDateTime {
-	string-set: stringDateTime content();
-}
-#documentId {
-	string-set: stringDocumentId content();
-}
-@page {
-	counter-reset: counterFootnote 1;
-}
-body {
-	counter-reset: counterFootnote 1;
-	counter-reset: counterFigure 1;
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-	counter-reset: counterArticle 1;
-}
-section.pagestartnumbers {
-	counter-reset: counterPage 1;
-}
-section.interior:nth-child(0) {
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-}
-section.interior > article:nth-child(0) {
-	counter-reset: counterArticle 1;
+    content: counter(footnote, lower-roman);
+    font-size: 14pt;
+    color: red;
+    display: inline-block;
+    width: 2em;
+    padding-right: 1em;
+    text-align: right;
 }
