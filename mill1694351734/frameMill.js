@@ -6,7 +6,7 @@ let input = {
 	bookmargin: 1,
 	bookguttermargin: 1.2,
 	bleed: 0.125,
-	pixelsperunit: 120,
+	pixelsperunit: 72,
 	captionheight: 1,
 	cssstyles: "", 
 };
@@ -59,7 +59,11 @@ const canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight)
 const fps = 24;
 
 let poemsobj = [...new Array(nticks).keys()].map( j => {
-	let poem = poems[j%poems.length];
+	//let poem = poems[j%poems.length];
+	let poem = {
+		id: `${(j+1).toString().padStart(2, '0')}`,
+		title: `${(j+1).toString().padStart(2, '0')}`,
+	};
 	let elementdraw = B.elements.map( layer => {
 	 return layer.map( el => {
 		return tools.drawf(canvas,el.b[j],el.tag);
@@ -104,6 +108,14 @@ let bookobj = {
 			title: "the repair(*)",
 			inscription: "it was like this every morning ...",
 			cssclasses: ["pagestartnumbers", "booksection"],
+			poems: [...new Array(nticks).keys()].map( j => { return poemsobj[j].id }), 
+		},
+		/*
+		{ 
+			id: "section1",
+			title: "the repair(*)",
+			inscription: "it was like this every morning ...",
+			cssclasses: ["pagestartnumbers", "booksection"],
 			poems: [...new Array(nticks).keys()].filter( j => j < 61 ).map( j => { return poems[j%poems.length].id }), 
 		},
 		{ 
@@ -125,8 +137,9 @@ let bookobj = {
 			cssclasses: ["booksection"],
 			poems: [...new Array(nticks).keys()].filter( j => j > 180 && j < 241 ).map( j => { return poems[j%poems.length].id }), 
 		},
+		*/
 	],
-	poemids: [...new Array(nticks).keys()].map( j => { return poems[j%poems.length].id }), 
+	poemids: [...new Array(nticks).keys()].map( j => { return poemsobj[j].id }), 
 };
 
 

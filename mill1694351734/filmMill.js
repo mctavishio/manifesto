@@ -186,10 +186,11 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		${poem.figure.picture}
 		</figure>`
 	}
+	/*
 	poemstr = poemstr + `<div class="flex"><div class="content">`;
-	poemstr = poemstr + `<p class="large">${poem.title}</p>`;
-	poemstr = poemstr + `<p>${poem.figure.caption}</p>`;
+	poemstr = poemstr + `<header><h1>${poem.title}</h1></header>`;
 	poemstr = poemstr + `</div></div>`;
+	*/
 	poemstr = poemstr + `
 </article>`;
 	return poemstr;

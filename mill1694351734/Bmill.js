@@ -2,8 +2,8 @@ const fs = require("fs");
 console.log(process.argv);
 let args = process.argv;
 //const nticks = process.argv[2] ? process.argv[2] : 240;
-const nticks = 20;
-const fps = 4;
+const nticks = 60;
+const fps = 24;
 const dirTimestamp = 00000000;
 let dt = new Date();
 let timestamp = dt.getTime();
@@ -84,14 +84,14 @@ let drawp = {
 const tween = (p1,p2,t,d) => {
 	console.log(`****p1=${JSON.stringify(p1)}`);
 	console.log(`****p2=${JSON.stringify(p2)}`);
-	let dt = t/d;
+	let dt = (100*t/d)/100;
 	let pdt = {};
 	Object.keys(p1).forEach(k=> {
 		if(isNaN(p1[k])) {
 			pdt[k] = p1[k];
 		}
 		else {
-			pdt[k] = 100*(p1[k] + (p2[k]-p1[k])*dt)/100;
+			pdt[k] = (100*p1[k] + 100*(p2[k]-p1[k])*dt)/100;
 			console.log(`k=${k},dt=${dt},(p2[k]-p1[k])*dt=${(p2[k]-p1[k])*dt}`);
 		}
 	});
@@ -134,7 +134,7 @@ let Bobj = {
 	nticks: nticks*fps,
 	elements: elements,
 };
-let changes = [[3,1],[2,1]].flatMap(wx=>{
+let changes = [[3,0],[2,1]].flatMap(wx=>{
 	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 });
 let ischange = [];
