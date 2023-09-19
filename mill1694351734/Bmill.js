@@ -3,7 +3,7 @@ console.log(process.argv);
 let args = process.argv;
 //const nticks = process.argv[2] ? process.argv[2] : 240;
 const nticks = 20;
-const fps = 24;
+const fps = 4;
 const dirTimestamp = 00000000;
 let dt = new Date();
 let timestamp = dt.getTime();
@@ -82,10 +82,18 @@ let drawp = {
 	hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
 }
 const tween = (p1,p2,t,d) => {
+	console.log(`****p1=${JSON.stringify(p1)}`);
+	console.log(`****p2=${JSON.stringify(p2)}`);
 	let dt = t/d;
-	let pdt = p2;
-	Object.keys(p2).filter(k=>!isNaN(p2[k])).forEach(k=> {
-		pdt[k] = p1[k] + (p2[k]-p1[k])*dt;
+	let pdt = {};
+	Object.keys(p1).forEach(k=> {
+		if(isNaN(p1[k])) {
+			pdt[k] = p1[k];
+		}
+		else {
+			pdt[k] = 100*(p1[k] + (p2[k]-p1[k])*dt)/100;
+			console.log(`k=${k},dt=${dt},(p2[k]-p1[k])*dt=${(p2[k]-p1[k])*dt}`);
+		}
 	});
 	console.log(`pdt = ${JSON.stringify(pdt)}`);
 	return pdt;
@@ -126,7 +134,7 @@ let Bobj = {
 	nticks: nticks*fps,
 	elements: elements,
 };
-let changes = [[3,0],[2,1]].flatMap(wx=>{
+let changes = [[3,1],[2,1]].flatMap(wx=>{
 	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 });
 let ischange = [];
@@ -171,14 +179,19 @@ ischange[0] = [...new Array(m).keys()].map( x => {
 			acc.push(bt);
 			return acc;
 		}, []);
-		el.b = bframe.map( (f,j) => { 
-			let p2 = j < nticks-1 ? bframe[j+1] : f;
-			console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
+		el.b = [...new Array(nticks).keys()].flatMap( j => { 
+			//let p2 = j < nticks-1 ? bframe[j+1] : f;
+			let p1 = bframe[j];
+			let p2 = bframe[(j+1)%nticks];
+			//console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
 			return [...new Array(fps).keys()].map( t => {
-				//return tween(f,p2,t,fps); 
-				return p2;
+				//console.log(`****p1=${JSON.stringify(p1)},p2=${JSON.stringify(p2)}`);
+				let step = tween(p1,p2,t,fps);
+				//console.log(`tween = ${JSON.stringify(step)}`);
+				return step; 
+				//return p2;
 			});
-		}).flat();
+		});
 		console.log(`count=${el.b.length}`);
 	});
 });
