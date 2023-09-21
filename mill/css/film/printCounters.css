@@ -1,0 +1,44 @@
+body > main > header > h1 {
+	string-set: stringBookTitle content();
+}
+section > header > h1 {
+	string-set: stringSectionTitle content();
+}
+article > header > h1 {
+	string-set: stringArticleTitle content();
+}
+figcaption {
+	string-set: stringFigCaption content();
+}
+#author {
+	string-set: stringAuthor content();
+}
+#documentTimeStamp {
+	string-set: stringDocumentTimeStamp content();
+}
+#documentDateTime {
+	string-set: stringDateTime content();
+}
+#documentId {
+	string-set: stringDocumentId content();
+}
+@page {
+	counter-reset: counterFootnote 1;
+}
+body {
+	counter-reset: counterFootnote 1;
+	counter-reset: counterFigure 1;
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+	counter-reset: counterArticle 1;
+}
+section.pagestartnumbers {
+	counter-reset: counterPage 1;
+}
+section.interior:nth-child(0) {
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+}
+section.interior > article:nth-child(0) {
+	counter-reset: counterArticle 1;
+}

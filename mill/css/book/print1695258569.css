@@ -1,0 +1,594 @@
+/*https://www.w3.org/TR/css-page-3/ */
+/*https://www.princexml.com/doc/paged/ */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  /*--red: #9a0000;*/
+	--red: #8F0000; /*panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
+  --yellow: #ffcc00;/*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0) */
+  /*--yellow: #FFD700;/*panatone "Yellow 012 C" rgb(255,215,0), hsl(50.4,100%,50%), cmyk(0,16,100,0) */
+  --blue: #006699; /*rgb(0,102,153), hsl(200,100%,30%), cmyk(100,33,0,40) */
+  /*--blue: #00629B; panatone "3015 C", rgb(0,98,155), hsl(202.1,100%,30.4%), cmyk(100,37,0,39)*/
+  --bluegreen: #006969; /*rgb(0,105,105), hsl(180,100%,20.6%), cmyk(100,0,0,59) */
+  /*--bluegreen: #006666; close to "7715 C" rgb(0,102,102), hsl(180,100%,20%), cmyk(100,0,0,60)*/
+  --black: #000000;
+  --warmblack: #191918;/*panatone "Black 6 C" rgb(25,25,24), hsl(60,2%,9.6%), cmyk(0,0,4,90)*/
+  /*--warmblack: #1A1A19; rgb(26,26,25),hsl(60,2%,10%),cmyk(0,0,4,90) */
+  --gray: #484848;
+  --lightgray: #888888;
+  --warmgray: #4b4b44;
+  --warmlightgray: #656560;
+  --white: #ffffff;
+  --warmwhite: #fcfbe3; /* rgb(252,251,227),hsl(57.6,80.6%,93.9%),cmyk(0,0,10,1)*/
+  /*--warmwhite: #fcfbe3;  rgb(252,252,227),hsl(60,81%,94%),cmyk(0,0,10,1)*/
+  --warmlightwhite:#fdfdf3; /* panatone sort of "P 1-9 C"rgb(253,253,243),hsl(60,71.4%,97.3%),cmyk(0,0,4,1)*/
+  --warmlightwhiteveil: rgba(253,253,243,0.8);
+  --richblack: #010203;
+  --richgray1: #2a2a2b;
+  --richgray2: #4f4f50;
+  --richgray3: #777878;
+  --richgray4: #a2a3a3;
+  --richgray5: #d0d0d0;
+  --richgray6: #ffffff;
+  --margin: 1in;
+  --margingutter: 1.2in;
+  --bleed: 0.25in;
+  --width: 8.5in;
+  --height: 8.5in;
+  --innerwidth: 6.3in;
+  --innerheight: 6.3in; /*pageheight - margin - margingutter*/
+  --monospace_code: Courier, 'Andale Mono', AndaleMono, Monaco, monospace;
+  --monospace: 'Lucida Console', 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --monospace_zeroslash: Monaco, 'Andale Mono', AndaleMono, Courier, monospace;
+  --monospace_zerodot: 'Andale Mono', AndaleMono, Monaco, Courier, monospace;
+  --typewriter: 'American Typewriter', Didot, 'Times New Roman', serif;
+  --sans: Verdana, Helvetica, Arial, Tahoma, 'Trebuchet MS', sans-serif;
+  --serif: Georgia, Didot, 'Times New Roman', Times, serif;
+  --cursive: 'Bradley Hand', 'Comic Sans MS', cursive, sans-serif;
+  --dragons: Luminari, 'Bradley Hand', cursive, sans-serif;
+  --oldbook: 'Palatino Linotype', 'Book Antiqua', Palatino, 'American Typewriter', 'Times New Roman', serif;
+  --poetry: 'Crimson Pro', serif;
+  --indent1: 2em;
+  --indent2: 4em;
+  --indent3: 6em;
+  --indent4: 8em;
+  --indent5: 10em;
+  --fontSize0: 12pt;
+  --textfont1: var(--monospace_code);
+  --bgfootnote: var(--warmwhite);
+  --hr1: 2em solid var(--warmblack);
+  --hr2: 1em solid var(--warmblack);
+}
+@page {
+	@footnote {
+		background-color: var(--bgfootnote);
+		border-top: var(--hr2);
+	}
+	margin: var(--margin);
+	size: var(--width) var(--height);
+	marks: crop cross;
+	bleed: 0.25in;
+	-prince-trim: 0.25in;
+}
+@page :left {
+	margin-right: 1.2in;
+	margin-right: var(--margingutter);
+}
+@page :right {
+	margin-left: 1.2in;
+	margin-left: var(--margingutter);
+}
+@page :right{
+	@bottom-right {
+		content: counter(page);
+		font-family:  var(--monospace_zerodot);
+		font-weight:400;
+		font-size: 20pt;
+		color: var(--warmlightgray);
+		color: var(--richgray3);
+		margin-bottom: 0.6in;
+	}
+}
+@page :left{
+	@bottom-left {
+		content: counter(page);
+		font-family:  var(--monospace_zerodot);
+		font-weight:400;
+		font-size: 20pt;
+		color: var(--warmlightgray);
+		color: var(--richgray3);
+		margin-bottom: 0.6in;
+	}
+}
+@page cover {
+	margin: 0;
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+}
+@page pageblank {
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+}
+div.blank, section.blank, section#sectiontoc {
+	page: pageblank;
+}
+main > header, section.pagefrontmatter, section > header > h1, section#prelude, section#sectiontoc, section#bookinscription {
+	page: pageblank;
+}
+@page pagewithborderline {
+	border-top: thin var(--warmblack) solid;
+	border-bottom: thin var(--warmblack) solid;
+}
+@page pagefigure :right{
+	counter-increment: figurenum;
+	@bottom-right {
+		content: "page ::: " counter(page) " figure # => " counter(figurenum);
+	}
+}
+@page pagefigure :left{
+	counter-increment: figurenum;
+	@bottom-left {
+		content: "page:" counter(page) "figure #" counter(figurenum);
+	}
+}
+figure, div.frame {
+	page: pagefigure;
+}
+body > main > header > h1 {
+	string-set: stringBookTitle content();
+}
+section > header > h1 {
+	string-set: stringSectionTitle content();
+}
+article > header > h1 {
+	string-set: stringArticleTitle content();
+}
+figcaption {
+	string-set: stringFigCaption content();
+}
+#author {
+	string-set: stringAuthor content();
+}
+#documentTimeStamp {
+	string-set: stringDocumentTimeStamp content();
+}
+#documentDateTime {
+	string-set: stringDateTime content();
+}
+#documentId {
+	string-set: stringDocumentId content();
+}
+@page {
+	counter-reset: counterFootnote 1;
+}
+body {
+	counter-reset: counterFootnote 1;
+	counter-reset: counterFigure 1;
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+	counter-reset: counterArticle 1;
+}
+section.pagestartnumbers {
+	counter-reset: counterPage 1;
+}
+section.interior:nth-child(0) {
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+}
+section.interior > article:nth-child(0) {
+	counter-reset: counterArticle 1;
+}
+section#sectionfrontmatter {
+	font: var(--fontfrontmatter);
+}
+article.lowertopmargin {
+	margin-top:30%;
+}
+#sectiontoc ul li a::after {
+	content: leader(' . ') target-counter(attr(href), page);
+}
+blockquote {
+	margin: var(--indent2, 0.25in);
+}
+.justify {
+	text-align: justify;
+	hyphens: none;
+	text-align-last: left;
+}
+html {
+	font-size: var(--fontSize0,11pt);
+	font-variant: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	background: var(--bg0, #fff);
+	color: var(--richblack);
+}
+main > header, section#prelude > header {
+	text-align: center;
+}
+main > header > h1, section#prelude > header > h1 {
+	font-family:  var(--monospace_zerodot);
+	font-size: 2.5em;
+	font-weight: 400;
+	color: var(--richgray1);
+	letter-spacing: 0.015em;
+}
+main > header > h2 {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: var(--richgray1);
+}
+main > header > h3 {
+	margin-top: 5em;
+	font-size: 1.8em;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	color: var(--richgray1);
+}
+main > header > h4 {
+	margin-top: 10em;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	color: var(--richgray2);
+}
+h1 {
+	font-family:  var(--monospace_zerodot);
+	font-size: 1.8em;
+	letter-spacing: 0.05em;
+	font-weight: 600;
+	color: var(--richgray2);
+}
+h2, h3, h4 {
+	font-size: 1.2em;
+	margin-top: 1em;
+	color: var(--richgray2);
+}
+h5 {
+	color: var(--richgray1);
+	font-size: 1.1em;
+}
+section > header > h1 {
+	font-size: 2.0em;
+	font-weight: 400;
+	color: var(--richgray2);
+	letter-spacing: 0.02em;
+	break-after: avoid-page;
+}
+article, article header, article header h1 {
+	margin-top:0;
+	padding-top:0;
+}
+article h1 {
+	margin-bottom:0.8em;
+}
+article:has(div.inscription) header h1 {
+	margin-bottom:0.1em;
+}
+article .inscription {
+	margin-top:0em;
+	font-size: 0.9em;
+	margin-left: 3em;
+	color: var(--richgray2);
+}
+section > div.inscription {
+	font-size: 1.4em;
+	font-style: italic;
+	padding-top: 40%;
+	padding-left: 40%;
+	color: var(--richgray2);
+}
+#copyright,#publisher {
+	margin-top:8em;
+}
+figure, div.frame {
+	break-before: page;
+}
+article {
+	break-before: page;
+}
+article.illustratedbook {
+	break-before: verso;
+}
+section#sectiontoc > div {
+	break-before: recto;
+}
+section > article:first-of-type {
+	break-before: recto;
+}
+main > header, section#prelude > header {
+	break-before: recto;
+}
+section {
+	break-before: recto;
+}
+section#frontmatter, section#prelude > article:first-of-type {
+	break-before: verso;
+}
+h1, h2, h3, h4, h5 {
+	break-after: avoid-page;
+}
+article {
+	break-inside: avoid-page;
+}
+div.blank {
+	page: blank;
+}
+.graphic figcaption{
+	background:#F00;
+	color:#FFF;
+	width:100%;
+	height:20%;
+	text-align:center;
+	padding:5px;
+}
+.graphic img {
+	width:100%;
+	height:80%;
+}
+figure, div.frame {
+	display: block;
+	top:0; left:0;
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	min-width: var(--innerwidth);
+	min-height: var(--innerheight);
+	padding-top:0;
+	margin:0;
+	break-before: recto;
+}
+svg {
+	top:0; left:0;
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	width:100%;
+	height:90%;
+}
+figcaption {
+	font-size:.8em;
+	height: 8%;
+}
+span.indent1 {
+	padding-left: var(--indent1)
+}
+span.indent2 {
+	padding-left: var(--indent2)
+}
+span.indent3 {
+	padding-left: var(--indent3)
+}
+span.indent4 {
+	padding-left: var(--indent4)
+}
+span.indent5 {
+	padding-left: var(--indent5)
+}
+.top {
+	display: none;
+}
+a {
+	color: #000;
+	color: var(--richblack);
+	text-decoration: none;
+}
+#sectiontoc ul li {
+	list-style-type: none;
+	font-size: 10pt;
+	color: var(--richblack);
+	font-weight:400;
+}
+section#sectiontoc  ul {
+	margin: 0.3em;
+	margin-right: 0em;
+	break-before: avoid-page;
+	orphans: 4;
+}
+section#sectiontoc div.sectionlink {
+	font-size:1.1em;
+	color: var(--richgray1);
+	font-weight:400;
+	margin-top: 1.1em;
+	break-after: avoid-page;
+}
+section#sectiontoc  div.sectionlink > a{
+	font-size:1.1em;
+	color: var(--richgray1);
+	font-weight:500;
+}
+article.moreroom  p {
+	margin-bottom: 2.4em;
+}
+p.citation {
+	text-align: left;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+	text-indent: hanging;
+}
+p {
+	orphans: 3;
+	widows: 4;
+}
+article.prose  p {
+	orphans: 3;
+	widows: 2;
+}
+ul.stanza li {
+	list-style-type: none;
+	display: inline;
+	font-size: 12pt;
+	color: var(--warmblack);
+	font-weight:400;
+	margin:0.1em;
+}
+ul.stanza li:nth-child(4n+0) {
+	color: var(--warmlightgray);
+	font-weight:500;
+}
+ul.stanza li:nth-child(4n+1) {
+	color: var(--warmblack);
+	font-weight:600;
+}
+ul.stanza:nth-child(odd) li:nth-child(4n+1) {
+	color: var(--warmgray);
+	font-weight:400;
+}
+ul.stanza li:nth-child(4n+2) {
+	color: var(--warmlightgray);
+	font-weight:600;
+}
+ul.stanza li:nth-child(4n+3) {
+	color: var(--warmgray);
+	font-weight:400;
+}
+
+ul.stanza > li:nth-child(9n+1):after {
+	color: var(--red);
+	content: " _|.";
+	font-weight:600;
+}
+ul.stanza:nth-child(even) > li:nth-child(9n+1):after {
+	color: var(--yellow);
+	content: " |..|";
+	font-weight:600;
+}
+ul.stanza > li:nth-child(9n+2):after {
+	content: " ..-";
+	color: var(--yellow);
+}
+ul.stanza > li:nth-child(9n+3):after {
+	content: " |+|";
+	color: var(--warmblack);
+}
+ul.stanza > li:nth-child(9n+4):after {
+	content: " #_#";
+	color: var(--warmlighgray);
+	font-weight:600;
+}
+ul.stanza > li:nth-child(9n+5):after {
+	content: " |\|";
+	color: var(--red);
+}
+ul.stanza > li:nth-child(9n+6):after {
+	content: " ^..";
+	color: var(--warmgray);
+}
+ul.stanza > li:nth-child(9n+7):after {
+	content: " &_&";
+	color: var(--warmblack);
+	font-weight:600;
+}
+ul.stanza > li:nth-child(9n+8):after {
+	content: " +0+";
+	color: var(--warmgray);
+}
+ul.stanza > li:nth-child(9n+0):after {
+	content: " |||";
+	color: var(--yellow);
+	font-weight:500;
+}
+
+ul.stanza > li:nth-child(5n+1):before {
+	content: ".|_ ";
+	font-weight:600;
+	color: var(--warmblack);
+}
+ul.stanza:nth-child(even) > li:nth-child(5n+1):before {
+	content: "..|. ";
+	font-weight:600;
+	color: var(--red);
+}
+ul.stanza > li:nth-child(5n+2):before {
+	content: "|.| ";
+	color: var(--yellow);
+}
+ul.stanza > li:nth-child(5n+3):before {
+	content: "|\| ";
+	color: var(--warmgray);
+	font-weight:600;
+}
+ul.stanza > li:nth-child(5n+4):before {
+	content: "+_+ ";
+	color: var(--red);
+}
+ul.stanza > li:nth-child(5n+0):before {
+	content: "&=^ ";
+	color: var(--warmlightgray);
+	font-weight:600;
+}
+/* Cover  from https://github.com/michaelperrin/blog-css-book-demo/blob/master/book.css*/
+.cover {
+  page: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cover h1 {
+  margin-top: 1in;
+  margin-left: 1in;
+  margin-right: 1in;
+  color: #333;
+  text-align: left;
+  font-weight: 300;
+  font-size: 3.4rem;
+}
+span.footnote {
+    float: footnote;
+}
+article a {
+  text-decoration: underline;
+  color: inherit;
+}
+article a::after {
+  content: "(" attr(href) ")";
+  color: inherit;
+}
+.footnote::footnote-call {
+    content: counter(counterFootnote, decimal) " ";
+    color: var(--warmgray);
+    vertical-align: super;
+    font-size: 0.8em;
+}
+.footnote::footnote-marker {
+    content: counter(footnote, lower-roman);
+    font-size: 14pt;
+    color: red;
+    display: inline-block;
+    width: 2em;
+    padding-right: 1em;
+    text-align: right;
+}
