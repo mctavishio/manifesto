@@ -2,8 +2,8 @@ const fs = require("fs");
 console.log(process.argv);
 let args = process.argv;
 //const nticks = process.argv[2] ? process.argv[2] : 240;
-const nticks = 60;
-const isFilm = false;
+const nticks = 60*1;
+const isFilm = true;
 const fps = 24;
 const dirTimestamp = 00000000;
 let dt = new Date();
@@ -44,12 +44,13 @@ const rmin = .5, rmax = 40;
 const swmin = .5, swmax = 40;
 const sdmin = .08, sdmax = 12;
 
-const ncircles = 4;
-const nvlines = 2;
-const nhlines = 2;
+const ncircles = 10;
+const nvlines = 0;
+const nhlines = 4;
 const nlayers = 3;
 
 const m = (nvlines+nhlines+ncircles)*nlayers;
+//const m = nhlines*nlayers + ncircles;
 
 const pgrid = [...new Array(nticks).keys()].map( j=> {
 	const cx = [...new Array(m).keys()].map( x => {
@@ -79,8 +80,10 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 let drawp = {
 	circle: p => { return {cx:p.cx,cy:p.cy,r:p.r,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
 	rect: p => { return {x:p.cx,y:p.cy,width:p.w,height:p.h,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
-	vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw*0.6,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
-	hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw*0.6,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw*2,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	//vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	//hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
 }
 const tween = (p1,p2,t,d) => {
 	//console.log(`****p1=${JSON.stringify(p1)}`);
@@ -102,10 +105,11 @@ const tween = (p1,p2,t,d) => {
 
 //let B = {};
 
-let elements = [...new Array(nlayers).keys()].reduce( (acc,z) => {
+let elements = [...new Array(nlayers-1).keys()].reduce( (acc,z) => {
 	let zels = [];
 	let n = 0;
-	let colors = ["#fdfdf3","#4b4b44","#191918"];
+	//let colors = ["#fdfdf3","#4b4b44","#191918"];
+	let colors = ["#fdfdf3","#191918"];
 	[...new Array(nvlines).keys()].filter( j=>j%2===0 ).forEach( j => {
 		zels.push({tag:"line", b:[], role:"vline", n:n, color:colors[(z+j)%colors.length]});
 		++n;
@@ -122,23 +126,25 @@ let elements = [...new Array(nlayers).keys()].reduce( (acc,z) => {
 		zels.push({tag:"line", b:[], role:"hline", n:n, color:colors[(z+j)%colors.length]});
 		++n;
 	});
-	colors = ["#fdfdf3","#191918","#fdfdf3","#8F0000","#191918","#fdfdf3","#191918"];
-	[...new Array(ncircles).keys()].forEach( j => {
-		zels.push({tag:"circle", role:"circle", b:[], n:n, color:colors[(z+j)%colors.length]});
-		++n;
-	});
 	acc.push(zels);
 	return acc;
 }, [[{tag:"rect", b:[]}]]);
+elements[nlayers] = [...new Array(ncircles).keys()].map( n => {
+ let colors = ["#fdfdf3","#191918","#fdfdf3"];
+	return ({tag:"circle", role:"circle", b:[], n:n, color:colors[(nlayers+n)%colors.length]});
+});
 
 let Bobj = {
 	nticks: isFilm ? nticks*fps : nticks,
 	elements: elements,
 };
-let changes = [[6,1],[2,1]].flatMap(wx=>{
+const istweens = [[12,1],[1,0]].flatMap(wx=>{
 	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 });
-let ischange = [];
+const changes = [[6,1],[2,1]].flatMap(wx=>{
+	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
+});
+const ischange = [];
 ischange[0] = [...new Array(m).keys()].map( x => { 
 	return 1;
 });
@@ -164,7 +170,7 @@ ischange[0] = [...new Array(m).keys()].map( x => {
  * */
 [...new Array(nlayers).keys()].map( z => z+1).forEach( z => { 
 	elements[z].forEach( (el,n) => {
-		let k = n*(z-1)+n;
+		let k = z < nlayers ? n*(z-1)+n : n;
 		let bframe = [...new Array(nticks).keys()].reduce( (acc,j) => {
 			let bt = [];
 			if(j===0 || ischange[j][n]) {
@@ -180,20 +186,30 @@ ischange[0] = [...new Array(m).keys()].map( x => {
 			acc.push(bt);
 			return acc;
 		}, []);
-		if(isFilm) {
-		el.b = [...new Array(nticks).keys()].flatMap( j => { 
-			//let p2 = j < nticks-1 ? bframe[j+1] : f;
-			let p1 = bframe[j];
-			let p2 = bframe[(j+1)%nticks];
-			//console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
-			return [...new Array(fps).keys()].map( t => {
-				//console.log(`****p1=${JSON.stringify(p1)},p2=${JSON.stringify(p2)}`);
-				let step = tween(p1,p2,t,fps);
-				//console.log(`tween = ${JSON.stringify(step)}`);
-				return step; 
-				//return p2;
-			});
+		[...new Array(12).keys()].forEach(x=> {
+			let t = tools.randominteger(1,nticks-1);
+			bframe[t] = tween(bframe[t-1],bframe[t+1],1,2);
 		});
+		[...new Array(6).keys()].forEach(x=> {
+			let t = tools.randominteger(1,nticks-2);
+			bframe[t] = tween(bframe[t-1],bframe[t+2],1,3);
+			bframe[t+1] = tween(bframe[t-1],bframe[t+2],2,3);
+		});
+		if(isFilm) {
+			el.b = [...new Array(nticks).keys()].flatMap( j => { 
+				//let p2 = j < nticks-1 ? bframe[j+1] : f;
+				let p1 = bframe[j];
+				let p2 = bframe[(j+1)%nticks];
+				//console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
+				let istween = istweens[tools.randominteger(0,istweens.length)];
+				return [...new Array(fps).keys()].map( t => {
+					//console.log(`****p1=${JSON.stringify(p1)},p2=${JSON.stringify(p2)}`);
+					let step = istween ? tween(p1,p2,t,fps) : bframe[tools.randominteger(0,bframe.length)];
+					//console.log(`tween = ${JSON.stringify(step)}`);
+					return step; 
+					//return p2;
+				});
+			});
 		}
 		else { el.b = bframe };
 		console.log(`count=${el.b.length}`);

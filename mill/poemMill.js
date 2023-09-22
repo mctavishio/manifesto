@@ -1,7 +1,7 @@
 let input = {
 	nticks: 60*4,
 	bookunits: "in",
-	bookwidth: 8.5,
+	bookwidth: 12,
 	bookheight: 8.5,
 	bookmargin: 1,
 	bookguttermargin: 1.2,
