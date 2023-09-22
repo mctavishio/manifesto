@@ -1,5 +1,6 @@
 let input = {
 	nticks: 60*4,
+	fps: 24,
 	bookunits: "in",
 	bookwidth: 12,
 	bookheight: 8.5,
@@ -17,8 +18,11 @@ let args = process.argv;
 const path = (args[2] || "./data/mill00000000/");
 const Bfile = `${path}/B.js`;
 const B = require(Bfile);
+const BfilmFile = `${path}/Bfilm.js`;
+const Bfilm = require(BfilmFile);
 const tools = require("./tools.js");
 const nticks = B.nticks;
+const fps = B.fps;
 const bookunits = input.bookunits || "in";
 const bookwidth = input.bookwidth || 8.5;
 const bookheight = input.bookheight || 8.5;
@@ -42,7 +46,9 @@ const svgheight = h*pixelsperunit;
 
 const bookid = process.argv[4] ? process.argv[4] : "testmill";
 const poemsfile = `${path}/poems.js`;
+const framesfile = `${path}/frames.js`;
 const bookfile = `${path}/book.js`;
+const filmfile = `${path}/film.js`;
 const texts = require("./poemTextLists.js");
 console.log(`texts.length = ${texts.length}`);
 
@@ -53,7 +59,6 @@ let datetime = dt.toDateString();
 //B.elements[B.elements.length] = [{tag:"rect", role:"veil"}];
 //this will be the veil ... used to cover for transitions
 const canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight),max:Math.max(svgwidth,svgheight)};
-const fps = 24;
 
 let poemsobj = [...new Array(nticks).keys()].map( j => {
 	let poem = {
@@ -78,6 +83,31 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 	caption:`${captiontext} ::: ${(j+1).toString().padStart(2, '0')}`};
 	console.log(`poemtitle = ${poem.title}, j=${j}`);
 	return poem;
+});
+
+let framesobj = poemsobj.flatMap( (poem,j) => { 
+	return [...new Array(fps).keys()].map( t => {
+		let k = fps*j + t;
+		let frame = {
+			id: `${(k).toString().padStart(3, '0')}`,
+			title: poem.title, 
+			text: poem.title, 
+		};
+		let elementdraw = B.elements.map( layer => {
+			return layer.map( el => {
+				return tools.drawf(canvas,el.b[j],el.tag);
+			}).join(" ");
+		}).join(" ");
+		frame.figure = {
+			picture:`
+	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
+		${elementdraw}
+	</svg>
+	`,
+			caption: poem.figure.caption,
+		};
+		return frame;
+	});
 });
 
 let bookobj = {
@@ -139,26 +169,78 @@ let bookobj = {
 	poemids: [...new Array(nticks).keys()].map( j => { return poemsobj[j].id }), 
 };
 
+let filmobj = {
+	title: "field notes",
+	subtitle: "blueatlas ::: fieldnotes",
+	description: "the rider passenger repair(*)",
+	rooturl: "https://bluerider.work",
+	file: "indexbook",
+	authorurl: "https://mctavish.work/index.html",
+	author: "mctavish",
+	copyright: "Copyright ©2021 mctavish<br/>",
+	isbn: "ISBN: 00000<br/>",
+	publisher: "mctavish",
+	bookwidth: w, //inches
+	bookheight: h, //inches
+	bookmargin: m, //inches
+	sections: [
+		{ 
+			id: "title",
+			title: "field notes",
+			cssclasses: ["pagenonumbers", "notoc", "booktitle", "booksection"],
+		},
+		{ 
+			id: "section1",
+			title: "the repair(*)",
+			inscription: "it was like this every morning ...",
+			cssclasses: ["pagestartnumbers", "booksection"],
+			poems: [...new Array(nticks*fps).keys()].map( j => { return framesobj[j].id }), 
+		},
+	],
+	poemids: [...new Array(nticks*fps).keys()].map( j => { return framesobj[j].id }), 
+};
 
 let bookstr = `let book =
-${JSON.stringify(bookobj, null, "\t")};
+	${JSON.stringify(bookobj, null, "\t")};
+module.exports = book;`
+
+let filmstr = `let book =
+	${JSON.stringify(filmobj, null, "\t")};
 module.exports = book;`
 
 let poemsstr = `let poems =
-${JSON.stringify(poemsobj, null, "\t")};
+	${JSON.stringify(poemsobj, null, "\t")};
+module.exports = poems;`
+
+let framestr = `let poems =
+	${JSON.stringify(framesobj)};
 module.exports = poems;`
 
 fs.writeFileSync(bookfile, bookstr, (err) => {
-  if (err)
-    console.log(err);
-  else {
-    console.log(`${bookfile} written successfully\n`);
-  }
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${bookfile} written successfully\n`);
+	}
+});
+fs.writeFileSync(filmfile, filmstr, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${filmfile} written successfully\n`);
+	}
 });
 fs.writeFileSync(poemsfile, poemsstr, (err) => {
-  if (err)
-    console.log(err);
-  else {
-    console.log(`${poemsfile} written successfully\n`);
-  }
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${poemsfile} written successfully\n`);
+	}
+});
+fs.writeFileSync(framesfile, framestr, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${framesfile} written successfully\n`);
+	}
 });

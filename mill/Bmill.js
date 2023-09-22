@@ -9,7 +9,8 @@ const dirTimestamp = 00000000;
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
-const outputFile = `./data/mill${dirTimestamp}/B.js`;
+const Bfile = `./data/mill${dirTimestamp}/B.js`;
+const BfilmFile = `./data/mill${dirTimestamp}/Bfilm.js`;
 const recipeFile = `./data/mill${dirTimestamp}/recipe.sh`;
 const tools = require("../../tools.js");
 /* 
@@ -103,8 +104,6 @@ const tween = (p1,p2,t,d) => {
 	return pdt;
 };
 
-//let B = {};
-
 let elements = [...new Array(nlayers-1).keys()].reduce( (acc,z) => {
 	let zels = [];
 	let n = 0;
@@ -129,13 +128,21 @@ let elements = [...new Array(nlayers-1).keys()].reduce( (acc,z) => {
 	acc.push(zels);
 	return acc;
 }, [[{tag:"rect", b:[]}]]);
+
 elements[nlayers] = [...new Array(ncircles).keys()].map( n => {
  let colors = ["#fdfdf3","#191918","#fdfdf3"];
 	return ({tag:"circle", role:"circle", b:[], n:n, color:colors[(nlayers+n)%colors.length]});
 });
+elements[nlayers+1] = [{tag:"rect",b:[]}];
 
-let Bobj = {
-	nticks: isFilm ? nticks*fps : nticks,
+let B = {
+	nticks: nticks,
+	fps: fps,
+	elements: elements,
+};
+let Bfilm = {
+	nticks: nticks,
+	fps: fps,
 	elements: elements,
 };
 const istweens = [[12,1],[1,0]].flatMap(wx=>{
@@ -154,15 +161,23 @@ ischange[0] = [...new Array(m).keys()].map( x => {
 	});
 });
 
-/* layer 0
+/* layer 0 & nlayers+1
  * rectangle background
  * */
-[...new Array(elements[0].length).keys()].forEach( n => { 
-	elements[0][n].b = [...new Array(nticks*fps).keys()].map( j => {
-		//let color = colors[j][n%colors[j].length]; 
-		let cx = 0, cy = 0, w = 1, h = 1, sw = 0.01, sd = 1, so = 0, fo = 1;
-		let color = "#fdfdf3";
-		return drawp.rect({cx:cx,cy:cy,w:w,h:h,sw,sd,so,fo,color});
+[0,nlayers+1].forEach( layer => {
+	[...new Array(elements[layer].length).keys()].forEach( n => { 
+		B.elements[layer][n].b = [...new Array(nticks).keys()].map( j => {
+			//let color = colors[j][n%colors[j].length]; 
+			let cx = 0, cy = 0, w = 1, h = 1, sw = 0.01, sd = 1, so = 0, fo = 1;
+			if(layer!==0) w=0;
+			let color = "#fdfdf3";
+			return drawp.rect({cx:cx,cy:cy,w:w,h:h,sw,sd,so,fo,color});
+		});
+		Bfilm.elements[layer][n].b = [...new Array(nticks).keys()].flatMap( j => {
+			return [...new Array(fps).keys()].map( t => {
+				return B.elements[layer][n].b[j];
+			});
+		});
 	});
 });
 
@@ -195,38 +210,49 @@ ischange[0] = [...new Array(m).keys()].map( x => {
 			bframe[t] = tween(bframe[t-1],bframe[t+2],1,3);
 			bframe[t+1] = tween(bframe[t-1],bframe[t+2],2,3);
 		});
-		if(isFilm) {
-			el.b = [...new Array(nticks).keys()].flatMap( j => { 
-				//let p2 = j < nticks-1 ? bframe[j+1] : f;
-				let p1 = bframe[j];
-				let p2 = bframe[(j+1)%nticks];
-				//console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
-				let istween = istweens[tools.randominteger(0,istweens.length)];
-				return [...new Array(fps).keys()].map( t => {
-					//console.log(`****p1=${JSON.stringify(p1)},p2=${JSON.stringify(p2)}`);
-					let step = istween ? tween(p1,p2,t,fps) : bframe[tools.randominteger(0,bframe.length)];
-					//console.log(`tween = ${JSON.stringify(step)}`);
-					return step; 
-					//return p2;
-				});
+		el.b = bframe;
+		Bfilm.elements[z][n].b = [...new Array(nticks).keys()].flatMap( j => { 
+			//let p2 = j < nticks-1 ? bframe[j+1] : f;
+			let p1 = bframe[j];
+			let p2 = bframe[(j+1)%nticks];
+			//console.log(`el.n=${el.n}, j=${j}, p2=${JSON.stringify(p2)}`);
+			let istween = istweens[tools.randominteger(0,istweens.length)];
+			return [...new Array(fps).keys()].map( t => {
+				//console.log(`****p1=${JSON.stringify(p1)},p2=${JSON.stringify(p2)}`);
+				let step = istween ? tween(p1,p2,t,fps) : bframe[tools.randominteger(0,bframe.length)];
+				//console.log(`tween = ${JSON.stringify(step)}`);
+				return step; 
+				//return p2;
 			});
-		}
-		else { el.b = bframe };
+		});
 		console.log(`count=${el.b.length}`);
 	});
 });
 
 let Bstr = `let B =
-	${JSON.stringify(Bobj,null,4)};
+	${JSON.stringify(B)};
 module.exports = B;`
 
-fs.writeFileSync(outputFile, Bstr, (err) => {
+let Bfilmstr = `let B =
+	${JSON.stringify(Bfilm)};
+module.exports = B;`
+
+fs.writeFileSync(Bfile, Bstr, (err) => {
 	if (err)
 		console.log(err);
 	else {
-		console.log(`${outputFile} written successfully\n`);
+		console.log(`${Bfile} written successfully\n`);
 	}
 });
+
+fs.writeFileSync(BfilmFile, Bfilmstr, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${BfilmFile} written successfully\n`);
+	}
+});
+
 let recipe = `
 #!/bin/bash
 cd ../..

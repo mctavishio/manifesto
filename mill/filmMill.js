@@ -1,8 +1,8 @@
 const fs = require("fs"); 
 console.log(process.argv);
 const path = process.argv[2] ? process.argv[2] : "./data/mill00000000";
-const poemfile = `${path}/poems.js`;
-const bookfile = `${path}/book.js`;
+const poemfile = `${path}/frames.js`;
+const bookfile = `${path}/film.js`;
 const tools = require("./tools.js");
 const poems = require(poemfile);
 const book = require(bookfile);
@@ -38,7 +38,7 @@ const generatefunctions = {
 		sectionstr = sectionstr + `
 		<ul id="list_${section.id}">`
 		sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
-			//console.log(`poemid=${poemid}`);
+			console.log(`poemid=${poemid}`);
 			let poem = poems.filter(poem=>poem.id===poemid)[0];
 			poemstr = poemstr + `<li><a id="link_${poem.id}" href="#${poem.id}">${poem.title}</a></li>`;
 			return poemstr;
