@@ -2,8 +2,7 @@ const fs = require("fs");
 console.log(process.argv);
 let args = process.argv;
 //const nticks = process.argv[2] ? process.argv[2] : 240;
-const nticks = 60*1;
-const isFilm = true;
+const nticks = 40;
 const fps = 24;
 const dirTimestamp = 00000000;
 let dt = new Date();
@@ -60,11 +59,15 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 	const cy = [...new Array(m).keys()].map( x => {
 		return 0.5;
 	});
-	const so = [...new Array(m).keys()].map( j => {
-		return j%3===0 ? 0.0 : 1.0;
+	const so = [...new Array(m).keys()].map( x => {
+	 let so = x%3===0 ? 0.0 : 1.0;
+		//if(j<2 || j>nticks-2) {so=0}
+		return so;
 	});
-	const fo = [...new Array(m).keys()].map( j => {
-		return so[j]===0 ? 1.0 : 0.0;
+	const fo = [...new Array(m).keys()].map( x => {
+		let fo = so[x]===0 ? 1.0 : 0.0;
+		//if(j<2 || j>nticks-2) {fo=0}
+		return fo;
 	});
 	const r = [...new Array(m).keys()].map( z => {
 		return tools.randominteger(rmin,rmax)/100;
@@ -133,7 +136,6 @@ elements[nlayers] = [...new Array(ncircles).keys()].map( n => {
  let colors = ["#fdfdf3","#191918","#fdfdf3"];
 	return ({tag:"circle", role:"circle", b:[], n:n, color:colors[(nlayers+n)%colors.length]});
 });
-elements[nlayers+1] = [{tag:"rect",b:[]}];
 
 let B = {
 	nticks: nticks,
@@ -161,21 +163,19 @@ ischange[0] = [...new Array(m).keys()].map( x => {
 	});
 });
 
-/* layer 0 & nlayers+1
+/* layer 0
  * rectangle background
  * */
-[0,nlayers+1].forEach( layer => {
+[0].forEach( layer => {
+	let cx = 0, cy = 0, w = 1.0, h = 1.0, sw = 0.01, sd = 1, so = 0, fo = 1;
+	let color = "#fdfdf3";
 	[...new Array(elements[layer].length).keys()].forEach( n => { 
 		B.elements[layer][n].b = [...new Array(nticks).keys()].map( j => {
-			//let color = colors[j][n%colors[j].length]; 
-			let cx = 0, cy = 0, w = 1, h = 1, sw = 0.01, sd = 1, so = 0, fo = 1;
-			if(layer!==0) w=0;
-			let color = "#fdfdf3";
 			return drawp.rect({cx:cx,cy:cy,w:w,h:h,sw,sd,so,fo,color});
 		});
 		Bfilm.elements[layer][n].b = [...new Array(nticks).keys()].flatMap( j => {
 			return [...new Array(fps).keys()].map( t => {
-				return B.elements[layer][n].b[j];
+				return B.elements[layer][n].b[j]; 
 			});
 		});
 	});
@@ -185,7 +185,7 @@ ischange[0] = [...new Array(m).keys()].map( x => {
  * */
 [...new Array(nlayers).keys()].map( z => z+1).forEach( z => { 
 	elements[z].forEach( (el,n) => {
-		let k = z < nlayers ? n*(z-1)+n : n;
+		let k = z < nlayers-1 ? n*(z-1)+n : n;
 		let bframe = [...new Array(nticks).keys()].reduce( (acc,j) => {
 			let bt = [];
 			if(j===0 || ischange[j][n]) {

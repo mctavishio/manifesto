@@ -8,14 +8,14 @@ const poems = require(poemfile);
 const book = require(bookfile);
 const w = Number(book.bookwidth), h = Number(book.bookheight);
 const m = Number(book.bookmargin);
-const width = book.bookwidth+"in";
-const height = book.bookheight+"in";
-const innerwidth = (w-2.0*m)+"in";
-const innerheight = (h-2.0*m)+"in";
-const margin = book.bookmargin+"in";
-const margingutter = (book.bookmargin*1+0.2)+"in";
-const svgwidth = book.bookwidth*300;
-const svgheight = book.bookheight*300;
+const width = book.bookwidth+book.bookunits;
+const height = book.bookheight+book.bookunits;
+const innerwidth = (w-2.0*m)+book.bookunits;
+const innerheight = (h-2.0*m)+book.bookunits;
+const margin = book.bookmargin+book.bookunits;
+const margingutter = book.bookguttermargin+book.bookunits;
+const svgwidth = book.bookwidth*book.pixelsperunit;
+const svgheight = book.bookheighti*book.pixelsperunit;
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
@@ -113,31 +113,7 @@ let head = `
 </head>
 `;
 
-let html = `<html>${head}<body><main id="top">`;
-if(book.otherbooks) {
-html = html + ` 
-<section class="prelude num0 pagenonumbers notoc noweb" id="prelude">
-<header>
-	<h1>${book.title}</h1>
-</header>
-<article id="preludeotherbooks" class="lowertopmargin">
-<header>
-	<h1>Other books by ${book.author}</h1>
-</header>`;
-let otherbookstr = book.otherbooks.filter( b => {
-	//console.log(`book ${b} =? title ${book.title}`);
-	return b!==book.title; 
-}).reduce( (str,book,j) => {
-	return str + `<i>${book}</i><br/>`
-},"");
-html = html + `
-<p>
-${otherbookstr}
-</p>
-</article>
-</section>
-`;
-}
+let html = `<html>${head}<body class="film"><main id="top">`;
 html = html + `
 <header>
 	<h1>${book.title}</h1>
@@ -178,7 +154,18 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
 	let cssstr = poem.cssclasses ? poem.cssclasses.join(" ") : "";
 	poemstr = poemstr + `
-<article id="${poem.id}" class="broadside ${cssstr}">`;
+<article id="${poem.id}" class="${cssstr}">`;
+	poemstr = poemstr + `
+	<header>
+		<h1>${poem.title}</h1>
+	</header>`;
+	poemstr = poemstr + `
+	<div class="flex">
+	<div class="content">`;
+	poemstr = poemstr + `
+		<div>${poem.title}</div>`;
+	poemstr = poemstr + `
+	</div></div>`;
 	//console.log(poem.figure.picture);
 	if(poem.figure.picture) {
 		poemstr = poemstr + `

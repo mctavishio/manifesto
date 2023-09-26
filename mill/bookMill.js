@@ -115,7 +115,7 @@ let head = `
 `;
 
 let html = `<html>${head}
-<body>
+<body class="illustratedbook" >
 <main id="top">`;
 if(book.otherbooks) {
 html = html + ` 
@@ -168,9 +168,9 @@ sectionstr = sectionstr + `
 }
 if(section.inscription) {
 sectionstr = sectionstr + `
-	<div class="inscription">
-	${section.inscription}
-	</div>`
+<div class="inscription">
+${section.inscription}
+</div>`
 }
 if(section.generatorf) {
 	sectionstr = sectionstr + generatefunctions[section.generatorf]();
@@ -181,17 +181,18 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
 	let cssstr = poem.cssclasses ? poem.cssclasses.join(" ") : "";
 	poemstr = poemstr + `
-<article id="${poem.id}" class="illustratedbook ${cssstr}">`;
+<article id="${poem.id}" class="${cssstr}">`;
 	poemstr = poemstr + `
 	<header>
 		<h1>${poem.title}</h1>
 	</header>`;
 	poemstr = poemstr + `
+	<div class="flex">;
 	<div class="content">`;
 	poemstr = poemstr + `
 		${poem.text}`;
 	poemstr = poemstr + `
-	</div>`
+	</div></div>`
 	if(poem.figure.picture) {
 		poemstr = poemstr + `
 	<figure class="frame">

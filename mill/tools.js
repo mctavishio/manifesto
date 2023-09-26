@@ -209,19 +209,32 @@ let tools = {
 	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
 		let p = b;
 		//console.log("b = "+JSON.stringify(b));
-		let attmap = att => {return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
+		let attmap = att => {
+			let multiplier = height;
+			if(["width","x","x1","x2","cx"].includes(att)) {
+				multiplier = width;
+			}
+			else if(["stroke-width","stroke-dasharray","r"].includes(att)) { 
+				multiplier = min;
+			}
+			else if(["stroke-opacity","fill-opacity"].includes(att)) {
+				multiplier = 1;
+			}
+			return multiplier;
+		};
 		let atts = Object.keys(p).reduce( (acc,key) => {
 			if(isNaN(p[key])) {
 				acc[key]=p[key];
 			}
 			else {
 				acc[key] = Math.round(p[key]*attmap(key));
-				//acc[key] = p[key]*attmap(key);
+				//acc[key] = 1.0*Number(p[key])*attmap(key);
 			}
 			return acc; 
 		},{});
 		//console.log("atts = "+JSON.stringify(atts));
 		//console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
+		//if(tag==="rect"){console.log(`from tools atts=${JSON.stringify(atts)}`);}
 		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 	},
 	curves: {

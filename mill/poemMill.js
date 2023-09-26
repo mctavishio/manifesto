@@ -1,9 +1,7 @@
 let input = {
-	nticks: 60*4,
-	fps: 24,
 	bookunits: "in",
-	bookwidth: 12,
-	bookheight: 8.5,
+	bookwidth: 8,
+	bookheight: 4.5,
 	bookmargin: 1,
 	bookguttermargin: 1.2,
 	bleed: 0.125,
@@ -11,7 +9,6 @@ let input = {
 	captionheight: 1,
 	cssstyles: "", 
 };
-
 const fs = require("fs"); 
 console.log(process.argv);
 let args = process.argv;
@@ -66,7 +63,6 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 		title: `${(j+1).toString().padStart(2, '0')}`,
 		text: texts[j%texts.length].text,
 	};
-	
 	let elementdraw = B.elements.map( layer => {
 	 return layer.map( el => {
 		return tools.drawf(canvas,el.b[j],el.tag);
@@ -93,9 +89,9 @@ let framesobj = poemsobj.flatMap( (poem,j) => {
 			title: poem.title, 
 			text: poem.title, 
 		};
-		let elementdraw = B.elements.map( layer => {
+		let elementdraw = Bfilm.elements.map( (layer,l) => {
 			return layer.map( el => {
-				return tools.drawf(canvas,el.b[j],el.tag);
+				return tools.drawf(canvas,el.b[k],el.tag);
 			}).join(" ");
 		}).join(" ");
 		frame.figure = {
@@ -121,9 +117,6 @@ let bookobj = {
 	copyright: "Copyright ©2021 mctavish<br/>",
 	isbn: "ISBN: 00000<br/>",
 	publisher: "mctavish",
-	bookwidth: w, //inches
-	bookheight: h, //inches
-	bookmargin: m, //inches
 	sections: [
 		{ 
 			id: "title",
@@ -180,9 +173,6 @@ let filmobj = {
 	copyright: "Copyright ©2021 mctavish<br/>",
 	isbn: "ISBN: 00000<br/>",
 	publisher: "mctavish",
-	bookwidth: w, //inches
-	bookheight: h, //inches
-	bookmargin: m, //inches
 	sections: [
 		{ 
 			id: "title",
@@ -199,6 +189,14 @@ let filmobj = {
 	],
 	poemids: [...new Array(nticks*fps).keys()].map( j => { return framesobj[j].id }), 
 };
+
+Object.keys(input).forEach( key => {
+	bookobj[key] = input[key];
+	filmobj[key] = input[key];
+});
+filmobj["bookmargin"] = 0;
+filmobj["bookguttermargin"] = 0;
+filmobj["bleed"] = 0;
 
 let bookstr = `let book =
 	${JSON.stringify(bookobj, null, "\t")};
