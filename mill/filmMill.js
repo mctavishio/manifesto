@@ -163,7 +163,7 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	<div class="flex">
 	<div class="content">`;
 	poemstr = poemstr + `
-		<div>${poem.title}</div>`;
+		<div class="banner">${poem.figure.caption}</div>`;
 	poemstr = poemstr + `
 	</div></div>`;
 	//console.log(poem.figure.picture);
@@ -194,7 +194,7 @@ html = html + `
 </body>
 </html>`;
 let poemids = poems.map(poem => poem.id); 
-let filename = `${path}/print.html`;
+let filename = `${path}/film.html`;
 fs.writeFileSync(filename, html, (err) => {
   if (err)
     console.log(err);

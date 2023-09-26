@@ -36,7 +36,8 @@ const poemsfile = `${path}/poems.js`;
 const bookfile = `${path}/book.js`;
 
 //const poems = require("./fieldnotespoems.js");
-const poems = require("./poemTexts.js");
+//const poems = require("./poemTexts.js");
+const poems = require("./poemTextLists.js");
 const npoems = poems.length;
 
 let dt = new Date();

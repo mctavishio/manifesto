@@ -21,7 +21,7 @@
   --warmwhite: #fcfbe3; /* rgb(252,251,227),hsl(57.6,80.6%,93.9%),cmyk(0,0,10,1)*/
   /*--warmwhite: #fcfbe3;  rgb(252,252,227),hsl(60,81%,94%),cmyk(0,0,10,1)*/
   --warmlightwhite:#fdfdf3; /* panatone sort of "P 1-9 C"rgb(253,253,243),hsl(60,71.4%,97.3%),cmyk(0,0,4,1)*/
-  --warmlightwhiteveil: rgba(253,253,243,0.2);
+  --warmlightwhiteveil: rgba(253,253,243,0.8);
   --richblack: #010203;
   --richgray1: #2a2a2b;
   --richgray2: #4f4f50;

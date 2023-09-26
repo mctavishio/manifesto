@@ -1687,4 +1687,5 @@ let poems = rawpoems.map( (poem,j) => {
 	}
 });
 //console.log(JSON.stringify(poems,null,3));
-module.exports = poems;
+console.log(`number of rawpoems: ${rawpoems.length}`); 
+module.exports = rawpoems;

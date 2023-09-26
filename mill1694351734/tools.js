@@ -122,7 +122,7 @@ let tools = {
 	},
 	jsonToHTMLArticle: ({article, attributes={}, cssclasses=[], cssstyles={}, ns="none"}={}) => {
 		let articlestr = tools.createElementTagStr({tag:"article",attributes,cssclasses,cssstyles}); 
-		conole.log("articlestr = "+articlestr);
+		//console.log("articlestr = "+articlestr);
 		articlestr = articlestr + tools.createElementTagStr({tag:"header"});
 		articlestr =  articlestr + tools.createElementCloseStr({tag:"article"});
 		let contents = Object.keys(article).reduce( (acc,key) => {
@@ -137,8 +137,8 @@ let tools = {
 		return tools.createElementStr({tag, cssclasses, value:contents});
 	},
 	createElementTagStr: ({tag="div", attributes={}, cssclasses=[], cssstyles={}, ns="none", value="", isEmpty=false}={}) => {
-		console.log("tag = "+tag);
-		console.log(attributes);
+		//console.log("tag = "+tag);
+		//console.log(attributes);
 		let el=`<${tag} `;
 		if(ns!=="none") {
 			el = el + `xmlns="${ns}" `;
@@ -166,7 +166,7 @@ let tools = {
 			`;
 		}
 		else { el = el + "/>" }
-		tools.logmsg(`element created: ${el}`);
+		//tools.logmsg(`element created: ${el}`);
 		return el;
 	},
 	createElementCloseStr: (tag="div",isEmpty=false) => {
@@ -188,7 +188,7 @@ let tools = {
 			});
 		}
 		Object.entries(cssstyles).forEach( entry => {
-			z.tools.logmsg("entry = " + entry)
+			//z.tools.logmsg("entry = " + entry)
 			el.style[entry[0]] = entry[1];
 		});
 		cssclasses.forEach( entry => {
@@ -208,7 +208,7 @@ let tools = {
 	},
 	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
 		let p = b;
-		console.log("b = "+JSON.stringify(b));
+		//console.log("b = "+JSON.stringify(b));
 		let attmap = att => {return ["width","x","x1","x2","stroke-width","cx"].includes(att) ? width : height};
 		let atts = Object.keys(p).reduce( (acc,key) => {
 			if(isNaN(p[key])) {
@@ -216,10 +216,11 @@ let tools = {
 			}
 			else {
 				acc[key] = Math.round(p[key]*attmap(key));
+				//acc[key] = p[key]*attmap(key);
 			}
 			return acc; 
 		},{});
-		console.log("atts = "+JSON.stringify(atts));
+		//console.log("atts = "+JSON.stringify(atts));
 		//console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
 		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
 	},

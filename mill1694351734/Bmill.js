@@ -78,8 +78,8 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 let drawp = {
 	circle: p => { return {cx:p.cx,cy:p.cy,r:p.r,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
 	rect: p => { return {x:p.cx,y:p.cy,width:p.w,height:p.h,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.color,fill:p.color } },
-	vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
-	hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw*0.6,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
+	hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw*0.6,"stroke-dasharray":p.sd,"stroke-opacity":1,stroke:p.color } },
 }
 const tween = (p1,p2,t,d) => {
 	console.log(`****p1=${JSON.stringify(p1)}`);
@@ -134,7 +134,7 @@ let Bobj = {
 	nticks: nticks*fps,
 	elements: elements,
 };
-let changes = [[3,0],[2,1]].flatMap(wx=>{
+let changes = [[6,0],[2,1]].flatMap(wx=>{
 	return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 });
 let ischange = [];

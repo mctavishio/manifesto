@@ -1,7 +1,10 @@
 logs
+mill1694351734
 *.log
+**/print169*.css
 npm-debug.log*
 node_modules/
+**/data/
 notes.txt
 keys.js
 notes/

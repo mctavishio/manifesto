@@ -135,6 +135,7 @@ html {
 }
 main > header, section#prelude > header {
 	text-align: center;
+	margin-top: 20%;
 }
 main > header > h1, section#prelude > header > h1 {
 	font-family:  var(--monospace_zerodot);
@@ -156,7 +157,7 @@ main > header > h3 {
 	color: var(--richgray1);
 }
 main > header > h4 {
-	margin-top: 10em;
+	margin-top: 5em;
 	margin-bottom: 0;
 	font-size: 1.2em;
 	letter-spacing: 0.01em;
@@ -201,7 +202,7 @@ body.film article {
 	page: pagefilm;
 	break-before: page;
 }
-body.broadsides article > div.flex, body.film article > div.flex {
+body.broadsides article > div.flex {
 	position: absolute;
 	top:0; left:0;
 	display: flex;
@@ -210,34 +211,47 @@ body.broadsides article > div.flex, body.film article > div.flex {
 	align-items: center;
 	overflow: clip;
 }
-body.broadsides article > div.flex > div.content, body.film article > div.flex > div.content {
+body.film article > div.flex {
+	position: absolute;
+	top:0; left:0;
+	display: flex;
+    width: var(--width);
+    height: var(--height);
+	align-items: center;
+	justify-content: center;
+	overflow: clip;
+}
+body.broadsides article > div.flex > div.content {
 	position: relative;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: 1em;
 	margin: var(--margin);
 	justify-content: center;
-	/*top:0; left:0;*/
 	flex-basis: 1;
 	background-color: var(--warmlightwhiteveil);
 	font-size:1.4rem;
-	/*width: var(--innerwidth);
-	height: var(--innerheight);$/
-	/*display: table-cell;
-	vertical-align: middle;*/
+}
+body.film article > div.flex > div.content {
+	position: relative;
+	padding: 1em;
+	padding: 1em;
+	margin: 2em;
+	justify-content: center;
+	flex-basis: 1;
+	background-color: var(--warmlightwhiteveil);
+	font-size:1.4rem;
 }
 body.broadsides article  header, body.film article  header {
 	z-index: 300;
-	/*position: absolute;
-	top: var(--margin);
-	left: var(--margin);*/
+	padding: 1em;
 }
 body.broadsides article header > h1, body.film article header > h1 {
-	z-index: 200;
+	z-index: 400;
 	color: var(--red);
 	font-size: 4em;
 }
 .banner {
-	font-size: 4em;
+	font-size: 2em;
+	color: var(--red);
 	font-weight: bold;
 }
 article:has(div.inscription) header h1 {
@@ -326,6 +340,7 @@ body.broadsides article, body.film article {
 	break-inside: avoid-page;
 }
 div.blank {
+	break-after: page;
 	page: blank;
 }
 body.broadsides div.blank {

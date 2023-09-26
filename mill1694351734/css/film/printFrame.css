@@ -199,18 +199,17 @@ article > div.flex {
 	position: absolute;
 	top:0; left:0;
 	display: flex;
-	padding: var(--margin);
-    width: var(--innerwidth);
-    height: var(--innerheight);
+    width: var(--width);
+    height: var(--height);
 	align-items: center;
 	justify-content: center;
 	overflow: clip;
 }
 article > div.flex > div.content {
-	/*position: absolute;*/
+	position: relative;
+	padding: var(--margin);
 	/*top:0; left:0;*/
 	flex-basis: 1;
-	background-color: var(--warmlightwhite);
 	font-size:1.4rem;
 	/*width: var(--innerwidth);
 	height: var(--innerheight);$/
@@ -221,8 +220,11 @@ article.broadside  header {
 	/*position: absolute;
 	top: var(--margin);
 	left: var(--margin);*/
+	width:100%;
 }
-article.broadside  header > h1 {
+article.broadside header > h1 {
+	width:100%;
+	text-align: center;
 	color: var(--red);
 	font-size: 4em;
 }

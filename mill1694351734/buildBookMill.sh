@@ -8,6 +8,9 @@ cp inputTemplate.js data/mill$ts/input.js
 cp poemMill.js data/mill$ts/poemMill.js
 cp bookMill.js data/mill$ts/bookMill.js
 cp css/book/print.css data/mill$ts/css/print.css
+cd css/book
+bash compileCSS.sh
+cd ../..
 sed "s/00000000/\"$ts\"/" data/mill$ts/Bmill_temp.js > data/mill$ts/Bmill.js
 rm data/mill$ts/Bmill_temp.js
 node data/mill$ts/Bmill.js

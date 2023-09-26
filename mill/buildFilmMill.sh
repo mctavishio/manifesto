@@ -16,10 +16,10 @@ rm data/mill$ts/Bmill_temp.js
 node data/mill$ts/Bmill.js
 node poemMill ./data/mill$ts
 node filmMill ./data/mill$ts 
-prince -s data/mill$ts/css/print.css data/mill$ts/print.html -o data/mill$ts/print.pdf
+prince -s data/mill$ts/css/print.css data/mill$ts/film.html -o data/mill$ts/film.pdf
 echo "cd data/mill$ts"
 echo "bash pdfToFilm.sh"
 echo "$(date)" > data/mill$ts/readMe.txt
 echo "directory=data/mill$ts" >> data/mill$ts/readMe.txt
 echo "done"
-open data/mill$ts/print.pdf
+echo "open data/mill$ts/film.pdf"

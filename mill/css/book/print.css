@@ -59,15 +59,9 @@
   --hr2: 1em solid var(--warmblack);
 }
 @page {
-	@footnote {
-		background-color: var(--bgfootnote);
-		border-top: var(--hr2);
-	}
 	margin: var(--margin);
 	size: var(--width) var(--height);
-	marks: crop cross;
-	bleed: 0.25in;
-	-prince-trim: 0.25in;
+	/*-prince-trim: 0.25in;*/
 }
 @page :left {
 	margin-right: 1.2in;
@@ -91,6 +85,7 @@
 @page :left{
 	@bottom-left {
 		content: counter(page);
+		opacity:0.6;
 		font-family:  var(--monospace_zerodot);
 		font-weight:400;
 		font-size: 20pt;
@@ -99,52 +94,57 @@
 		margin-bottom: 0.6in;
 	}
 }
-@page cover {
+@page pagebroadsides {
 	margin: 0;
-	@bottom-left {
-		content: none;
-	}
-	@bottom-center {
-		content: none;
-	}
-	@bottom-right {
-		content: none;
-	}
-	@top-left {
-		content: none;
-	}
-	@top-center {
-		content: none;
-	}
-	@top-right {
-		content: none;
-	}
+	size: var(--width) var(--height);
+	marks: crop cross;
+	bleed: 0.125in;
+	bleed: var(--bleed);
+	/*-prince-trim: 0.25in;*/
+	/*background-color: var(--warmlightwhite);*/
+	@bottom-left { content: none; }
+	@bottom-center { content: none; }
+	@bottom-right { content: none; }
+	@top-left { content: none; }
+	@top-center { content: none; }
+	@top-right { content: none; }
+}
+@page pagefilm {
+	margin: 0;
+	size: var(--width) var(--height);
+	/*background-color: var(--warmlightwhite);*/
+	@bottom-left { content: none; }
+	@bottom-center { content: none; }
+	@bottom-right { content: none; }
+	@top-left { content: none; }
+	@top-center { content: none; }
+	@top-right { content: none; }
 }
 @page pageblank {
-	@bottom-left {
-		content: none;
-	}
-	@bottom-center {
-		content: none;
-	}
-	@bottom-right {
-		content: none;
-	}
-	@top-left {
-		content: none;
-	}
-	@top-center {
-		content: none;
-	}
-	@top-right {
-		content: none;
-	}
+	@bottom-left { content: none; }
+	@bottom-center { content: none; }
+	@bottom-right { content: none; }
+	@top-left { content: none; }
+	@top-center { content: none; }
+	@top-right { content: none; }
 }
 div.blank, section.blank, section#sectiontoc {
 	page: pageblank;
 }
+body.broadsides div.blank, body.broadsides section.blank, body.broadsides section#sectiontoc {
+	page: pagebroadsides;
+}
+body.film div.blank, body.film section.blank, body.film section#sectiontoc {
+	page: pagefilm;
+}
 main > header, section.pagefrontmatter, section > header > h1, section#prelude, section#sectiontoc, section#bookinscription {
 	page: pageblank;
+}
+body.broadsides main > header, body.broadsides section.pagefrontmatter, body.broadsides section > header > h1, body.broadsides section#prelude, body.broadsides section#sectiontoc, body.broadsides >  section#bookinscription, body.broadsides section div.inscription {
+	page: pagebroadsides;
+}
+body.film main > header, body.film section.pagefrontmatter, body.film section > header > h1, body.film section#prelude, body.film section#sectiontoc, body.film >  section#bookinscription, body.film section div.inscription {
+	page: pagefilm;
 }
 @page pagewithborderline {
 	border-top: thin var(--warmblack) solid;
@@ -162,52 +162,11 @@ main > header, section.pagefrontmatter, section > header > h1, section#prelude, 
 		content: "page:" counter(page) "figure #" counter(figurenum);
 	}
 }
-figure, div.frame {
-	page: pagefigure;
+body.broadsides figure, body.broadsides div.frame {
+	page: pagebroadsides;
 }
-body > main > header > h1 {
-	string-set: stringBookTitle content();
-}
-section > header > h1 {
-	string-set: stringSectionTitle content();
-}
-article > header > h1 {
-	string-set: stringArticleTitle content();
-}
-figcaption {
-	string-set: stringFigCaption content();
-}
-#author {
-	string-set: stringAuthor content();
-}
-#documentTimeStamp {
-	string-set: stringDocumentTimeStamp content();
-}
-#documentDateTime {
-	string-set: stringDateTime content();
-}
-#documentId {
-	string-set: stringDocumentId content();
-}
-@page {
-	counter-reset: counterFootnote 1;
-}
-body {
-	counter-reset: counterFootnote 1;
-	counter-reset: counterFigure 1;
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-	counter-reset: counterArticle 1;
-}
-section.pagestartnumbers {
-	counter-reset: counterPage 1;
-}
-section.interior:nth-child(0) {
-	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
-}
-section.interior > article:nth-child(0) {
-	counter-reset: counterArticle 1;
+body.film figure, body.film div.frame {
+	page: pagefilm;
 }
 section#sectionfrontmatter {
 	font: var(--fontfrontmatter);
@@ -236,6 +195,7 @@ html {
 }
 main > header, section#prelude > header {
 	text-align: center;
+	margin-top: 20%;
 }
 main > header > h1, section#prelude > header > h1 {
 	font-family:  var(--monospace_zerodot);
@@ -257,7 +217,7 @@ main > header > h3 {
 	color: var(--richgray1);
 }
 main > header > h4 {
-	margin-top: 10em;
+	margin-top: 5em;
 	margin-bottom: 0;
 	font-size: 1.2em;
 	letter-spacing: 0.01em;
@@ -266,7 +226,7 @@ main > header > h4 {
 }
 h1 {
 	font-family:  var(--monospace_zerodot);
-	font-size: 1.8em;
+	font-size: 2em;
 	letter-spacing: 0.05em;
 	font-weight: 600;
 	color: var(--richgray2);
@@ -287,12 +247,72 @@ section > header > h1 {
 	letter-spacing: 0.02em;
 	break-after: avoid-page;
 }
-article, article header, article header h1 {
+article {
+	break-before: page;
+}
+article {
 	margin-top:0;
 	padding-top:0;
 }
-article h1 {
-	margin-bottom:0.8em;
+body.broadsides article {
+	page: pagebroadsides;
+	break-before: page;
+}
+body.film article {
+	page: pagefilm;
+	break-before: page;
+}
+body.broadsides article > div.flex {
+	position: absolute;
+	top:0; left:0;
+	display: flex;
+    width: var(--width);
+    height: var(--height);
+	align-items: center;
+	overflow: clip;
+}
+body.film article > div.flex {
+	position: absolute;
+	top:0; left:0;
+	display: flex;
+    width: var(--width);
+    height: var(--height);
+	align-items: center;
+	justify-content: center;
+	overflow: clip;
+}
+body.broadsides article > div.flex > div.content {
+	position: relative;
+	padding: 1em;
+	margin: var(--margin);
+	justify-content: center;
+	flex-basis: 1;
+	background-color: var(--warmlightwhiteveil);
+	font-size:1.4rem;
+}
+body.film article > div.flex > div.content {
+	position: relative;
+	padding: 1em;
+	padding: 1em;
+	margin: 2em;
+	justify-content: center;
+	flex-basis: 1;
+	background-color: var(--warmlightwhiteveil);
+	font-size:1.4rem;
+}
+body.broadsides article  header, body.film article  header {
+	z-index: 300;
+	padding: 1em;
+}
+body.broadsides article header > h1, body.film article header > h1 {
+	z-index: 400;
+	color: var(--red);
+	font-size: 4em;
+}
+.banner {
+	font-size: 2em;
+	color: var(--red);
+	font-weight: bold;
 }
 article:has(div.inscription) header h1 {
 	margin-bottom:0.1em;
@@ -310,11 +330,41 @@ section > div.inscription {
 	padding-left: 40%;
 	color: var(--richgray2);
 }
+body.broadsides section > div.inscription, body.film section > div.inscription {
+	font-size: 1.4em;
+	font-style: italic;
+	padding-top: 40%;
+	padding-left: 40%;
+	color: var(--richgray2);
+	break-before: page;
+}
 #copyright,#publisher {
 	margin-top:8em;
 }
-figure, div.frame {
-	break-before: page;
+figure {
+	z-index: -100;
+}
+body.illustratedbook figure {
+	display: block;
+	top:0; left:0;
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	min-width: var(--innerwidth);
+	min-height: var(--innerheight);
+	padding-top:0;
+	margin:0;
+	break-before: recto;
+	/*break-before: page;*/
+}
+body.broadsides figure, div.frame, body.film figure {
+	position: absolute;
+	display: block;
+	padding: 0in;
+	margin: 0in;
+	top: 0in; left: 0in;
+	width:var(--width); height:var(--height);
+	min-width:var(--width); min-height:var(--height);
+	/*break-before: page;*/
 }
 article {
 	break-before: page;
@@ -322,11 +372,18 @@ article {
 section#sectiontoc > div {
 	break-before: recto;
 }
-
-section > article.illustratedbook:first-of-type {
+body section article:first-of-type {
 	break-before: verso;
 }
-
+body.illustratedbook section article:first-of-type {
+	break-before: verso;
+}
+body.broadsides section > article:first-of-type {
+	break-before: recto;
+}
+body.film section > article:first-of-type {
+	break-before: recto;
+}
 main > header, section#prelude > header {
 	break-before: recto;
 }
@@ -339,8 +396,18 @@ section#frontmatter, section#prelude > article:first-of-type {
 h1, h2, h3, h4, h5 {
 	break-after: avoid-page;
 }
+body.broadsides article, body.film article {
+	break-inside: avoid-page;
+}
 div.blank {
+	break-after: page;
 	page: blank;
+}
+body.broadsides div.blank {
+	page: pagebroadsides;
+}
+body.film div.blank {
+	page: pagefilm;
 }
 .graphic figcaption{
 	background:#F00;
@@ -354,27 +421,32 @@ div.blank {
 	width:100%;
 	height:80%;
 }
-figure, div.frame {
-	display: block;
-	top:0; left:0;
-	width: var(--innerwidth);
-	height: var(--innerheight);
-	min-width: var(--innerwidth);
-	min-height: var(--innerheight);
-	padding-top:0;
-	margin:0;
-	break-before: recto;
-}
-svg {
-	top:0; left:0;
+body svg {
 	width: var(--innerwidth);
 	height: var(--innerheight);
 	width:100%;
 	height:90%;
 }
-figcaption {
+body.illustratedbook svg {
+	width: var(--innerwidth);
+	height: var(--innerheight);
+	width:100%;
+	height:90%;
+}
+body.broadsides svg, body.film svg {
+	position:absolute;
+	top:0; left:0;
+	margin:0;
+	padding:0;
+	width:var(--width); height:var(--height);
+}
+body figcaption {
+	display:block;
 	font-size:.8em;
 	height: 8%;
+}
+body.broadsides figcaption, body.film figcaption {
+	display:none;
 }
 span.indent1 {
 	padding-left: var(--indent1)
@@ -440,13 +512,58 @@ article.prose  p {
 	orphans: 3;
 	widows: 2;
 }
+/* Cover  from https://github.com/michaelperrin/blog-css-book-demo/blob/master/book.css*/
+.cover {
+	page: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('cover.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cover h1 {
+	margin-top: 1in;
+	margin-left: 1in;
+	margin-right: 1in;
+	color: #333;
+	text-align: left;
+	font-weight: 300;
+	font-size: 3.4rem;
+}
+span.footnote {
+	float: footnote;
+}
+article a {
+	text-decoration: underline;
+	color: inherit;
+}
+article a::after {
+	content: "(" attr(href) ")";
+	color: inherit;
+}
+.footnote::footnote-call {
+	content: counter(counterFootnote, decimal) " ";
+	color: var(--warmgray);
+	vertical-align: super;
+	font-size: 0.8em;
+}
+.footnote::footnote-marker {
+	content: counter(footnote, lower-roman);
+	font-size: 14pt;
+	color: red;
+	display: inline-block;
+	width: 2em;
+	padding-right: 1em;
+	text-align: right;
+}
 ul.stanza li {
 	list-style-type: none;
 	display: inline;
-	font-size: 12pt;
+	font-size: 1em;
 	color: var(--warmblack);
 	font-weight:400;
-	margin:0.1em;
+	margin:0.05em;
 }
 ul.stanza li:nth-child(4n+0) {
 	color: var(--warmlightgray);
@@ -543,48 +660,47 @@ ul.stanza > li:nth-child(5n+0):before {
 	color: var(--warmlightgray);
 	font-weight:600;
 }
-/* Cover  from https://github.com/michaelperrin/blog-css-book-demo/blob/master/book.css*/
-.cover {
-  page: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url('cover.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+body > main > header > h1 {
+	string-set: stringBookTitle content();
 }
-.cover h1 {
-  margin-top: 1in;
-  margin-left: 1in;
-  margin-right: 1in;
-  color: #333;
-  text-align: left;
-  font-weight: 300;
-  font-size: 3.4rem;
+section > header > h1 {
+	string-set: stringSectionTitle content();
 }
-span.footnote {
-    float: footnote;
+article > header > h1 {
+	string-set: stringArticleTitle content();
 }
-article a {
-  text-decoration: underline;
-  color: inherit;
+figcaption {
+	string-set: stringFigCaption content();
 }
-article a::after {
-  content: "(" attr(href) ")";
-  color: inherit;
+#author {
+	string-set: stringAuthor content();
 }
-.footnote::footnote-call {
-    content: counter(counterFootnote, decimal) " ";
-    color: var(--warmgray);
-    vertical-align: super;
-    font-size: 0.8em;
+#documentTimeStamp {
+	string-set: stringDocumentTimeStamp content();
 }
-.footnote::footnote-marker {
-    content: counter(footnote, lower-roman);
-    font-size: 14pt;
-    color: red;
-    display: inline-block;
-    width: 2em;
-    padding-right: 1em;
-    text-align: right;
+#documentDateTime {
+	string-set: stringDateTime content();
+}
+#documentId {
+	string-set: stringDocumentId content();
+}
+@page {
+	counter-reset: counterFootnote 1;
+}
+body {
+	counter-reset: counterFootnote 1;
+	counter-reset: counterFigure 1;
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+	counter-reset: counterArticle 1;
+}
+section.pagestartnumbers {
+	counter-reset: counterPage 1;
+}
+section.interior:nth-child(0) {
+	counter-reset: counterPage 1;
+	counter-reset: counterSection 1;
+}
+section.interior > article:nth-child(0) {
+	counter-reset: counterArticle 1;
 }

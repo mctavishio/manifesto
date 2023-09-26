@@ -19,14 +19,15 @@ let nx = 2, ny = 2, nz = 4;
 /*
 const colorsets = [
 	["#fdfdf3", "#191918"], //"warmbw",
-	["#8F0000", "#fdfdf3", "#191918"], //"warmbwred",
+	["#8F0000", "#fdfdf3", ""#4b4b44","#191918"], //"warmbwred",
+	["#8F0000", "#fdfdf3", "#191918"], //"warmbwgred",
 	["#fdfdf3", "#191918"], //"warmbw",
 	["#ffcc00", "#fdfdf3", "#191918"], //"warmbwyellow",
 	["#fdfdf3", "#191918"], //"warmbw",
 	//["#006699", "#fdfdf3", "#191918"], //"warmbwblue",
 ];
 */
-const colorsets = [[[["#fdfdf3", "#191918"],3],[["#8F0000", "#fdfdf3", "#191918"],1],[["#fdfdf3", "#191918"],2],[["#8F0000", "#fdfdf3", "#191918"],1]].map(wx=>{
+const colorsets = [[[["#fdfdf3", "#191918"],3],[["#8F0000", "#fdfdf3", "#191918"],1],[["#4b4b44", "#fdfdf3", "#191918"],2],[["#8F0000", "#fdfdf3", "#191918"],1]].map(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 }).flat(2)];
 
@@ -78,6 +79,7 @@ const pgrid = [...new Array(nticks).keys()].map( j=> {
 				if(z===2) {so=1}
 				//fillopacity
 				let fo = (so+1)%2;
+				//s0 = 1; fo = 1;
 				return {cx:cx[x],cy:cy[y],r:rz[z],sw:swz[z],sd:sdz[z],so,fo};
 			});
 		});
@@ -91,9 +93,10 @@ let drawp = {
 }
 let B = {nticks};
 
-let elements = [...new Array(nz-2).keys()].reduce( (acc,z) => {
+let elements = [...new Array(nz-1).keys()].reduce( (acc,z) => {
 	let zels = [];
 	[...new Array(nx).keys()].forEach( x => {
+		zels.push({tag:"line", b:[]});
 		zels.push({tag:"line", b:[]});
 		zels.push({tag:"line", b:[]});
 	});
@@ -108,8 +111,8 @@ let elements = [...new Array(nz-2).keys()].reduce( (acc,z) => {
 	});
 	acc.push(zels);
 	return acc;
-//}, [[{tag:"rect", b:[]},{tag:"rect", b:[]}]]);
-}, []);
+}, [[{tag:"rect", b:[]},{tag:"rect", b:[]}]]);
+//}, []);
 
 //elements.push([{tag:"line", b:[]},{tag:"line", b:[]},{tag:"circle", b:[]},{tag:"circle", b:[]}]);
 let Bobj = {
@@ -139,7 +142,7 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 /* layer 0
  * rectangle background
  * */
-/*
+
 [...new Array(elements[0].length).keys()].forEach( n => { 
 	elements[0][n].b = [...new Array(nticks).keys()].map( j => {
 		//let color = colors[j][n%colors[j].length]; 
@@ -154,16 +157,15 @@ ischange[0] = [...new Array(nx).keys()].map( x => {
 		return drawp.rect({cx:cx,cy:cy,w:w,h:h,sw,sd,so,fo,color});
 	});
 });
-*/
+
 /* layers 1 to z-1
- layers 0 to z-1
  * */
-[...new Array(nz-2).keys()].map( z => z+0).forEach( z => { 
+[...new Array(nz-1).keys()].map( z => z+1).forEach( z => { 
 	elements[z].filter(el=>el.tag==="line").forEach( (el,n) => { 
 		el.b = [...new Array(nticks).keys()].map( j => {
 			let bt = [];
-			let sw = pgrid[j][n%nx][n%ny][z].sw*0.8; 
-			if(n%2===0) {
+			let sw = pgrid[j][n%nx][n%ny][z].sw*0.9; 
+			if(n%3===0) {
 				bt = drawp.vline({cx:pgrid[j][n%nx][0][z].cx,cy:0,sw:sw,sd:pgrid[j][n%nx][n%ny][z].sd,so:1,fo:0,color:colors[j][n%colors[j].length]});
 			}
 			else {

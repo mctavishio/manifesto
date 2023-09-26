@@ -1,7 +1,7 @@
 let input = {
 	bookunits: "in",
-	bookwidth: 8,
-	bookheight: 4.5,
+	bookwidth: 16,
+	bookheight: 9,
 	bookmargin: 1,
 	bookguttermargin: 1.2,
 	bleed: 0.125,
@@ -25,7 +25,7 @@ const bookwidth = input.bookwidth || 8.5;
 const bookheight = input.bookheight || 8.5;
 const bookmargin = input.bookmargin || 1;
 const bleed = input.bleed || 0.125;
-const pixelsperunit = input.pixelsperunit || 300;
+const pixelsperunit = input.pixelsperunit || 72;
 const captionheight = input.captionheight || 1;
 const width = bookwidth+bookunits;
 const height = bookheight+bookunits;
@@ -46,37 +46,50 @@ const poemsfile = `${path}/poems.js`;
 const framesfile = `${path}/frames.js`;
 const bookfile = `${path}/book.js`;
 const filmfile = `${path}/film.js`;
-const texts = require("./poemTextLists.js");
-console.log(`texts.length = ${texts.length}`);
+const rawpoems = require("./poemTextLists.js");
+console.log(`rawpoems.length = ${rawpoems.length}`);
 
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
 
-//B.elements[B.elements.length] = [{tag:"rect", role:"veil"}];
-//this will be the veil ... used to cover for transitions
 const canvas = {width:svgwidth,height:svgheight,min:Math.min(svgwidth,svgheight),max:Math.max(svgwidth,svgheight)};
+const textLists2html = textLists => {
+	return textLists.reduce( (acc,list) => {
+		acc = acc + `
+		<ul class="stanza">` + list.reduce( (ulstr,item) => {
+			ulstr = ulstr + `<li>${item}</li>`;
+			return ulstr;
+		},"");
+		acc = acc + `
+		</ul>`;
+		return acc;
+	}, "")
+};
 
 let poemsobj = [...new Array(nticks).keys()].map( j => {
+	let textLists = rawpoems[j%rawpoems.length].lists;
 	let poem = {
 		id: `${(j+1).toString().padStart(2, '0')}`,
 		title: `${(j+1).toString().padStart(2, '0')}`,
-		text: texts[j%texts.length].text,
+		text: textLists2html(textLists),
 	};
 	let elementdraw = B.elements.map( layer => {
-	 return layer.map( el => {
-		return tools.drawf(canvas,el.b[j],el.tag);
+		return layer.map( el => {
+			return tools.drawf(canvas,el.b[j],el.tag);
 		}).join(" ");
 	}).join(" ");
-	let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermosi tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
+	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
+	let textarray = textLists[tools.randominteger(0,textLists.length)].join(" ").split(" ");
+	//console.log(textarray);
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
 	poem.figure = {
-	picture:`
+		picture:`
 	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
 		${elementdraw}
 	</svg>
 	`,
-	caption:`${captiontext} ::: ${(j+1).toString().padStart(2, '0')}`};
+		caption:`${captiontext}`};
 	console.log(`poemtitle = ${poem.title}, j=${j}`);
 	return poem;
 });

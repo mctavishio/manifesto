@@ -117,7 +117,7 @@ let head = `
 let html = `<html>${head}
 <body class="illustratedbook" >
 <main id="top">`;
-if(book.otherbooks) {
+/*if(book.otherbooks) {
 html = html + ` 
 <section class="prelude num0 pagenonumbers notoc noweb" id="prelude">
 <header>
@@ -140,8 +140,9 @@ ${otherbookstr}
 </article>
 </section>
 `;
-}
+}*/
 html = html + `
+<div class="blank"></div>
 <header>
 	<h1>${book.title}</h1>
 	<h2>${book.subtitle}</h2>

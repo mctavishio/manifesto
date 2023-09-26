@@ -227,7 +227,7 @@ let tools = {
 				acc[key]=p[key];
 			}
 			else {
-				acc[key] = Math.round(p[key]*attmap(key));
+				acc[key] = Math.round(100*p[key]*attmap(key))/100;
 				//acc[key] = 1.0*Number(p[key])*attmap(key);
 			}
 			return acc; 
