@@ -168,6 +168,9 @@ body.broadsides figure, body.broadsides div.frame {
 body.film figure, body.film div.frame {
 	page: pagefilm;
 }
+section.pagestartnumbers {
+	counter-reset: page 1;
+}
 section#sectionfrontmatter {
 	font: var(--fontfrontmatter);
 }
@@ -425,13 +428,13 @@ body svg {
 	width: var(--innerwidth);
 	height: var(--innerheight);
 	width:100%;
-	height:90%;
+	height:100%;
 }
 body.illustratedbook svg {
 	width: var(--innerwidth);
 	height: var(--innerheight);
 	width:100%;
-	height:90%;
+	height:100%;
 }
 body.broadsides svg, body.film svg {
 	position:absolute;
@@ -443,7 +446,6 @@ body.broadsides svg, body.film svg {
 body figcaption {
 	display:block;
 	font-size:.8em;
-	height: 8%;
 }
 body.broadsides figcaption, body.film figcaption {
 	display:none;

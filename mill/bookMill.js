@@ -14,8 +14,8 @@ const innerwidth = (w-2.0*m)+"in";
 const innerheight = (h-2.0*m)+"in";
 const margin = book.bookmargin+"in";
 const margingutter = (book.bookmargin*1+0.2)+"in";
-const svgwidth = book.bookwidth*300;
-const svgheight = book.bookheight*300;
+const svgwidth = book.bookwidth*book.pixelsperunit;
+const svgheight = book.bookheight*book.pixelsperunit;
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
@@ -151,7 +151,6 @@ html = html + `
 </header>`
 html = html + book.sections.reduce( (sectionstr,section,s) => {
 	//console.log(`section = ${JSON.stringify(section)}`);
-//<div class="blank"></div>
 	let cssstr = section.cssclasses ? section.cssclasses.join(" ") : "";
 	if(section.id!=="sectiontoc") {
 	sectionstr = sectionstr + `

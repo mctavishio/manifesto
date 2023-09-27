@@ -217,17 +217,17 @@ let Bfilm = {
 				acc.push(bt);
 				return acc;
 			}, []);
-			/*
-		[...new Array(12).keys()].forEach(x=> {
-			let t = tools.randominteger(1,nticks-2);
-			bframe[t] = tween(bframe[t-1],bframe[t+1],1,2);
-		});
-		[...new Array(6).keys()].forEach(x=> {
-			let t = tools.randominteger(1,nticks-3);
-			bframe[t] = tween(bframe[t-1],bframe[t+2],1,3);
-			bframe[t+1] = tween(bframe[t-1],bframe[t+2],2,3);
-		});
-		*/
+
+			[...new Array(12).keys()].forEach(x=> {
+				let t = tools.randominteger(1,nticks-2);
+				bframe[t] = tween(bframe[t-1],bframe[t+1],1,2);
+			});
+			[...new Array(6).keys()].forEach(x=> {
+				let t = tools.randominteger(1,nticks-3);
+				bframe[t] = tween(bframe[t-1],bframe[t+2],1,3);
+				bframe[t+1] = tween(bframe[t-1],bframe[t+2],2,3);
+			});
+
 			el.b = bframe;
 			Bfilm.elements[z][n].b = [...new Array(nticks).keys()].flatMap( j => { 
 				//let p2 = j < nticks-1 ? bframe[j+1] : f;
@@ -240,6 +240,12 @@ let Bfilm = {
 					return step; 
 				});
 			});
+
+			let introb = [...new Array(fps).keys()].map( t => {
+				return Bfilm.elements[z][n].b[tools.randominteger(0,fps)];
+			});
+			introb.forEach(bt=>{Bfilm.elements[z][n].b.push(bt)});
+
 			console.log(`Bfilm.elements[z][n].b.length =${Bfilm.elements[z][n].b.length}`);
 			console.log(`el.b.length=${el.b.length}`);
 			console.log(`count=${el.b.length}`);
@@ -247,31 +253,31 @@ let Bfilm = {
 		});
 	});
 
-	let Bstr = `let B =
+let Bstr = `let B =
 	${JSON.stringify(B)};
 module.exports = B;`
 
-	let Bfilmstr = `let B =
+let Bfilmstr = `let B =
 	${JSON.stringify(Bfilm)};
 module.exports = B;`
 
-	fs.writeFileSync(Bfile, Bstr, (err) => {
-		if (err)
-			console.log(err);
-		else {
-			console.log(`${Bfile} written successfully\n`);
-		}
-	});
+fs.writeFileSync(Bfile, Bstr, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${Bfile} written successfully\n`);
+	}
+});
 
-	fs.writeFileSync(BfilmFile, Bfilmstr, (err) => {
-		if (err)
-			console.log(err);
-		else {
-			console.log(`${BfilmFile} written successfully\n`);
-		}
-	});
+fs.writeFileSync(BfilmFile, Bfilmstr, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${BfilmFile} written successfully\n`);
+	}
+});
 
-	let recipe = `
+let recipe = `
 #!/bin/bash
 cd ../..
 ts=${dirTimestamp}
@@ -288,11 +294,11 @@ echo "cd data/mill${dirTimestamp}"
 echo "$(date)" > data/mill${dirTimestamp}/readMe.txt
 echo "done"
 `;
-	fs.writeFileSync(recipeFile, recipe, (err) => {
-		if (err)
-			console.log(err);
-		else {
-			console.log(`${recipeFile} written successfully\n`);
-		}
-	});
-	console.log(`bash ${recipeFile}\n`);
+fs.writeFileSync(recipeFile, recipe, (err) => {
+	if (err)
+		console.log(err);
+	else {
+		console.log(`${recipeFile} written successfully\n`);
+	}
+});
+console.log(`bash ${recipeFile}\n`);

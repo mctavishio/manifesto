@@ -94,7 +94,9 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 	return poem;
 });
 
-let framesobj = poemsobj.flatMap( (poem,j) => { 
+//let framesobj = poemsobj.flatMap( (poem,j) => { 
+let framesobj = [...new Array(nticks+1).keys()].flatMap( j => { 
+	let poem = (j>0&&j<nticks) ? poemsobj[j%nticks] : {title:"fieldNotes",figure:{caption:"field notes!"}};
 	return [...new Array(fps).keys()].map( t => {
 		let k = fps*j + t;
 		let frame = {
@@ -104,7 +106,7 @@ let framesobj = poemsobj.flatMap( (poem,j) => {
 		};
 		let elementdraw = Bfilm.elements.map( (layer,l) => {
 			return layer.map( el => {
-				return tools.drawf(canvas,el.b[k],el.tag);
+				return tools.drawf(canvas,el.b[k%el.b.length],el.tag);
 			}).join(" ");
 		}).join(" ");
 		frame.figure = {
@@ -197,7 +199,7 @@ let filmobj = {
 			title: "the repair(*)",
 			inscription: "it was like this every morning ...",
 			cssclasses: ["pagestartnumbers", "booksection"],
-			poems: [...new Array(nticks*fps).keys()].map( j => { return framesobj[j].id }), 
+			poems: [...new Array(framesobj.length).keys()].map( j => { return framesobj[j].id }), 
 		},
 	],
 	poemids: [...new Array(nticks*fps).keys()].map( j => { return framesobj[j].id }), 
