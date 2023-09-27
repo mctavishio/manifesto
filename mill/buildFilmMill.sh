@@ -17,6 +17,8 @@ node data/mill$ts/Bmill.js
 node poemMill ./data/mill$ts
 node filmMill ./data/mill$ts 
 prince -s data/mill$ts/css/print.css data/mill$ts/film.html -o data/mill$ts/film.pdf
+sed "s/notext/withtext/" data/mill$ts/film.html > data/mill$ts/filmwithtext.html
+prince -s data/mill$ts/css/print.css data/mill$ts/filmwithtext.html -o data/mill$ts/filmwithtext.pdf
 echo "cd data/mill$ts"
 echo "bash pdfToFilm.sh"
 echo "$(date)" > data/mill$ts/readMe.txt

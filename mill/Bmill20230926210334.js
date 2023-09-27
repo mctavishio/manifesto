@@ -44,7 +44,7 @@ const rmin = .5, rmax = 40;
 const swmin = .5, swmax = 40;
 const sdmin = .08, sdmax = 12;
 
-const ncircles = 0;
+const ncircles = 10;
 const nvlines = 0;
 const nhlines = 4;
 const nlayers = 3;
@@ -131,12 +131,12 @@ let elements = [...new Array(nlayers-1).keys()].reduce( (acc,z) => {
 	acc.push(zels);
 	return acc;
 }, [[{tag:"rect"}]]);
-/*
+
 elements[nlayers] = [...new Array(ncircles).keys()].map( n => {
  let colors = ["#fdfdf3","#191918","#fdfdf3"];
 	return ({tag:"circle", role:"circle", n:n, color:colors[(nlayers+n)%colors.length]});
 });
-*/
+
 let B = {
 	nticks: nticks,
 	fps: fps,
@@ -156,10 +156,10 @@ let Bfilm = {
 		});
 	})
 }
-	const istweens = [[Math.floor(nticks*0.9),1],[1,0]].flatMap(wx=>{
+	const istweens = [[12,1],[1,0]].flatMap(wx=>{
 		return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 	});
-	const changes = [[6,0],[3,1]].flatMap(wx=>{
+	const changes = [[6,1],[2,1]].flatMap(wx=>{
 		return [...new Array(wx[0]).keys()].map( w=>wx[1] );
 	});
 	const ischange = [];
@@ -195,7 +195,7 @@ let Bfilm = {
 
 	/* layers 1 to z-1
 	 * */
-	[...new Array(nlayers-1).keys()].map( z => z+1).forEach( z => { 
+	[...new Array(nlayers).keys()].map( z => z+1).forEach( z => { 
 		B.elements[z].forEach( (el,n) => {
 			let k = z < nlayers-1 ? n*(z-1)+n : n;
 			let bframe = [...new Array(nticks).keys()].reduce( (acc,j) => {
@@ -218,15 +218,16 @@ let Bfilm = {
 				return acc;
 			}, []);
 
-			[...new Array(Math.floor(nticks/3)).keys()].forEach(x=> {
+			[...new Array(12).keys()].forEach(x=> {
 				let t = tools.randominteger(1,nticks-2);
 				bframe[t] = tween(bframe[t-1],bframe[t+1],1,2);
 			});
-			[...new Array(Math.floor(nticks/4)).keys()].forEach(x=> {
+			[...new Array(6).keys()].forEach(x=> {
 				let t = tools.randominteger(1,nticks-3);
 				bframe[t] = tween(bframe[t-1],bframe[t+2],1,3);
 				bframe[t+1] = tween(bframe[t-1],bframe[t+2],2,3);
 			});
+
 			el.b = bframe;
 			Bfilm.elements[z][n].b = [...new Array(nticks).keys()].flatMap( j => { 
 				//let p2 = j < nticks-1 ? bframe[j+1] : f;
@@ -239,12 +240,12 @@ let Bfilm = {
 					return step; 
 				});
 			});
-/*
+
 			let introb = [...new Array(fps).keys()].map( t => {
 				return Bfilm.elements[z][n].b[tools.randominteger(0,fps)];
 			});
 			introb.forEach(bt=>{Bfilm.elements[z][n].b.push(bt)});
-*/
+
 			console.log(`Bfilm.elements[z][n].b.length =${Bfilm.elements[z][n].b.length}`);
 			console.log(`el.b.length=${el.b.length}`);
 			console.log(`count=${el.b.length}`);

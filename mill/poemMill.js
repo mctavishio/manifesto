@@ -69,9 +69,16 @@ const textLists2html = textLists => {
 
 let poemsobj = [...new Array(nticks).keys()].map( j => {
 	let textLists = rawpoems[j%rawpoems.length].lists;
+	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
+	let textarray = textLists.reduce( (acc,list) => {
+		return acc + list.join(" ");
+	}, "").split(" ");
+	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" :|: ");
+	let title = [0,1].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
+	// console.log(textarray);
 	let poem = {
 		id: `${(j+1).toString().padStart(2, '0')}`,
-		title: `${(j+1).toString().padStart(2, '0')}`,
+		title: `${title}`,
 		text: textLists2html(textLists),
 	};
 	let elementdraw = B.elements.map( layer => {
@@ -79,10 +86,6 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 			return tools.drawf(canvas,el.b[j],el.tag);
 		}).join(" ");
 	}).join(" ");
-	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
-	let textarray = textLists[tools.randominteger(0,textLists.length)].join(" ").split(" ");
-	//console.log(textarray);
-	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(2,textarray.length)]).join(" :|: ");
 	poem.figure = {
 		picture:`
 	<svg viewBox="0 0 ${svgwidth} ${svgheight}">
@@ -90,20 +93,30 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 	</svg>
 	`,
 		caption:`${captiontext}`};
-	console.log(`poemtitle = ${poem.title}, j=${j}`);
+	console.log(`poemtitle = ${poem.figure.caption}, j=${j}`);
 	return poem;
 });
 
 //let framesobj = poemsobj.flatMap( (poem,j) => { 
-let framesobj = [...new Array(nticks+1).keys()].flatMap( j => { 
-	let poem = (j>0&&j<nticks) ? poemsobj[j%nticks] : {title:"fieldNotes",figure:{caption:"field notes!"}};
+let framesobj = [...new Array(nticks).keys()].flatMap( j => { 
+	//let poem = (j>0&&j<nticks) ? poemsobj[j%nticks] : {title:"fieldNotes",figure:{caption:"field notes!"}};
+	let poem = (j>0&&j<nticks-1) ? poemsobj[j%nticks] : {title:"",figure:{caption:""}};
+	//let poem = poemsobj[j%nticks];
 	return [...new Array(fps).keys()].map( t => {
 		let k = fps*j + t;
+		console.log(`poem.title=${poem.figure.caption}`);
 		let frame = {
 			id: `${(k).toString().padStart(3, '0')}`,
 			title: poem.title, 
-			text: poem.title, 
+			text: poem.figure.caption, 
 		};
+		/*	
+		let frame = {
+			id: `${(k).toString().padStart(3, '0')}`,
+			title: "", 
+			text: "", 
+		}
+		*/
 		let elementdraw = Bfilm.elements.map( (layer,l) => {
 			return layer.map( el => {
 				return tools.drawf(canvas,el.b[k%el.b.length],el.tag);
@@ -115,7 +128,8 @@ let framesobj = [...new Array(nticks+1).keys()].flatMap( j => {
 		${elementdraw}
 	</svg>
 	`,
-			caption: poem.figure.caption,
+			//caption: poem.figure.caption,
+			caption: "",
 		};
 		return frame;
 	});

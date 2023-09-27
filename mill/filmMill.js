@@ -19,41 +19,6 @@ const svgheight = book.bookheighti*book.pixelsperunit;
 let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
-const generatefunctions = {
-	generateTOC: () => {
-	let divstr = `
-	<div id="toc"><nav>`;
-	divstr = divstr + book.sections.filter(section=>{
-		let b=true;
-		if(section.cssclasses) {
-			if(section.cssclasses.includes("notoc")) b=false;
-		}
-		return b
-	}).reduce( (sectionstr,section,s) => {
-	if(section.title) {
-		sectionstr = sectionstr + `
-		<div class="sectionlink"><a id="link_${section.id}" href="#${section.id}">${section.title}</a></div>`;
-	}
-	if(section.poems) {
-		sectionstr = sectionstr + `
-		<ul id="list_${section.id}">`
-		sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
-			console.log(`poemid=${poemid}`);
-			let poem = poems.filter(poem=>poem.id===poemid)[0];
-			poemstr = poemstr + `<li><a id="link_${poem.id}" href="#${poem.id}">${poem.title}</a></li>`;
-			return poemstr;
-		}, "");
-		sectionstr = sectionstr + `
-		</ul>`
-	}
-	return sectionstr;
-}, "");
-
-	divstr = divstr + `
-	</nav></div>`;
-	return divstr;
-}
-}
 let head = `
 <head>
 	<title>${book.title}</title>
@@ -113,7 +78,9 @@ let head = `
 </head>
 `;
 
-let html = `<html>${head}<body class="film"><main id="top">`;
+let html = `<html>${head}
+<body class="film notext">
+<main id="top">`;
 html = html + `
 <header>
 	<h1>${book.title}</h1>
@@ -125,30 +92,9 @@ html = html + book.sections.reduce( (sectionstr,section,s) => {
 	//console.log(`section = ${JSON.stringify(section)}`);
 //<div class="blank"></div>
 	let cssstr = section.cssclasses ? section.cssclasses.join(" ") : "";
-	if(section.id!=="sectiontoc") {
 	sectionstr = sectionstr + `
 <section class="interior num${s+1} ${cssstr}" id="${section.id}">`;
-	}
-	else {
-	sectionstr = sectionstr + `
-<section class="interior num${s} ${cssstr}" id="${section.id}">`;
-	}
-if(section.title) {
-sectionstr = sectionstr + `
-<header>
-	<h1>${section.title}</h1>
-</header>`;
-}
-if(section.inscription) {
-sectionstr = sectionstr + `
-	<div class="inscription">
-	${section.inscription}
-	</div>`
-}
-if(section.generatorf) {
-	sectionstr = sectionstr + generatefunctions[section.generatorf]();
-}
-else if(section.poems) {
+if(section.poems) {
 sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	//console.log(`poemid=${poemid}`);
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
@@ -163,7 +109,7 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 	<div class="flex">
 	<div class="content">`;
 	poemstr = poemstr + `
-		<div class="banner">${poem.figure.caption}</div>`;
+		<div class="banner">${poem.text}</div>`;
 	poemstr = poemstr + `
 	</div></div>`;
 	//console.log(poem.figure.picture);
@@ -173,11 +119,6 @@ sectionstr = sectionstr + section.poems.reduce( (poemstr,poemid,p) => {
 		${poem.figure.picture}
 		</figure>`
 	}
-	/*
-	poemstr = poemstr + `<div class="flex"><div class="content">`;
-	poemstr = poemstr + `<header><h1>${poem.title}</h1></header>`;
-	poemstr = poemstr + `</div></div>`;
-	*/
 	poemstr = poemstr + `
 </article>`;
 	return poemstr;

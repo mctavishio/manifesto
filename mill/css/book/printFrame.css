@@ -130,6 +130,7 @@ blockquote {
 }
 html {
 	font-size: var(--fontSize0,11pt);
+	font-family: var(--textfont0);
 	font-variant: normal;
 	font-weight: 400;
 	font-stretch: normal;
@@ -139,6 +140,15 @@ html {
 main > header, section#prelude > header {
 	text-align: center;
 	margin-top: 20%;
+}
+body.film main > header {
+	display:none;
+}
+body.notext main > header {
+	display:none;
+}
+body.notext main article > header {
+	display:none;
 }
 main > header > h1, section#prelude > header > h1 {
 	font-family:  var(--monospace_zerodot);
@@ -243,9 +253,17 @@ body.film article > div.flex > div.content {
 	background-color: var(--warmlightwhiteveil);
 	font-size:1.4rem;
 }
-body.broadsides article  header, body.film article  header {
+body.notext article > div.flex > div.content {
+	display:none;
+}
+body.broadsides article  header {
 	z-index: 300;
-	padding: 1em;
+	padding: 3em;
+}
+body.film article  header {
+	display: none;
+	z-index: 300;
+	padding: 3em;
 }
 body.broadsides article header > h1, body.film article header > h1 {
 	z-index: 400;
@@ -253,7 +271,14 @@ body.broadsides article header > h1, body.film article header > h1 {
 	font-size: 4em;
 }
 .banner {
-	font-size: 2em;
+	text-align:center;
+	font-size: 3em;
+	color: var(--warmgray);
+	font-weight: bold;
+}
+body.film .banner {
+	text-align:center;
+	font-size: 3em;
 	color: var(--red);
 	font-weight: bold;
 }
@@ -318,7 +343,7 @@ section#sectiontoc > div {
 body section article:first-of-type {
 	break-before: verso;
 }
-body.illustratedbook section article:first-of-type {
+body.illustratedbook section > article:first-of-type {
 	break-before: verso;
 }
 body.broadsides section > article:first-of-type {

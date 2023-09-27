@@ -53,6 +53,8 @@
   --indent4: 8em;
   --indent5: 10em;
   --fontSize0: 12pt;
+  --textfont0: var(--monospace_zerodot);
+  --textfont2: var(--monospace_zeroslash);
   --textfont1: var(--monospace_code);
   --bgfootnote: var(--warmwhite);
   --hr1: 2em solid var(--warmblack);
