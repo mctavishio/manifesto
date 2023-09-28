@@ -6,11 +6,11 @@ mkdir data/mill$ts/css
 cp Bmill.js data/mill$ts/Bmill_temp.js
 cp poemMill.js data/mill$ts/poemMill.js
 cp filmMill.js data/mill$ts/filmMill.js
-cd css/book
-bash compileCSS.sh
-cd ../..
-cp css/book/print.css data/mill$ts/css/print.css
 cp pdfToFilm.sh data/mill$ts/pdfToFilm.sh
+cd css
+bash compileCSS.sh
+cd ../
+cp css/print.css data/mill$ts/css/print.css
 sed "s/00000000/\"$ts\"/" data/mill$ts/Bmill_temp.js > data/mill$ts/Bmill.js
 rm data/mill$ts/Bmill_temp.js
 node data/mill$ts/Bmill.js

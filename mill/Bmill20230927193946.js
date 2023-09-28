@@ -44,7 +44,7 @@ const rmin = .5, rmax = 40;
 const swmin = .5, swmax = 40;
 const sdmin = .08, sdmax = 12;
 
-const ncircles = 8;
+const ncircles = 0;
 const nvlines = 0;
 const nhlines = 4;
 const nlayers = 3;
@@ -131,17 +131,12 @@ let elements = [...new Array(nlayers-1).keys()].reduce( (acc,z) => {
 	acc.push(zels);
 	return acc;
 }, [[{tag:"rect"}]]);
-
+/*
 elements[nlayers] = [...new Array(ncircles).keys()].map( n => {
  let colors = ["#fdfdf3","#191918","#fdfdf3"];
 	return ({tag:"circle", role:"circle", n:n, color:colors[(nlayers+n)%colors.length]});
 });
-
-[0,1].forEach( j => {
-	let l = tools.randominteger(0,nlayers);
-	let n = elements[l][tools.randominteger(0,elements[l].length)].color="#8F0000";
-});
-
+*/
 let B = {
 	nticks: nticks,
 	fps: fps,
@@ -200,10 +195,9 @@ let Bfilm = {
 
 	/* layers 1 to z-1
 	 * */
-	[...new Array(nlayers).keys()].map( z => z+1).forEach( z => { 
+	[...new Array(nlayers-1).keys()].map( z => z+1).forEach( z => { 
 		B.elements[z].forEach( (el,n) => {
-			//let k = z < nlayers-1 ? n*(z-1)+n : n;
-			let k = n*(z-1)+n;
+			let k = z < nlayers-1 ? n*(z-1)+n : n;
 			let bframe = [...new Array(nticks).keys()].reduce( (acc,j) => {
 				let bt = [];
 				if(j===0 || ischange[j][n] || j===nticks-1) {

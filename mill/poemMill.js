@@ -74,16 +74,17 @@ let poemsobj = [...new Array(nticks).keys()].map( j => {
 		return acc + list.join(" ");
 	}, "").split(" ");
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" :|: ");
-	let title = [0,1].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
+	let title = [0].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
 	// console.log(textarray);
 	let poem = {
 		id: `${(j+1).toString().padStart(2, '0')}`,
 		title: `${title}`,
 		text: textLists2html(textLists),
 	};
+	jd = (j===0 || j===nticks-1) ? tools.randominteger(1,nticks-2) : j; 
 	let elementdraw = B.elements.map( layer => {
 		return layer.map( el => {
-			return tools.drawf(canvas,el.b[j],el.tag);
+			return tools.drawf(canvas,el.b[jd],el.tag);
 		}).join(" ");
 	}).join(" ");
 	poem.figure = {
@@ -147,11 +148,6 @@ let bookobj = {
 	isbn: "ISBN: 00000<br/>",
 	publisher: "mctavish",
 	sections: [
-		{ 
-			id: "title",
-			title: "field notes",
-			cssclasses: ["pagenonumbers", "notoc", "booktitle", "booksection"],
-		},
 		{ 
 			id: "section1",
 			title: "the repair(*)",

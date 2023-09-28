@@ -89,7 +89,6 @@ let head = `
 	  gtag('config', 'G-0989MECNZV');
 	</script>
 	<link rel="stylesheet" media="screen" href="css/bookweb.css"/>
-	<!--<link rel="stylesheet" media="print" href="css/bookprint.css"/>-->
 	<link rel="stylesheet" media="print" href="css/print.css"/>
 	<style>
 	:root {

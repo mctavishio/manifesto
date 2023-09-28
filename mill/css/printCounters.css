@@ -28,16 +28,15 @@ figcaption {
 body {
 	counter-reset: counterFootnote 1;
 	counter-reset: counterFigure 1;
-	counter-reset: counterPage 1;
+	counter-reset: counterPage 300;
 	counter-reset: counterSection 1;
 	counter-reset: counterArticle 1;
 }
 section.pagestartnumbers {
-	counter-reset: counterPage 1;
+	counter-reset: counterPage 900;
 }
-section.interior:nth-child(0) {
+article.pagestartnumbers {
 	counter-reset: counterPage 1;
-	counter-reset: counterSection 1;
 }
 section.interior > article:nth-child(0) {
 	counter-reset: counterArticle 1;

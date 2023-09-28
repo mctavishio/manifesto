@@ -8,6 +8,7 @@
 	marks: crop cross;
 	bleed: 0.25in;
 	-prince-trim: 0.25in;
+	counter-increment: counterPage;
 }
 @page :left {
 	margin-right: 1.2in;
@@ -19,7 +20,7 @@
 }
 @page :right{
 	@bottom-right {
-		content: counter(page);
+		content: counter(counterPage);
 		font-family:  var(--monospace_zerodot);
 		font-weight:400;
 		font-size: 20pt;
@@ -30,7 +31,7 @@
 }
 @page :left{
 	@bottom-left {
-		content: counter(page);
+		content: counter(counterPage);
 		font-family:  var(--monospace_zerodot);
 		font-weight:400;
 		font-size: 20pt;
@@ -91,15 +92,15 @@ main > header, section.pagefrontmatter, section > header > h1, section#prelude, 
 	border-bottom: thin var(--warmblack) solid;
 }
 @page pagefigure :right{
-	counter-increment: figurenum;
+	counter-increment: counterFigure;
 	@bottom-right {
-		content: "page ::: " counter(page) " figure # => " counter(figurenum);
+		content: "page ::: " counter(counterPage) " figure # => " counter(counterFigure);
 	}
 }
 @page pagefigure :left{
-	counter-increment: figurenum;
+	counter-increment: counterFigure;
 	@bottom-left {
-		content: "page:" counter(page) "figure #" counter(figurenum);
+		content: "page:" counter(counterPage) "figure #" counter(counterFigure);
 	}
 }
 figure, div.frame {
